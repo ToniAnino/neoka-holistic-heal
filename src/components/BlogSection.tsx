@@ -1,6 +1,8 @@
 import { Eye, MessageCircle, Heart } from "lucide-react";
+import { useState } from "react";
+import { BlogPostModal } from "./BlogPostModal";
 
-const blogPosts = [
+const initialBlogPosts = [
   {
     id: 1,
     title: "El amor se ha perdido.",
@@ -64,6 +66,41 @@ const blogPosts = [
 ];
 
 export const BlogSection = () => {
+  const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
+  const [selectedPost, setSelectedPost] = useState<typeof blogPosts[0] | null>(null);
+  const [likedPosts, setLikedPosts] = useState<Set<number>>(new Set());
+
+  const handleLike = (postId: number) => {
+    setBlogPosts((posts) =>
+      posts.map((post) =>
+        post.id === postId
+          ? { ...post, likes: likedPosts.has(postId) ? post.likes - 1 : post.likes + 1 }
+          : post
+      )
+    );
+    setLikedPosts((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(postId)) {
+        newSet.delete(postId);
+      } else {
+        newSet.add(postId);
+      }
+      return newSet;
+    });
+  };
+
+  const handleAddComment = (postId: number) => {
+    setBlogPosts((posts) =>
+      posts.map((post) =>
+        post.id === postId ? { ...post, comments: post.comments + 1 } : post
+      )
+    );
+  };
+
+  const currentPost = selectedPost
+    ? blogPosts.find((p) => p.id === selectedPost.id) || selectedPost
+    : null;
+
   return (
     <section id="blog" className="py-20 bg-background">
       {/* Header */}
@@ -79,6 +116,7 @@ export const BlogSection = () => {
             <article
               key={post.id}
               className="group relative h-64 rounded-lg overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-300"
+              onClick={() => setSelectedPost(post)}
             >
               {/* Background Image */}
               <div
@@ -117,10 +155,18 @@ export const BlogSection = () => {
                       <MessageCircle className="w-4 h-4" />
                       <span>{post.comments}</span>
                     </div>
-                    <div className="flex items-center gap-1 ml-auto text-red-400">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleLike(post.id);
+                      }}
+                      className={`flex items-center gap-1 ml-auto transition-colors ${
+                        likedPosts.has(post.id) ? "text-red-400" : "text-white/80 hover:text-red-400"
+                      }`}
+                    >
                       <span>{post.likes}</span>
-                      <Heart className="w-4 h-4 fill-current" />
-                    </div>
+                      <Heart className={`w-4 h-4 ${likedPosts.has(post.id) ? "fill-current" : ""}`} />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -139,6 +185,18 @@ export const BlogSection = () => {
           </a>
         </div>
       </div>
+
+      {/* Blog Post Modal */}
+      {currentPost && (
+        <BlogPostModal
+          post={currentPost}
+          isOpen={!!selectedPost}
+          onClose={() => setSelectedPost(null)}
+          onLike={() => handleLike(currentPost.id)}
+          onAddComment={() => handleAddComment(currentPost.id)}
+          isLiked={likedPosts.has(currentPost.id)}
+        />
+      )}
     </section>
   );
 };
