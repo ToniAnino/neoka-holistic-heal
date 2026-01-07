@@ -1,17 +1,41 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 export const HeroSection = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center hero-gradient overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
+      {/* Parallax Background Image */}
+      <div 
+        className="absolute inset-0 w-full h-[120%] -top-[10%]"
+        style={{ transform: `translateY(${scrollY * 0.4}px)` }}
+      >
+        <img 
+          src={heroBackground} 
+          alt="Consultorio de psicología en Huelva" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px]" />
+      </div>
+
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary/50 rounded-full blur-3xl opacity-50" />
       </div>
 
       <div className="container relative z-10 pt-24 pb-16 lg:pt-32 lg:pb-24">
