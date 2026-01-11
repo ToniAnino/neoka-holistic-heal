@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { TeamModal } from "./TeamModal";
 
 const features = [
   "Equipo multidisciplinar cualificado",
@@ -10,6 +12,8 @@ const features = [
 ];
 
 export const AboutSection = () => {
+  const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
+
   return (
     <section id="nosotros" className="py-20 lg:py-28 bg-secondary/30">
       <div className="container">
@@ -70,12 +74,14 @@ export const AboutSection = () => {
               ))}
             </ul>
 
-            <Button variant="default" size="lg">
+            <Button variant="default" size="lg" onClick={() => setIsTeamModalOpen(true)}>
               Conoce al equipo
             </Button>
           </div>
         </div>
       </div>
+
+      <TeamModal open={isTeamModalOpen} onOpenChange={setIsTeamModalOpen} />
     </section>
   );
 };
