@@ -123,7 +123,7 @@ export const BlogPostModal = ({
             ) : (
               <>
                 <p className="text-foreground/80 leading-relaxed">
-                  Contenido del artículo próximamente disponible.
+                  Contenido del artículo próximamente disponible...
                 </p>
               </>
             )}
