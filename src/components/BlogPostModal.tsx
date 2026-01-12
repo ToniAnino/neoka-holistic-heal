@@ -114,16 +114,19 @@ export const BlogPostModal = ({
 
           {/* Post Content */}
           <div className="prose prose-sm max-w-none mb-8">
-            <p className="text-foreground/80 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p className="text-foreground/80 leading-relaxed mt-4">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            {post.content ? (
+              post.content.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="text-foreground/80 leading-relaxed mb-4">
+                  {paragraph}
+                </p>
+              ))
+            ) : (
+              <>
+                <p className="text-foreground/80 leading-relaxed">
+                  Contenido del artículo próximamente disponible.
+                </p>
+              </>
+            )}
           </div>
 
           {/* Comments Section */}
