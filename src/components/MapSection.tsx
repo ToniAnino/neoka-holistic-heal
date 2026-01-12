@@ -40,9 +40,9 @@ export const MapSection = () => {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">Teléfono</h3>
+                  <h3 className="font-semibold text-foreground mb-1">Teléfono y WhatsApp</h3>
                   <p className="text-muted-foreground text-sm">
-                    +34 XXX XXX XXX
+                    +34 617 64 25 64
                   </p>
                 </div>
               </div>
