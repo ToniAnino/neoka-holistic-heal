@@ -12,6 +12,49 @@ const initialBlogPosts = [
     views: 22,
     comments: 0,
     likes: 1,
+    content: `Siento nostalgia.
+
+Nostalgia por el amor dulce, tierno y hasta empalagoso. Ese amor que ahora tanto crítica la sociedad pero que, hipócritamente, todos buscamos en nuestro foro interno. Ese amor de no querer a medias, sino con todas.
+
+¡Ay!…qué tiempos aquellos en los que estaba de moda ser romántico. Escribir una nota o dedicar un poema a tu pareja, de tu puño y letra y no mandando algo por Instagram o tik tok que se ha mandado cientos y miles de veces y que es de todo, menos único o hecho solo por y para ti. O enviar la letra de una canción profunda, y no una de reggaetón con una simple frase que te hace de todo, menos conectar con tu romanticismo.
+
+Nostalgia amigos míos de amar serenamente, pero con fervor. Con pasión de dejarnos llevar, arrastrar, envolvernos y perdernos en la esencia, en la fragancia del otro. Por sentir el aliento de la otra persona por detrás de ti, rodeando tu cuerpo y que se te estremezcan hasta las entrañas, atravesando tu piel al tocarte, desde abajo hasta arriba y sintiendo como algo nace desde lo más profundo de ti, para acabar clavándose en tu pecho. Que se te corte el aliento al escuchar su nombre y caigas en picado como cuando caes desde una montaña rusa y todo el estómago te mariposea. Eso.
+
+Nostalgia por dejarnos llevar, sin tener miedo a amores superfluos, vacuos, inertes, y terriblemente temporales, nimio. Nostalgia por no tener recelo a sentir, a reír, a llorar, compartir, apostar por un amor sincero, honesto, leal, estable e inamovible. De los que no les tiembla el pulso cuando vienen turbulencias.
+
+Que fue de aquellos tiempos de vivir en un sueño constante, pero a su vez, estar en una relación estable, con los pies en la tierra. En los que conocer al otro y querer mejorar y compartir, era una aventura y/o un desafío motivante y no un hartazgo.
+
+Ahora todo se vuelve correr. Hasta echar un ´kiki´ dura poco. Que triste. Queremos sentir emociones fuertes, rápidas, intensas y nos enamoramos y desenamoramos con la misma rapidez que los mecánicos de Fernando Alonso cambian las ruedas del coche de éste. Pero, ¿qué nos pasa? ¿Dónde quedaron los "a fuego lento tu mirada"? ¿Dónde quedaron los poemas de Becquer? ¿O el querer ir despacio para ir descubriendo a esa persona poco a poco e ir enamorándote cada día de una cosa nueva? ¿Dónde ha quedado quedarse, permanecer, estar?
+
+Como decía Alejandro Sanz, "no es lo mismo ser que estar, no es lo mismo estar, que quedarse, ¡que va!"
+
+Nada. Ahora todo es YA, AHORA (pero paradójicamente no sabemos vivir en el aquí y el ahora…). Lo queremos todo, y a todos. Sociedad caprichosa, frívola, desagradecida. Más emociones, más viajes, más dinero, más físico, más vivencias, más, más, más, y cuando no hay más…ohhhhh depresión. ¡No te jode! No sabemos disfrutar de nada de lo que tenemos, seguimos buscando más, sedientos de ego.
+
+Siento nostalgia de pasar la noche de un sábado hablando hasta las 6 de la mañana, porque el sueño no pesaba, pero la emoción de hablar sí. Nostalgia de querer sorprender al otro y, por ende, a ti mismo, al tener que descubrir una faceta de creatividad y originalidad que solo el amor te sacaba.
+
+Nostalgia por envolvernos en el cuerpo de la otra persona, sin prisa, sintiendo su calor, recorrerle poco a poco, sin dejarnos nada. Nostalgia por las historias románticas de película. Y no, no os engañéis, ni vayáis ahora todos de avanzados y modernos, que Pretty Woman sigue siendo una de las películas más vistas de la historia.
+
+Ahora todo se convierte en morbo, en curiosidad, en oscuridad, en empaparme una serie hoy y otra mañana. Ingenua de mí pues. Yo soy de las que ven una serie una y otra vez, ¿saben por qué? Porque cada vez que la veo, descubro algo nuevo que antes no había visto, y me vuelve a conquistar o impresionar. Y esa es la belleza de la cuestión, que cuando te quedas, descubres cosas. Cuando miras con el alma, siempre hay algo nuevo. Pero claro, si te vas tan rápido, ¿cómo vas a verlo?
+
+Hay una frase que yo escucho mucho en mi consulta que es: "Es que desde que le he dejado ha hecho no sé qué, o ha conseguido no sé cuál", "Ahora le veo diferente, está cambiado/a y estando conmigo no era así".
+
+Yo no puedo cansarme de algo que me cautiva, que me apasiona, que me enamora, que me contagia. Es como una canción que no puedes quitarte de la cabeza y que, si hoy es tu favorita, lo seguirá siendo aun cuando la oigas dentro de 10 años ¿no? Hay cosas, como personas, que SIEMPRE resuenan dentro de nosotros; que marcarán un antes y un después, pero que, por un motivo que a veces ni siquiera sabemos, preferimos cambiar y dejarlas a un lado para descubrir algo nuevo, algo fresco, pensando que ahí, estará lo que anhelábamos. Naaaaahhh.
+
+Cuando llegue vuestra vejez o, mejor dicho, la nuestra, porque yo también vivo en este planeta, a ver qué nos queda, a ver quién nos elige, cuida y ama, cuando todo se nos caiga: cuando ya no tengamos más botox que ponernos, más abdominales que hacer, cuando nuestros sueños, ilusiones y esperanzas, ya no existan y solo vivamos el día a día. A ver quién nos queda al lado. Porque señores, no se dejen engañar eh…La vida es corta y rápida, cierto, pero la vejez es leeeeeeenta, y está ahí. Tic Tac. Que no tik tok.
+
+Que será de nosotros cuando la frialdad, el egoísmo, la frivolidad, la superficialidad y los valores perdidos nos alcancen y llame a nuestra puerta y al abrirla, no haya nadie quien nos consuele, espere, alegre o simplemente, nos reciba para darnos un cálido beso y nos pregunte cómo estamos.
+
+Hoy puede que lo haya, que lo tengas, y mañana también. Pero más te vale elegir bien a tu compañero/a de vida, porque no todos saben perdurar, estar a la altura, permanecer en las malas y regenerar tus ilusiones cuando no te queden.
+
+Sigo sintiendo nostalgia pues por dos viejecitos de 87 años de la mano que pasean al atardecer. Nostalgia por volver a creer que, en este mundo, aún hay almas creyendo en el amor romántico, en el de llorar, en el de ir corriendo hacia al otro para encontrarse de nuevo después de un tiempo separados, por aquellas personas que abren su alma, enseñan sus vulnerabilidades, pecan en equivocarse y aprender. Por correr de la mano de esa persona entre el trigo de un campo de Andalucía.
+
+Nostalgia de mí, y de ti. Nostalgia de sentir, de vibrar, de ¡aaaahhhhhhh!, vivir. De romper el molde y ser feliz. Nostalgia de pensar en mil maneras de diferentes de escapar, pero contigo. Y no sin ti. Nostalgia de sentir nostalgia, que ya ni eso nos permitimos. Nostalgia por sentir la fuerza, coraje y valentía por darle la vuelta al destino y hacer posible lo imposible. Porque triunfe el amor. Nostalgia por no sentir vergüenza de sentir, de expresar, de contar, de gritar al mundo el amor que tienes hacia otra persona. Por no cohibirse, por no dejar en el olvido o peor, para mañana. Nostalgia por la gente que sí quiere trabajar en la pareja y le dedica un rato a diario, o tiene detalles cada dos semanas.
+
+Nostalgia de alguien que te deja huella y "le debas" un cambio profundo en ti, para hacerte mejor persona, para sacarte lo mejor y pulir lo peor. Nostalgia para saber morir y nacer dentro de un mismo compromiso, sin tener que echar a la otra persona.
+
+Que pena de aquellos que, buscan y cambian de compañeros de vida constantemente porque se dejan atraer por lo "nuevo", por ideales que luego no resultan ser, por querer buscar fuera lo que no son capaces de valorar o promover dentro. Que pena de aquellas personas que se dejan cautivar por mensajes, mentes o cuerpos, que son estacionales, ilusorios. Que pena de los débiles, que no saben amar hasta el final sabiendo llegar a un equilibrio donde ambas almas puedan llegarse a entender y respetar.
+
+Amar. Que bonitos recuerdos aquellos. A mí que me dejen, que yo quiero seguir soñando y amando. Yo quiero seguir vibrando, cantándole una canción al amor de mi vida a pleno pulmón en el coche, escribirle una nota, sorprenderle, darle todo mi amor, paciencia, comprensión, mi tiempo y quitárselo a otras cosas o personas; mis miedos, alegrías, pasión, entrega, mis sueños y… volar, lejos, muy lejos, dónde las almas se encuentran y los egos se pierden. Donde todo es volver a empezar, pero con la misma persona. Para el resto de lo que nos quede. En esta vida y en la otra.`,
   },
   {
     id: 2,
