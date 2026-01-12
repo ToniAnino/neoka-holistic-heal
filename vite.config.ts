@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/neoka-holistic-heal/',
+  base: mode === 'production' ? '/neoka-holistic-heal/' : '/',
   server: {
     host: "::",
     port: 8080,
