@@ -11,7 +11,7 @@ interface BlogPost {
   views: number;
   comments: number;
   likes: number;
-  content?: string;
+  content?: React.ReactNode;
 }
 
 interface Comment {
@@ -113,19 +113,13 @@ export const BlogPostModal = ({
           </div>
 
           {/* Post Content */}
-          <div className="prose prose-sm max-w-none mb-8">
+          <div className="prose prose-sm max-w-none mb-8 [&>p]:text-foreground/80 [&>p]:leading-relaxed [&>p]:mb-4 [&_strong]:text-foreground [&_strong]:font-semibold [&_em]:italic [&_a]:text-primary [&_a:hover]:underline [&_img]:rounded-lg [&_img]:shadow-md">
             {post.content ? (
-              post.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-foreground/80 leading-relaxed mb-4">
-                  {paragraph}
-                </p>
-              ))
+              post.content
             ) : (
-              <>
-                <p className="text-foreground/80 leading-relaxed">
-                  Contenido del artículo próximamente disponible...
-                </p>
-              </>
+              <p className="text-foreground/80 leading-relaxed">
+                Contenido del artículo próximamente disponible...
+              </p>
             )}
           </div>
 
