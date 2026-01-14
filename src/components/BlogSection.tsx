@@ -1,29 +1,26 @@
 import { Eye, MessageCircle, Heart } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BlogPostModal } from "./BlogPostModal";
+import { useAllBlogStats } from "@/hooks/useAllBlogStats";
 
 interface BlogPost {
   id: number;
+  slug: string;
   title: string;
   date: string;
   readTime: string;
   image: string;
-  views: number;
-  comments: number;
-  likes: number;
   content: React.ReactNode;
 }
 
 const initialBlogPosts: BlogPost[] = [
   {
     id: 1,
+    slug: "el-amor-se-ha-perdido",
     title: "El amor se ha perdido.",
     date: "8 may 2024",
     readTime: "6 Min. de lectura",
     image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&h=300&fit=crop",
-    views: 22,
-    comments: 0,
-    likes: 1,
     content: (
       <>
         <p>Siento nostalgia.</p>
@@ -53,13 +50,11 @@ const initialBlogPosts: BlogPost[] = [
   },
   {
     id: 2,
+    slug: "mirar-hacia-otro-lado",
     title: "Mirar hacia otro lado",
     date: "1 may 2024",
     readTime: "5 Min. de lectura",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
-    views: 354,
-    comments: 0,
-    likes: 11,
     content: (
       <>
         <p>Cómo empezar hablando de algo tan difícil. -"¿De qué?" te estarás preguntando.</p>
@@ -95,13 +90,11 @@ const initialBlogPosts: BlogPost[] = [
   },
   {
     id: 3,
+    slug: "la-importancia-del-compromiso",
     title: "La importancia del compromiso.",
     date: "11 oct 2023",
     readTime: "8 Min. de lectura",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
-    views: 462,
-    comments: 0,
-    likes: 4,
     content: (
       <>
         <p>Qué tiempos más bonitos esos en los que conoces a alguien nuevo y te ilusionas, ¿verdad? En los que pones todo tu corazón, tus ganas, tu tiempo, tus sueños y empiezas como a flotar en una nube de sensaciones que...buah, hacía mil que no sentías o que incluso es la primera vez que lo experimentas.</p>
@@ -177,13 +170,11 @@ const initialBlogPosts: BlogPost[] = [
   },
   {
     id: 4,
+    slug: "perderse-encontrarse-catarsis",
     title: "Perderse - Encontrarse = Catarsis.",
     date: "8 jun 2023",
     readTime: "7 Min. de lectura",
     image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop",
-    views: 352,
-    comments: 0,
-    likes: 24,
     content: (
       <>
         <p><strong>"Solo escribo cuando tengo una crísis"</strong>, eso es lo que le digo a la gente que me conoce, y es cierto. Desde 2020 no me he vuelto a sentar frente a mi ordenador a empezar y terminar un blog. He tenido algún que otro intento, pero como nunca era nada grave ni lo suficientemente profundo en mí como para hacerme parar, pues escribía 2 frases y lo borraba. Pero hoy, tres años después, estoy aquí, enfrentándome a una de las cosas que más me libera, me conecta, me hace encontrarme y me sana: Escribir. Soltar y compartir todo lo que llevo dentro es para mí, una de mis mejores terapias. Y aquí voy, esperando que os sirva, que os llegue y os sintáis en algún momento identificados para poder liberaros al leerlo y perdonaros.</p>
@@ -217,13 +208,11 @@ const initialBlogPosts: BlogPost[] = [
   },
   {
     id: 5,
+    slug: "bendito-2020",
     title: "Bendito 2020.",
     date: "11 dic 2020",
     readTime: "7 Min. de lectura",
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop",
-    views: 478,
-    comments: 0,
-    likes: 8,
     content: (
       <>
         <p>Creo que es la frase que más he repetido en este año: Bendito 2020. La verdad es que <strong>he estado en alguna que otra mierda,</strong> algunas han sido pesadas, otras duraderas y las que menos, livianas. Sólo ha sido alguna que otra, porque en un alto porcentaje ha sido el mejor año de mi vida, pues <strong>ni el COVID ha podido con él.</strong> Es mi mejor año sin duda. En treinta años solo había cumplido un sueño. En el año que llevo, (ahora tengo treinta y uno), ya llevo cumplidos tres, más otro que está ya fraguándose. En proporción es mucho mejor, ¿no?</p>
@@ -261,13 +250,11 @@ const initialBlogPosts: BlogPost[] = [
   },
   {
     id: 6,
+    slug: "idolos-del-circo",
     title: "Ídolos del circo.",
     date: "20 sept 2020",
     readTime: "3 Min. de lectura",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=300&fit=crop",
-    views: 69,
-    comments: 0,
-    likes: 3,
     content: (
       <>
         <p className="text-sm text-muted-foreground mb-4">Artículo publicado en el Diario de Huelva: <a href="https://www.diariodehuelva.es/2020/09/30/idolos-del-circo/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://www.diariodehuelva.es/2020/09/30/idolos-del-circo/</a></p>
@@ -296,46 +283,19 @@ const initialBlogPosts: BlogPost[] = [
 ];
 
 export const BlogSection = () => {
-  const [blogPosts] = useState(initialBlogPosts);
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
-  const [likedPosts, setLikedPosts] = useState<Set<number>>(new Set());
-  const [postLikes, setPostLikes] = useState<Record<number, number>>(
-    Object.fromEntries(initialBlogPosts.map(p => [p.id, p.likes]))
-  );
-  const [postComments, setPostComments] = useState<Record<number, number>>(
-    Object.fromEntries(initialBlogPosts.map(p => [p.id, p.comments]))
-  );
+  
+  // Get all post slugs for fetching stats
+  const postSlugs = initialBlogPosts.map(p => p.slug);
+  const { allStats, likedPosts, toggleLike, updateCommentCount, refetchStats } = useAllBlogStats(postSlugs);
 
-  const handleLike = (postId: number) => {
-    setPostLikes((prev) => ({
-      ...prev,
-      [postId]: likedPosts.has(postId) ? prev[postId] - 1 : prev[postId] + 1,
-    }));
-    setLikedPosts((prev) => {
-      const newSet = new Set(prev);
-      if (newSet.has(postId)) {
-        newSet.delete(postId);
-      } else {
-        newSet.add(postId);
-      }
-      return newSet;
-    });
+  const handleLike = async (postSlug: string) => {
+    await toggleLike(postSlug);
   };
 
-  const handleAddComment = (postId: number) => {
-    setPostComments((prev) => ({
-      ...prev,
-      [postId]: prev[postId] + 1,
-    }));
+  const handleStatsUpdate = () => {
+    refetchStats();
   };
-
-  const currentPost = selectedPost
-    ? {
-        ...selectedPost,
-        likes: postLikes[selectedPost.id],
-        comments: postComments[selectedPost.id],
-      }
-    : null;
 
   return (
     <section id="blog" className="py-20 bg-background">
@@ -348,66 +308,71 @@ export const BlogSection = () => {
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {blogPosts.map((post) => (
-            <article
-              key={post.id}
-              className="group relative h-64 rounded-lg overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-300"
-              onClick={() => setSelectedPost(post)}
-            >
-              {/* Background Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{ backgroundImage: `url(${post.image})` }}
-              />
-              
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+          {initialBlogPosts.map((post) => {
+            const stats = allStats[post.slug] || { views: 0, likes: 0, comments: 0 };
+            const isLiked = likedPosts.has(post.slug);
+            
+            return (
+              <article
+                key={post.id}
+                className="group relative h-64 rounded-lg overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-300"
+                onClick={() => setSelectedPost(post)}
+              >
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${post.image})` }}
+                />
+                
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-              {/* Content */}
-              <div className="absolute inset-0 p-4 flex flex-col justify-between">
-                {/* Top Info */}
-                <div className="flex flex-col gap-1">
-                  <span className="text-primary font-semibold text-sm">
-                    Neoka B.G
-                  </span>
-                  <span className="text-white/80 text-xs">
-                    {post.date} · {post.readTime}
-                  </span>
-                </div>
+                {/* Content */}
+                <div className="absolute inset-0 p-4 flex flex-col justify-between">
+                  {/* Top Info */}
+                  <div className="flex flex-col gap-1">
+                    <span className="text-primary font-semibold text-sm">
+                      Neoka B.G
+                    </span>
+                    <span className="text-white/80 text-xs">
+                      {post.date} · {post.readTime}
+                    </span>
+                  </div>
 
-                {/* Bottom Content */}
-                <div>
-                  <h3 className="text-white text-lg font-semibold mb-3 line-clamp-2">
-                    {post.title}
-                  </h3>
-                  
-                  {/* Stats */}
-                  <div className="flex items-center gap-4 text-white/80 text-sm">
-                    <div className="flex items-center gap-1">
-                      <Eye className="w-4 h-4" />
-                      <span>{post.views}</span>
+                  {/* Bottom Content */}
+                  <div>
+                    <h3 className="text-white text-lg font-semibold mb-3 line-clamp-2">
+                      {post.title}
+                    </h3>
+                    
+                    {/* Stats */}
+                    <div className="flex items-center gap-4 text-white/80 text-sm">
+                      <div className="flex items-center gap-1">
+                        <Eye className="w-4 h-4" />
+                        <span>{stats.views}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <MessageCircle className="w-4 h-4" />
+                        <span>{stats.comments}</span>
+                      </div>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleLike(post.slug);
+                        }}
+                        className={`flex items-center gap-1 ml-auto transition-colors ${
+                          isLiked ? "text-red-400" : "text-white/80 hover:text-red-400"
+                        }`}
+                      >
+                        <span>{stats.likes}</span>
+                        <Heart className={`w-4 h-4 ${isLiked ? "fill-current" : ""}`} />
+                      </button>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <MessageCircle className="w-4 h-4" />
-                      <span>{postComments[post.id]}</span>
-                    </div>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleLike(post.id);
-                      }}
-                      className={`flex items-center gap-1 ml-auto transition-colors ${
-                        likedPosts.has(post.id) ? "text-red-400" : "text-white/80 hover:text-red-400"
-                      }`}
-                    >
-                      <span>{postLikes[post.id]}</span>
-                      <Heart className={`w-4 h-4 ${likedPosts.has(post.id) ? "fill-current" : ""}`} />
-                    </button>
                   </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
 
         {/* Ver más button */}
@@ -423,14 +388,12 @@ export const BlogSection = () => {
       </div>
 
       {/* Blog Post Modal */}
-      {currentPost && (
+      {selectedPost && (
         <BlogPostModal
-          post={currentPost}
+          post={selectedPost}
           isOpen={!!selectedPost}
           onClose={() => setSelectedPost(null)}
-          onLike={() => handleLike(currentPost.id)}
-          onAddComment={() => handleAddComment(currentPost.id)}
-          isLiked={likedPosts.has(currentPost.id)}
+          onStatsUpdate={handleStatsUpdate}
         />
       )}
     </section>
