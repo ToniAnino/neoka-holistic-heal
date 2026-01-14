@@ -1,67 +1,69 @@
 import { X, Eye, MessageCircle, Heart, Send } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import { useComments } from "@/hooks/useComments";
+import { useBlogStats } from "@/hooks/useBlogStats";
 
 interface BlogPost {
   id: number;
+  slug: string;
   title: string;
   date: string;
   readTime: string;
   image: string;
-  views: number;
-  comments: number;
-  likes: number;
   content?: React.ReactNode;
-}
-
-interface Comment {
-  id: number;
-  author: string;
-  text: string;
-  date: string;
 }
 
 interface BlogPostModalProps {
   post: BlogPost;
   isOpen: boolean;
   onClose: () => void;
-  onLike: () => void;
-  onAddComment: () => void;
-  isLiked: boolean;
+  onStatsUpdate?: () => void;
 }
 
 export const BlogPostModal = ({
   post,
   isOpen,
   onClose,
-  onLike,
-  onAddComment,
-  isLiked,
+  onStatsUpdate,
 }: BlogPostModalProps) => {
-  const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
   const [authorName, setAuthorName] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const { comments, loading: commentsLoading, addComment } = useComments(post.slug);
+  const { stats, isLiked, incrementViews, toggleLike } = useBlogStats(post.slug);
+
+  // Increment views when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      // Check if already viewed in this session
+      const viewedPosts = JSON.parse(sessionStorage.getItem("viewedPosts") || "[]");
+      if (!viewedPosts.includes(post.slug)) {
+        incrementViews();
+        sessionStorage.setItem("viewedPosts", JSON.stringify([...viewedPosts, post.slug]));
+      }
+    }
+  }, [isOpen, post.slug, incrementViews]);
 
   if (!isOpen) return null;
 
-  const handleSubmitComment = (e: React.FormEvent) => {
+  const handleSubmitComment = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newComment.trim() || !authorName.trim()) return;
+    if (!newComment.trim() || !authorName.trim() || isSubmitting) return;
 
-    const comment: Comment = {
-      id: Date.now(),
-      author: authorName,
-      text: newComment,
-      date: new Date().toLocaleDateString("es-ES", {
-        day: "numeric",
-        month: "short",
-        year: "numeric",
-      }),
-    };
+    setIsSubmitting(true);
+    const success = await addComment(authorName, newComment);
+    if (success) {
+      setNewComment("");
+      onStatsUpdate?.();
+    }
+    setIsSubmitting(false);
+  };
 
-    setComments([...comments, comment]);
-    onAddComment();
-    setNewComment("");
+  const handleLike = async () => {
+    await toggleLike();
+    onStatsUpdate?.();
   };
 
   return (
@@ -95,19 +97,19 @@ export const BlogPostModal = ({
           <div className="flex items-center gap-4 text-muted-foreground text-sm mb-6 pb-4 border-b border-border">
             <div className="flex items-center gap-1">
               <Eye className="w-4 h-4" />
-              <span>{post.views}</span>
+              <span>{stats.views}</span>
             </div>
             <div className="flex items-center gap-1">
               <MessageCircle className="w-4 h-4" />
-              <span>{post.comments}</span>
+              <span>{stats.comments}</span>
             </div>
             <button
-              onClick={onLike}
+              onClick={handleLike}
               className={`flex items-center gap-1 ml-auto transition-colors ${
                 isLiked ? "text-red-500" : "text-muted-foreground hover:text-red-500"
               }`}
             >
-              <span>{post.likes}</span>
+              <span>{stats.likes}</span>
               <Heart className={`w-4 h-4 ${isLiked ? "fill-current" : ""}`} />
             </button>
           </div>
@@ -130,7 +132,11 @@ export const BlogPostModal = ({
             </h3>
 
             {/* Comment List */}
-            {comments.length > 0 && (
+            {commentsLoading ? (
+              <div className="text-center py-4 text-muted-foreground">
+                Cargando comentarios...
+              </div>
+            ) : comments.length > 0 ? (
               <div className="space-y-4 mb-6">
                 {comments.map((comment) => (
                   <div
@@ -139,16 +145,24 @@ export const BlogPostModal = ({
                   >
                     <div className="flex items-center justify-between mb-2">
                       <span className="font-medium text-foreground">
-                        {comment.author}
+                        {comment.user_name}
                       </span>
                       <span className="text-xs text-muted-foreground">
-                        {comment.date}
+                        {new Date(comment.created_at).toLocaleDateString("es-ES", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                        })}
                       </span>
                     </div>
-                    <p className="text-foreground/80 text-sm">{comment.text}</p>
+                    <p className="text-foreground/80 text-sm">{comment.content}</p>
                   </div>
                 ))}
               </div>
+            ) : (
+              <p className="text-muted-foreground text-sm mb-6">
+                Sé el primero en comentar...
+              </p>
             )}
 
             {/* Comment Form */}
@@ -168,7 +182,7 @@ export const BlogPostModal = ({
                   onChange={(e) => setNewComment(e.target.value)}
                   className="flex-1 px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
-                <Button type="submit" size="icon" className="shrink-0">
+                <Button type="submit" size="icon" className="shrink-0" disabled={isSubmitting}>
                   <Send className="w-4 h-4" />
                 </Button>
               </div>
