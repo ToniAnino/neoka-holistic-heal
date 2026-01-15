@@ -1,5 +1,6 @@
 import { Brain, Heart, Sparkles, Activity, Footprints, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -8,6 +9,7 @@ const services = [
     description: "Terapia individual para ansiedad, depresión, estrés y otros trastornos. Enfoque personalizado basado en evidencia científica.",
     color: "text-primary",
     bgColor: "bg-primary/10",
+    link: "/psicologia-sanitaria",
   },
   {
     icon: Heart,
@@ -15,6 +17,7 @@ const services = [
     description: "Mejora la comunicación y resuelve conflictos. Fortalece los vínculos y reconstruye la confianza en tu relación.",
     color: "text-rose-500",
     bgColor: "bg-rose-50",
+    link: null,
   },
   {
     icon: Sparkles,
@@ -22,6 +25,7 @@ const services = [
     description: "Explora tu crecimiento personal y espiritual. Conecta con tu esencia y encuentra un mayor sentido de propósito.",
     color: "text-violet-500",
     bgColor: "bg-violet-50",
+    link: null,
   },
   {
     icon: Activity,
@@ -29,6 +33,7 @@ const services = [
     description: "Rehabilitación, terapia manual y tratamiento del dolor. Recupera tu movilidad y calidad de vida.",
     color: "text-emerald-500",
     bgColor: "bg-emerald-50",
+    link: null,
   },
   {
     icon: Footprints,
@@ -36,6 +41,7 @@ const services = [
     description: "Cuidado integral del pie: estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
     color: "text-amber-600",
     bgColor: "bg-amber-50",
+    link: null,
   },
 ];
 
@@ -79,10 +85,19 @@ export const ServicesSection = () => {
               </p>
 
               {/* Link */}
-              <Button variant="ghost" className="p-0 h-auto text-primary hover:bg-transparent group/btn">
-                <span className="font-medium">Saber más</span>
-                <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-              </Button>
+              {service.link ? (
+                <Button variant="ghost" className="p-0 h-auto text-primary hover:bg-transparent group/btn" asChild>
+                  <Link to={service.link}>
+                    <span className="font-medium">Saber más</span>
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              ) : (
+                <Button variant="ghost" className="p-0 h-auto text-primary hover:bg-transparent group/btn">
+                  <span className="font-medium">Saber más</span>
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                </Button>
+              )}
             </article>
           ))}
         </div>
