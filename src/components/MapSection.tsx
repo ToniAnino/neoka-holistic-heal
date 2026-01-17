@@ -56,8 +56,7 @@ export const MapSection = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Horario</h3>
                   <p className="text-muted-foreground text-sm">
-                    Lunes - Viernes: 9:00 - 20:00<br />
-                    Sábados: 10:00 - 14:00
+                    Lunes - Viernes: 9:00 - 21:00<br />
                   </p>
                 </div>
               </div>
