@@ -61,13 +61,19 @@ export const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+34959000000" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+          <a href="tel:+34617642564" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
             <Phone className="w-4 h-4" />
-            <span>959 00 00 00</span>
+            <span>617 64 25 64</span>
           </a>
-          <Button variant="cta" size="default">
-            Reservar Cita
-          </Button>
+          <a 
+            href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="cta" size="default">
+              Reservar Cita
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -95,9 +101,16 @@ export const Header = () => {
               </a>
             ))}
             <div className="mt-4 pt-4 border-t border-border">
-              <Button variant="cta" size="lg" className="w-full">
-                Reservar Cita
-              </Button>
+              <a 
+                href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button variant="cta" size="lg" className="w-full">
+                  Reservar Cita
+                </Button>
+              </a>
             </div>
           </nav>
         </div>

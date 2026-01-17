@@ -64,10 +64,16 @@ export const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-300">
-            <Button variant="hero" size="xl">
-              Reservar Primera Consulta
-              <ArrowRight className="w-5 h-5 ml-1" />
-            </Button>
+            <a 
+              href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="hero" size="xl">
+                Reservar Primera Consulta
+                <ArrowRight className="w-5 h-5 ml-1" />
+              </Button>
+            </a>
             <Button variant="outline" size="xl">
               Conoce Nuestros Servicios
             </Button>
