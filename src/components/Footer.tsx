@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import neokaLogo from "@/assets/neoka-logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,12 +12,11 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-serif font-bold text-lg">N</span>
-              </div>
-              <div>
-                <span className="font-serif font-semibold text-xl leading-none">Neoka</span>
-              </div>
+              <img 
+                src={neokaLogo} 
+                alt="Neoka" 
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-background/70 mb-6 leading-relaxed">
               Centro de Salud Integral en Huelva. Cuidamos tu bienestar mental, emocional y físico desde 2016.
