@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,25 +24,40 @@ export const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/neokapsicologia/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/neokaoficial/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/neokaterapia"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Twitter"
               >
-                <Linkedin className="w-5 h-5" />
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCBrhtnUQXf86RAxp4-Hlo2g"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>
