@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import neokaLogo from "@/assets/neoka-logo.png";
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
@@ -33,17 +33,14 @@ export const Header = () => {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center transition-transform group-hover:scale-105">
-            <span className="text-primary-foreground font-serif font-bold text-lg">N</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif font-semibold text-xl text-foreground leading-none">
-              Neoka
-            </span>
-            <span className="text-[10px] text-muted-foreground tracking-widest uppercase">
-              Centro de Salud Integral
-            </span>
-          </div>
+          <img 
+            src={neokaLogo} 
+            alt="Neoka" 
+            className="h-10 w-auto transition-transform group-hover:scale-105"
+          />
+          <span className="text-[10px] text-muted-foreground tracking-widest uppercase">
+            Centro de Salud Integral
+          </span>
         </a>
 
         {/* Desktop Navigation */}
