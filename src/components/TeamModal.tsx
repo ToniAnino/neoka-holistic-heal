@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { X } from "lucide-react";
-
+import marioNutricionista from "@/assets/mario-nutricionista.png";
 interface TeamMember {
   name: string;
   role: string;
@@ -57,20 +57,12 @@ const teamMembers: TeamMember[] = [
     description: "Con 10 años de experiencia y formación con diferentes Post grados. Apasionada de la podología, siempre está en constante evolución. Ofrece tratamientos de quiropodia, papilomas, verrugas, exploraciones biomecánicas y ortesis plantares a medida.",
   },
   {
-    name: "Raquel C.",
-    role: "Psicóloga General Sanitaria",
-    subtitle: "Colegiada: AN09857",
-    colegiado: "AN09857",
-    image: "https://static.wixstatic.com/media/281c03_0cf6b75d676c4f6981a70ab288476962~mv2.jpeg/v1/crop/x_0,y_0,w_1200,h_1205/fill/w_296,h_297,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202024-06-08%20at%2012_31_57.jpeg",
-    description: "Le apasiona ayudar a las personas, le encanta su profesión y formar parte del proceso de quien decide pedir ayuda. Es una persona risueña, cercana, clara y directa, trabajadora, curiosa, perseverante y constante en lo que se propone.",
-  },
-  {
-    name: "Juanjo G.",
-    role: "Psicólogo General Sanitario",
-    subtitle: "Colegiado: AN12631",
-    colegiado: "AN12631",
-    image: "https://static.wixstatic.com/media/281c03_b4f5ea3d0c404e3cbd8416de1b1911f3~mv2.jpeg/v1/crop/x_0,y_124,w_1536,h_1540/fill/w_296,h_297,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202024-06-13%20at%2011_17_47.jpeg",
-    description: "Psicólogo con un interés genuino por las personas, cercano y empático. Su manera de entender la terapia psicológica reside en el trato a la persona, acompañando, apoyando y trabajando juntos por un mismo fin. Le impulsa la pasión por su trabajo y el aprendizaje continuo.",
+    name: "Mario C.",
+    role: "Dietista-Nutricionista",
+    subtitle: "Colegiado: AND-01673",
+    colegiado: "AND-01673",
+    image: marioNutricionista,
+    description: "Mario es dietista-nutricionista en Huelva con experiencia en nutrición clínica, trabajando con personas con distintas patologías desde un enfoque cercano, individualizado y basado en la evidencia científica. Actualmente es el profesional responsable de la atención nutricional de la Asociación Española Contra el Cáncer (AECC) en Huelva, acompañando a pacientes y familiares en diferentes etapas del proceso de la enfermedad.\n\nAdemás, trabaja en el ámbito del rendimiento deportivo, ayudando a deportistas a optimizar su alimentación para mejorar su salud, recuperación y desempeño. Concibe la nutrición como una herramienta de apoyo, educación y mejora de la calidad de vida, adaptada a las necesidades reales de cada persona. En consulta ofrece un espacio seguro y claro, donde aprender a comer mejor y construir hábitos sostenibles en el tiempo.",
   },
 ];
 
