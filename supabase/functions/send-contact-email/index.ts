@@ -12,33 +12,11 @@ interface ContactRequest {
   email: string;
   phone?: string;
   message: string;
-  recaptchaToken: string;
 }
 
-const RECAPTCHA_SECRET_KEY = Deno.env.get("RECAPTCHA_SECRET_KEY") ?? "";
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY") ?? "";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
-
-async function verifyRecaptcha(token: string): Promise<boolean> {
-  try {
-    const response = await fetch("https://www.google.com/recaptcha/api/siteverify", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: `secret=${RECAPTCHA_SECRET_KEY}&response=${token}`,
-    });
-
-    const data = await response.json();
-    // reCAPTCHA v3 returns a score between 0 and 1
-    // 0.5 is the recommended threshold
-    return data.success && data.score >= 0.5;
-  } catch (error) {
-    console.error("reCAPTCHA verification error:", error);
-    return false;
-  }
-}
 
 const handler = async (req: Request): Promise<Response> => {
   // Handle CORS preflight requests
@@ -47,24 +25,12 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { name, email, phone, message, recaptchaToken }: ContactRequest = await req.json();
+    const { name, email, phone, message }: ContactRequest = await req.json();
 
     // Validate required fields
-    if (!name || !email || !message || !recaptchaToken) {
+    if (!name || !email || !message) {
       return new Response(
         JSON.stringify({ error: "Faltan campos obligatorios" }),
-        {
-          status: 400,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
-        }
-      );
-    }
-
-    // Verify reCAPTCHA token
-    const isHuman = await verifyRecaptcha(recaptchaToken);
-    if (!isHuman) {
-      return new Response(
-        JSON.stringify({ error: "Verificación anti-spam fallida" }),
         {
           status: 400,
           headers: { "Content-Type": "application/json", ...corsHeaders },
