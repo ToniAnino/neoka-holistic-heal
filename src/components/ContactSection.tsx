@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -22,21 +22,9 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
-declare global {
-  interface Window {
-    grecaptcha: {
-      ready: (callback: () => void) => void;
-      execute: (siteKey: string, options: { action: string }) => Promise<string>;
-    };
-  }
-}
-
-const RECAPTCHA_SITE_KEY = "6LcpFEYrAAAAADjJNVcxHBKJt_f6f__cqtPsf4wh";
-
 export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
   const { toast } = useToast();
 
   const {
@@ -48,63 +36,13 @@ export const ContactSection = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  useEffect(() => {
-    // Load reCAPTCHA script
-    const script = document.createElement("script");
-    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
-    script.async = true;
-    script.defer = true;
-    script.onload = () => {
-      window.grecaptcha.ready(() => {
-        setRecaptchaLoaded(true);
-      });
-    };
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      const existingScript = document.querySelector(`script[src*="recaptcha"]`);
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, []);
-
-  const getRecaptchaToken = useCallback(async (): Promise<string | null> => {
-    if (!recaptchaLoaded || !window.grecaptcha) {
-      return null;
-    }
-    try {
-      const token = await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "contact_submit" });
-      return token;
-    } catch (error) {
-      console.error("reCAPTCHA error:", error);
-      return null;
-    }
-  }, [recaptchaLoaded]);
-
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
 
     try {
-      // Get reCAPTCHA token
-      const recaptchaToken = await getRecaptchaToken();
-      if (!recaptchaToken) {
-        toast({
-          title: "Error de verificación",
-          description: "No se pudo verificar que no eres un robot. Intenta de nuevo.",
-          variant: "destructive",
-        });
-        setIsSubmitting(false);
-        return;
-      }
-
       // Call edge function to handle submission
       const { data: response, error } = await supabase.functions.invoke("send-contact-email", {
-        body: {
-          ...data,
-          recaptchaToken,
-        },
+        body: data,
       });
 
       if (error) {
@@ -244,7 +182,7 @@ export const ContactSection = () => {
                   type="submit"
                   size="lg"
                   className="w-full"
-                  disabled={isSubmitting || !recaptchaLoaded}
+                  disabled={isSubmitting}
                 >
                   {isSubmitting ? (
                     <>
@@ -258,29 +196,6 @@ export const ContactSection = () => {
                     </>
                   )}
                 </Button>
-
-                {/* reCAPTCHA Notice */}
-                <p className="text-xs text-muted-foreground text-center">
-                  Este sitio está protegido por reCAPTCHA y aplican la{" "}
-                  <a
-                    href="https://policies.google.com/privacy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    Política de Privacidad
-                  </a>{" "}
-                  y los{" "}
-                  <a
-                    href="https://policies.google.com/terms"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    Términos de Servicio
-                  </a>{" "}
-                  de Google.
-                </p>
               </form>
             )}
           </div>
