@@ -25,7 +25,7 @@ const services = [
     description: "Explora tu crecimiento personal y espiritual. Conecta con tu esencia y encuentra un mayor sentido de propósito.",
     color: "text-violet-500",
     bgColor: "bg-violet-50",
-    link: null,
+    link: "/terapia-transpersonal",
   },
   {
     icon: Activity,
