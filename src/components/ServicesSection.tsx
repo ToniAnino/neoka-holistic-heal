@@ -17,7 +17,7 @@ const services = [
     description: "Mejora la comunicación y resuelve conflictos. Fortalece los vínculos y reconstruye la confianza en tu relación.",
     color: "text-rose-500",
     bgColor: "bg-rose-50",
-    link: null,
+    link: "/terapia-pareja",
   },
   {
     icon: Sparkles,
