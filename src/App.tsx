@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PsicologiaSanitaria from "./pages/PsicologiaSanitaria";
 import TerapiaPareja from "./pages/TerapiaPareja";
+import TerapiaTranspersonal from "./pages/TerapiaTranspersonal";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/psicologia-sanitaria" element={<PsicologiaSanitaria />} />
           <Route path="/terapia-pareja" element={<TerapiaPareja />} />
+          <Route path="/terapia-transpersonal" element={<TerapiaTranspersonal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
