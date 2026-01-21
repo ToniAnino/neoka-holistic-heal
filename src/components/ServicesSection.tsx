@@ -1,4 +1,4 @@
-import { Brain, Heart, Sparkles, Activity, Footprints, ArrowRight } from "lucide-react";
+import { Brain, Heart, Sparkles, Activity, Footprints, Apple, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -41,6 +41,14 @@ const services = [
     description: "Cuidado integral del pie: estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
     color: "text-amber-600",
     bgColor: "bg-amber-50",
+    link: null,
+  },
+  {
+    icon: Apple,
+    title: "Nutrición y Dietética",
+    description: "Asesoramiento personalizado y planes nutricionales basados en evidencia científica. Tratamiento de patologías, educación alimentaria y mejora del rendimiento físico y la salud.",
+    color: "text-lime-600",
+    bgColor: "bg-lime-50",
     link: null,
   },
 ];
