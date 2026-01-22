@@ -33,7 +33,7 @@ const services = [
     description: "Rehabilitación, terapia manual y tratamiento del dolor. Recupera tu movilidad y calidad de vida.",
     color: "text-emerald-500",
     bgColor: "bg-emerald-50",
-    link: null,
+    link: "/fisioterapia",
   },
   {
     icon: Footprints,
@@ -41,7 +41,7 @@ const services = [
     description: "Cuidado integral del pie: estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
     color: "text-amber-600",
     bgColor: "bg-amber-50",
-    link: null,
+    link: "/podologia",
   },
   {
     icon: Apple,
@@ -49,7 +49,7 @@ const services = [
     description: "Asesoramiento personalizado y planes nutricionales basados en evidencia científica. Tratamiento de patologías, educación alimentaria y mejora del rendimiento físico y la salud.",
     color: "text-lime-600",
     bgColor: "bg-lime-50",
-    link: null,
+    link: "/nutricion-dietetica",
   },
 ];
 

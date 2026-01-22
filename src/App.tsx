@@ -8,7 +8,9 @@ import NotFound from "./pages/NotFound";
 import PsicologiaSanitaria from "./pages/PsicologiaSanitaria";
 import TerapiaPareja from "./pages/TerapiaPareja";
 import TerapiaTranspersonal from "./pages/TerapiaTranspersonal";
-
+import Fisioterapia from "./pages/Fisioterapia";
+import Podologia from "./pages/Podologia";
+import NutricionDietetica from "./pages/NutricionDietetica";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -22,6 +24,9 @@ const App = () => (
           <Route path="/psicologia-sanitaria" element={<PsicologiaSanitaria />} />
           <Route path="/terapia-pareja" element={<TerapiaPareja />} />
           <Route path="/terapia-transpersonal" element={<TerapiaTranspersonal />} />
+          <Route path="/fisioterapia" element={<Fisioterapia />} />
+          <Route path="/podologia" element={<Podologia />} />
+          <Route path="/nutricion-dietetica" element={<NutricionDietetica />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
