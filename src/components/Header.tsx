@@ -3,11 +3,11 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import neokaLogo from "@/assets/neoka-logo.png";
 const navLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Quiénes Somos", href: "#nosotros" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/#inicio" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Quiénes Somos", href: "/#nosotros" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export const Header = () => {
@@ -32,7 +32,7 @@ export const Header = () => {
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-2 group">
+        <a href="/#inicio" className="flex items-center gap-2 group">
           <img 
             src={neokaLogo} 
             alt="Neoka" 
