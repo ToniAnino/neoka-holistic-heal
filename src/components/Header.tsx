@@ -6,7 +6,7 @@ import neokaLogo from "@/assets/neoka-logo.png";
 
 const navLinks = [
   { label: "Inicio", href: "/#inicio" },
-  { label: "Quiénes Somos", href: "/#nosotros" },
+  { label: "Quiénes Somos", href: "/quienes-somos", isRoute: true },
   { label: "Blog", href: "/#blog" },
   { label: "Contacto", href: "/#contacto" },
 ];
@@ -95,13 +95,23 @@ export const Header = () => {
           </div>
 
           {navLinks.slice(1).map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-            >
-              {link.label}
-            </a>
+            link.isRoute ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                {link.label}
+              </a>
+            )
           ))}
         </nav>
 
@@ -175,14 +185,25 @@ export const Header = () => {
             </div>
 
             {navLinks.slice(1).map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary rounded-lg transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
+              link.isRoute ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             
             <div className="mt-4 pt-4 border-t border-border">
