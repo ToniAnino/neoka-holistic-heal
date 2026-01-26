@@ -12,6 +12,7 @@ import TerapiaTranspersonal from "./pages/TerapiaTranspersonal";
 import Fisioterapia from "./pages/Fisioterapia";
 import Podologia from "./pages/Podologia";
 import NutricionDietetica from "./pages/NutricionDietetica";
+import QuienesSomos from "./pages/QuienesSomos";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/quienes-somos" element={<QuienesSomos />} />
           <Route path="/psicologia-sanitaria" element={<PsicologiaSanitaria />} />
           <Route path="/terapia-pareja" element={<TerapiaPareja />} />
           <Route path="/terapia-transpersonal" element={<TerapiaTranspersonal />} />
