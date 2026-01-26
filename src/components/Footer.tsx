@@ -69,7 +69,7 @@ export const Footer = () => {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-background/70">
-                  Calle Ejemplo, 123<br />
+                  Calle La Palma, 4, Local derecha<br />
                   21001 Huelva, España
                 </span>
               </li>
@@ -81,7 +81,7 @@ export const Footer = () => {
               </li>
               <li className="flex gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@neoka.es" className="text-background/70 hover:text-primary transition-colors">
+                <a href="mailto:webneoka@gmail.com" className="text-background/70 hover:text-primary transition-colors">
                   info@neoka.es
                 </a>
               </li>
