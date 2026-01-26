@@ -82,7 +82,7 @@ export const Footer = () => {
               <li className="flex gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="mailto:webneoka@gmail.com" className="text-background/70 hover:text-primary transition-colors">
-                  info@neoka.es
+                  webneoka@gmail.com
                 </a>
               </li>
               <li className="flex gap-3">
