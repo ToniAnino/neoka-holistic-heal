@@ -1,18 +1,30 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, Brain, Heart, Sparkles, Activity, Footprints, Apple } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import neokaLogo from "@/assets/neoka-logo.png";
+
 const navLinks = [
   { label: "Inicio", href: "/#inicio" },
-  { label: "Servicios", href: "/#servicios" },
   { label: "Quiénes Somos", href: "/#nosotros" },
   { label: "Blog", href: "/#blog" },
   { label: "Contacto", href: "/#contacto" },
 ];
 
+const services = [
+  { icon: Brain, label: "Psicología Sanitaria", href: "/psicologia-sanitaria", color: "text-primary" },
+  { icon: Heart, label: "Terapia de Pareja", href: "/terapia-pareja", color: "text-rose-500" },
+  { icon: Sparkles, label: "Terapia Transpersonal", href: "/terapia-transpersonal", color: "text-violet-500" },
+  { icon: Activity, label: "Fisioterapia", href: "/fisioterapia", color: "text-emerald-500" },
+  { icon: Footprints, label: "Podología", href: "/podologia", color: "text-amber-600" },
+  { icon: Apple, label: "Nutrición y Dietética", href: "/nutricion-dietetica", color: "text-lime-600" },
+];
+
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +57,44 @@ export const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
+          <a
+            href="/#inicio"
+            className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+          >
+            Inicio
+          </a>
+          
+          {/* Services Dropdown */}
+          <div 
+            className="relative"
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
+          >
+            <button
+              className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            >
+              Servicios
+              <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+            </button>
+            
+            {isServicesOpen && (
+              <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-xl shadow-lg py-2 z-50 animate-fade-in">
+                {services.map((service) => (
+                  <Link
+                    key={service.href}
+                    to={service.href}
+                    className="flex items-center gap-3 px-4 py-3 text-sm text-foreground/80 hover:text-primary hover:bg-secondary/50 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    <service.icon className={`w-5 h-5 ${service.color}`} />
+                    <span>{service.label}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {navLinks.slice(1).map((link) => (
             <a
               key={link.label}
               href={link.href}
@@ -87,7 +136,45 @@ export const Header = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-card/98 backdrop-blur-lg shadow-lg border-t border-border animate-fade-in">
           <nav className="container py-6 flex flex-col gap-2">
-            {navLinks.map((link) => (
+            <a
+              href="/#inicio"
+              className="px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary rounded-lg transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Inicio
+            </a>
+            
+            {/* Mobile Services Accordion */}
+            <div>
+              <button
+                className="w-full flex items-center justify-between px-4 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-secondary rounded-lg transition-colors"
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+              >
+                Servicios
+                <ChevronDown className={`w-5 h-5 transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {isMobileServicesOpen && (
+                <div className="ml-4 mt-1 border-l-2 border-border pl-4 space-y-1">
+                  {services.map((service) => (
+                    <Link
+                      key={service.href}
+                      to={service.href}
+                      className="flex items-center gap-3 px-4 py-2 text-sm text-foreground/80 hover:text-primary hover:bg-secondary/50 rounded-lg transition-colors"
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setIsMobileServicesOpen(false);
+                      }}
+                    >
+                      <service.icon className={`w-4 h-4 ${service.color}`} />
+                      <span>{service.label}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {navLinks.slice(1).map((link) => (
               <a
                 key={link.label}
                 href={link.href}
@@ -97,6 +184,7 @@ export const Header = () => {
                 {link.label}
               </a>
             ))}
+            
             <div className="mt-4 pt-4 border-t border-border">
               <a 
                 href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
