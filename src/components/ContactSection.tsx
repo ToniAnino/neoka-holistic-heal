@@ -44,33 +44,30 @@ export const ContactSection = () => {
 
   const selectedInterest = watch("interest");
 
-  const onSubmit = (data: ContactFormData) => {
-  // Definimos los iconos usando sus códigos hexadecimales exactos
-  const iconUser = "\u{1F464}";    // 👤
-  const iconChispas = "\u{2728}";  // ✨
-  const iconMensaje = "\u{1F4AC}"; // 💬
-  const iconWeb = "\u{1F310}";     // 🌐
+const onSubmit = (data: ContactFormData) => {
+  // Usamos códigos de escape hexadecimales directos
+  // Estos son los más compatibles con navegadores antiguos y modernos
+  const user = "\u263A";    // ☺ (Cara sonriente simple, muy compatible)
+  const star = "\u272D";    // ✭ (Estrella sólida)
+  const mail = "\u2709";    // ✉ (Sobre/Mensaje)
+  const link = "\u2310";    // 🌐 (Globo básico)
 
-  // Construimos el mensaje línea por línea
-  // Usamos \n para los saltos de línea (WhatsApp Web prefiere esto)
-  const lines = [
+  // Construimos el mensaje como un bloque sólido de texto
+  const msg = [
     "*Contacto desde la web Neoka*",
     "",
-    `${iconUser} *Nombre:* ${data.name}`,
-    `${iconChispas} *Interés:* ${data.interest}`,
-    `${iconMensaje} *Mensaje:* ${data.message}`,
+    user + " Nombre: " + data.name,
+    star + " Interes: " + data.interest,
+    mail + " Mensaje: " + data.message,
     "",
     "---",
-    `${iconWeb} _Enviado desde el formulario web_`
-  ];
+    link + " Enviado desde la web"
+  ].join("\n");
 
-  const fullMessage = lines.join("\n");
-  
-  // Creamos la URL final codificando TODO el string
-  const waUrl = `https://wa.me/34617642564?text=${encodeURIComponent(fullMessage)}`;
+  // Usamos la API de envío directo que a veces es más estable que wa.me
+  const finalUrl = "https://api.whatsapp.com/send?phone=34617642564&text=" + encodeURIComponent(msg);
 
-  // Abrimos en una nueva pestaña
-  window.open(waUrl, "_blank", "noopener,noreferrer");
+  window.open(finalUrl, "_blank");
 };
 
   return (
