@@ -45,29 +45,21 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
 const onSubmit = (data: ContactFormData) => {
-  // Usamos códigos de escape hexadecimales directos
-  // Estos son los más compatibles con navegadores antiguos y modernos
-  const user = "\u263A";    // ☺ (Cara sonriente simple, muy compatible)
-  const star = "\u272D";    // ✭ (Estrella sólida)
-  const mail = "\u2709";    // ✉ (Sobre/Mensaje)
-  const link = "\u2310";    // 🌐 (Globo básico)
+  // Usamos caracteres de teclado estándar (puntos, guiones, asteriscos)
+  // Esto es IMPOSIBLE que se rompa porque no son emojis.
+  const line1 = "*Contacto desde la web Neoka*";
+  const line2 = ">> Nombre: " + data.name;
+  const line3 = ">> Interes: " + data.interest;
+  const line4 = ">> Mensaje: " + data.message;
+  const line5 = "--------------------------";
+  const line6 = "Enviado desde el formulario web";
 
-  // Construimos el mensaje como un bloque sólido de texto
-  const msg = [
-    "*Contacto desde la web Neoka*",
-    "",
-    user + " Nombre: " + data.name,
-    star + " Interes: " + data.interest,
-    mail + " Mensaje: " + data.message,
-    "",
-    "---",
-    link + " Enviado desde la web"
-  ].join("\n");
+  const fullMessage = [line1, "", line2, line3, line4, "", line5, line6].join("\n");
+  
+  // Codificamos el texto plano
+  const waUrl = "https://api.whatsapp.com/send?phone=34617642564&text=" + encodeURIComponent(fullMessage);
 
-  // Usamos la API de envío directo que a veces es más estable que wa.me
-  const finalUrl = "https://api.whatsapp.com/send?phone=34617642564&text=" + encodeURIComponent(msg);
-
-  window.open(finalUrl, "_blank");
+  window.open(waUrl, "_blank");
 };
 
   return (
