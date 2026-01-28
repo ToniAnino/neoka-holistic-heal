@@ -79,7 +79,7 @@ export const TestimonialsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 p-8 md:p-12 bg-primary rounded-2xl text-primary-foreground">
           <div className="text-center">
             <p className="text-4xl md:text-5xl font-serif font-bold mb-2">
-              <Counter end={2500} suffix="+" />
+              <Counter end={8440} suffix="+" />
             </p>
             <p className="text-sm opacity-80">Clientes satisfechos</p>
           </div>
