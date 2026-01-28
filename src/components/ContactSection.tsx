@@ -45,25 +45,32 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
   const onSubmit = (data: ContactFormData) => {
-  // Usamos secuencias de escape: son texto plano que NUNCA se rompe
+  // Definimos los iconos usando sus códigos hexadecimales exactos
   const iconUser = "\u{1F464}";    // 👤
   const iconChispas = "\u{2728}";  // ✨
   const iconMensaje = "\u{1F4AC}"; // 💬
   const iconWeb = "\u{1F310}";     // 🌐
 
-  // Construimos el mensaje con saltos de línea explícitos
-  const mensajeFormateado = 
-    "*Contacto desde la web Neoka*\n\n" +
-    iconUser + " *Nombre:* " + data.name + "\n" +
-    iconChispas + " *Interés:* " + data.interest + "\n" +
-    iconMensaje + " *Mensaje:* " + data.message + "\n\n" +
-    "---\n" +
-    iconWeb + " _Enviado desde el formulario web_";
+  // Construimos el mensaje línea por línea
+  // Usamos \n para los saltos de línea (WhatsApp Web prefiere esto)
+  const lines = [
+    "*Contacto desde la web Neoka*",
+    "",
+    `${iconUser} *Nombre:* ${data.name}`,
+    `${iconChispas} *Interés:* ${data.interest}`,
+    `${iconMensaje} *Mensaje:* ${data.message}`,
+    "",
+    "---",
+    `${iconWeb} _Enviado desde el formulario web_`
+  ];
 
-  // La codificación URI es vital para WhatsApp Web
-  const urlFinal = "https://wa.me/34617642564?text=" + encodeURIComponent(mensajeFormateado);
+  const fullMessage = lines.join("\n");
+  
+  // Creamos la URL final codificando TODO el string
+  const waUrl = `https://wa.me/34617642564?text=${encodeURIComponent(fullMessage)}`;
 
-  window.open(urlFinal, "_blank");
+  // Abrimos en una nueva pestaña
+  window.open(waUrl, "_blank", "noopener,noreferrer");
 };
 
   return (
