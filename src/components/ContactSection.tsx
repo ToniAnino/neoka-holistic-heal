@@ -45,8 +45,16 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
   const onSubmit = (data: ContactFormData) => {
-    // Build WhatsApp message with line breaks
-    const message = `Hola, me llamo ${data.name}.%0A%0AMe interesa: ${data.interest}%0A%0AMensaje:%0A${encodeURIComponent(data.message)}`;
+    // Build WhatsApp message with emojis and line breaks
+    const message = [
+      "🌿 *Contacto desde la web Neoka*",
+      "",
+      `👤 *Nombre:* ${data.name}`,
+      `✨ *Interés:* ${data.interest}`,
+      `💬 *Mensaje:* ${data.message}`,
+      "",
+      "🌐 _Enviado desde el formulario web_"
+    ].map(line => encodeURIComponent(line)).join("%0A");
     
     // Open WhatsApp with the formatted message
     window.open(`https://wa.me/34617642564?text=${message}`, "_blank");
