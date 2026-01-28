@@ -61,7 +61,7 @@ const PsicologiaSanitaria = () => {
         <div className="container relative z-10 text-center">
           <Link 
             to="/#servicios" 
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6"
+            className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm text-primary hover:text-primary/80 hover:bg-background/90 transition-colors mb-6 px-4 py-2 rounded-full"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm font-medium">Volver a servicios</span>
@@ -69,10 +69,10 @@ const PsicologiaSanitaria = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
             Psicología general sanitaria en Huelva
           </h1>
-          <h2 className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4">
+          <h2 className="text-lg md:text-xl text-foreground/90 font-medium max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4">
             Atención psicológica profesional para el cuidado de tu salud mental
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-up animation-delay-200 mb-8">
+          <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto animate-fade-up animation-delay-200 mb-8">
             En Neoka ofrecemos atención psicológica sanitaria en Huelva, con un enfoque profesional, cercano y basado en la evidencia científica, adaptado a cada persona y a su momento vital.
           </p>
           <Button size="lg" className="animate-fade-up animation-delay-300" asChild>
