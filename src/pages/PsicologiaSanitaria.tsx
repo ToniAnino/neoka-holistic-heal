@@ -11,33 +11,33 @@ import mariaImage from "@/assets/maria-psicologa.jpg";
 const benefitsData = [
   {
     icon: Shield,
-    title: "Miedos y prevención de estrés y ansiedad",
-    description: "Con una variedad de técnicas eficaces podrás deshacerte de esa sensación de angustia constante y aumentar tu tranquilidad para afrontar tu día a día, comprender qué activa tu respuesta ansiógena y por qué, y modificar pensamientos, creencias y conductas disfuncionales.",
+    title: "Ansiedad, estrés y prevención del malestar",
+    description: "Intervención psicológica para comprender y reducir los niveles de ansiedad y estrés, aprendiendo estrategias para afrontar el día a día con mayor calma y equilibrio emocional.",
   },
   {
     icon: Users,
     title: "Problemas de conducta y resolución de conflictos",
-    description: "Realizamos una intervención hacia la solución de hábitos o conductas que nos generan malestar, generadas por su parte o por los demás. Nuestra mente nos está pidiendo un cambio. Los conflictos que puedan sucederse con uno mismo o en relación con otras personas son gestionados de forma profesional y objetiva para una satisfacción por todas las partes.",
+    description: "Trabajo psicológico orientado a identificar y modificar patrones de conducta que generan malestar, así como a mejorar la gestión de conflictos personales y relacionales, ya sea contigo o con los demás.",
   },
   {
     icon: Brain,
     title: "Trastornos y fobias",
-    description: "Una fobia es un temor a situaciones o cosas que no son peligrosas y que la mayoría de las personas no las encuentran molestas. Un trastorno es una alteración o cambio en el funcionamiento de un organismo o en el equilibrio psíquico o mental de una persona. Con la psicología, se soluciona, prevé o mejora todo ello de una manera muy importante.",
+    description: "Evaluación e intervención psicológica en trastornos emocionales, miedos intensos o paralizantes y fobias que interfieren en el bienestar personal y limitan la vida cotidiana.",
   },
   {
     icon: Heart,
     title: "Habilidades sociales",
-    description: "Aprenderás a relacionarte con los demás, a forjar lazos afectivos con otras personas, a expresarte como quieres, desde el corazón y sin miedos. Además, sabrás enfrentarte a los conflictos resolviéndolos de manera exitosa, con capacidad asertiva y empatía.",
+    description: "Desarrollo de habilidades sociales para mejorar la comunicación, la asertividad y las relaciones interpersonales desde un enfoque psicológico, forjando lazos afectivos con otros, y enseñándote a expresarte como quieres.",
   },
   {
     icon: Sparkles,
-    title: "Autoconocimiento",
-    description: "Descúbrete, profundiza en ti y averigua hacia dónde quieres ir y qué quieres conseguir. Pondrás de manifiesto todas tus virtudes para así sacarles mayor partido y brillar con ellas, y descubrirás aquellos defectos que no te terminan de dejar ser lo que estás llamado a ser.",
+    title: "Regulación emocional",
+    description: "Intervención psicológica orientada a comprender, regular y manejar las emociones de forma saludable, reduciendo el impacto del malestar emocional.",
   },
   {
     icon: Target,
-    title: "Gestión de emociones",
-    description: "Las emociones son lo que más nos preocupa hoy en día, debido a que ellas son las que nos ponen en momentos complicados o en momentos de auténtica euforia. Si no se saben gestionar, pueden ser peligrosas. Aprende el autocontrol, y domina tu vida.",
+    title: "Estado de ánimo y malestar emocional",
+    description: "Evaluación e intervención psicológica en alteraciones del estado de ánimo y malestar emocional que afectan al bienestar personal y al funcionamiento diario.",
   },
 ];
 
@@ -49,11 +49,11 @@ const PsicologiaSanitaria = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Psicología General Sanitaria - Neoka"
+            alt="Psicología General Sanitaria en Huelva - Neoka"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
@@ -67,11 +67,23 @@ const PsicologiaSanitaria = () => {
             <span className="text-sm font-medium">Volver a servicios</span>
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
-            Psicología General Sanitaria
+            Psicología general sanitaria en Huelva
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up animation-delay-100">
-            Tu bienestar emocional es nuestra prioridad
+          <h2 className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4">
+            Atención psicológica profesional para el cuidado de tu salud mental
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-up animation-delay-200 mb-8">
+            En Neoka ofrecemos atención psicológica sanitaria en Huelva, con un enfoque profesional, cercano y basado en la evidencia científica, adaptado a cada persona y a su momento vital.
           </p>
+          <Button size="lg" className="animate-fade-up animation-delay-300" asChild>
+            <a 
+              href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pedir cita
+            </a>
+          </Button>
         </div>
       </section>
 
@@ -86,10 +98,10 @@ const PsicologiaSanitaria = () => {
               ¿Qué es la terapia psicológica?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              La terapia psicológica es <strong className="text-foreground">cambio, solución y optimización</strong> de todas las áreas personales que influyen en nuestra satisfacción, en nuestra felicidad y en nuestra calma.
+              La terapia psicológica es un proceso profesional orientado a comprender, aliviar y mejorar el malestar emocional que interfiere en tu bienestar y en tu día a día, proporcionándote calma y bienestar.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Es sentirte escuchado, reflexionar y profundizar sobre uno mismo y lo que sucede. Es analizar cuáles son los motivos que han generado el problema y que actualmente lo mantienen, para poder elaborar una <strong className="text-foreground">terapia individualizada</strong> y evitar el malestar, ponerle solución y mejorar el estado emocional de la persona.
+              Es sentirte escuchado, reflexionar. Es analizar cuáles son los motivos que han generado el problema y que actualmente lo mantienen, para poder elaborar una <strong className="text-foreground">terapia individualizada</strong> y evitar el malestar, ponerle solución y mejorar el estado emocional de la persona.
             </p>
           </div>
         </div>
@@ -106,7 +118,7 @@ const PsicologiaSanitaria = () => {
               ¿Qué puedo mejorar si acudo a consulta?
             </h2>
             <p className="text-muted-foreground text-lg">
-              La Psicología General abarca un amplio espectro de motivos de consulta. Todos tienen en común la búsqueda de comprensión, respuestas, alivio, cambio y solución.
+              La psicología sanitaria aborda diferentes dificultades emocionales y conductuales que afectan al bienestar y a la calidad de vida.
             </p>
           </div>
 
@@ -168,7 +180,7 @@ const PsicologiaSanitaria = () => {
                   </div>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">
-                    Lleva por bandera su profesión: ser psicóloga como forma de vida. Es de las que piensa que compartir momentos y experiencias vale por dos. Siente que hablar es clave en el proceso de sanar, aprender y crecer. María es <strong className="text-foreground">humanitaria, valiente, generosa, cercana y noble</strong>.
+                    María es psicóloga general sanitaria, graduada en Psicología y especializada en intervención psicológica en adultos. Su trabajo se basa en un enfoque profesional y cercano, adaptado a las necesidades de cada persona y orientado al bienestar emocional. María es <strong className="text-foreground">humanitaria, valiente, generosa, cercana y noble</strong>.
                   </p>
 
                   <Button 
@@ -191,14 +203,24 @@ const PsicologiaSanitaria = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">
-              ¿Listo para dar el primer paso?
+              ¿Buscas atención psicológica profesional en Huelva?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Contacta con nosotros y comienza tu proceso de cambio y bienestar.
+              Si estás atravesando un momento difícil o necesitas apoyo psicológico profesional, en Neoka podemos ayudarte desde un enfoque cercano, respetuoso y adaptado a ti.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
-                <a href="tel:+34959000000">Llamar ahora</a>
+                <a 
+                  href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Contacta ahora
+                </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link to="/#contacto">Más información</Link>
