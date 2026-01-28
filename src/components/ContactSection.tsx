@@ -45,16 +45,24 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
   const onSubmit = (data: ContactFormData) => {
-    const line1 = "🌿 *Contacto desde la web Neoka*";
-    const line2 = `👤 *Nombre:* ${data.name}`;
-    const line3 = `✨ *Interés:* ${data.interest}`;
-    const line4 = `💬 *Mensaje:* ${data.message}`;
-    const line5 = "🌐 _Enviado desde el formulario web_";
+    // Definimos los emojis por sus códigos para evitar errores de lectura del archivo
+    const emojiPlanta = "\u{1F33F}"; // 🌿
+    const emojiUser = "\u{1F464}";   // 👤
+    const emojiChispas = "\u{2728}"; // ✨
+    const emojiMensaje = "\u{1F4AC}"; // 💬
+    const emojiWeb = "\u{1F310}";     // 🌐
+
+    // Construimos el mensaje con los códigos
+    const line1 = `${emojiPlanta} *Contacto desde la web Neoka*`;
+    const line2 = `${emojiUser} *Nombre:* ${data.name}`;
+    const line3 = `${emojiChispas} *Interés:* ${data.interest}`;
+    const line4 = `${emojiMensaje} *Mensaje:* ${data.message}`;
+    const line5 = `${emojiWeb} _Enviado desde el formulario web_`;
 
     const rawMessage = `${line1}\n\n${line2}\n${line3}\n${line4}\n\n${line5}`;
-
-    const encodedMessage = encodeURIComponent(rawMessage);
     
+    // Codificamos y enviamos
+    const encodedMessage = encodeURIComponent(rawMessage);
     window.open(`https://wa.me/34617642564?text=${encodedMessage}`, "_blank");
   };
 
