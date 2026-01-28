@@ -45,26 +45,25 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
 const onSubmit = (data: ContactFormData) => {
-  // Usamos iconos de teclado estándar y emojis de alta compatibilidad
-  const star = "\u2B50";  // ⭐ (Estrella clásica)
-  const pen = "\u270F";   // ✏️ (Lápiz/Nota)
-  const phone = "\u260E"; // ☎ (Teléfono clásico)
+  // Usamos secuencias de escape: son texto plano que NUNCA se rompe
+  const iconUser = "\u{1F464}";    // 👤
+  const iconChispas = "\u{2728}";  // ✨
+  const iconMensaje = "\u{1F4AC}"; // 💬
+  const iconWeb = "\u{1F310}";     // 🌐
 
-  const lines = [
-    "*Contacto desde la web Neoka*",
-    "",
-    `${star} *Nombre:* ${data.name}`,
-    `${star} *Interés:* ${data.interest}`,
-    `${pen} *Mensaje:* ${data.message}`,
-    "",
-    "---",
-    "Sent from Neoka Web"
-  ];
+  // Construimos el mensaje con saltos de línea explícitos
+  const mensajeFormateado = 
+    "*Contacto desde la web Neoka*\n\n" +
+    iconUser + " *Nombre:* " + data.name + "\n" +
+    iconChispas + " *Interés:* " + data.interest + "\n" +
+    iconMensaje + " *Mensaje:* " + data.message + "\n\n" +
+    "---\n" +
+    iconWeb + " _Enviado desde el formulario web_";
 
-  const fullMessage = lines.join("\n");
-  const waUrl = `https://api.whatsapp.com/send?phone=34617642564&text=${encodeURIComponent(fullMessage)}`;
+  // La codificación URI es vital para WhatsApp Web
+  const urlFinal = "https://wa.me/34617642564?text=" + encodeURIComponent(mensajeFormateado);
 
-  window.open(waUrl, "_blank");
+  window.open(urlFinal, "_blank");
 };
 
   return (
