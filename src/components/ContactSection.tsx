@@ -45,19 +45,24 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
 const onSubmit = (data: ContactFormData) => {
-  // Usamos caracteres de teclado estándar (puntos, guiones, asteriscos)
-  // Esto es IMPOSIBLE que se rompa porque no son emojis.
-  const line1 = "*Contacto desde la web Neoka*";
-  const line2 = ">> Nombre: " + data.name;
-  const line3 = ">> Interes: " + data.interest;
-  const line4 = ">> Mensaje: " + data.message;
-  const line5 = "--------------------------";
-  const line6 = "Enviado desde el formulario web";
+  // Usamos iconos de teclado estándar y emojis de alta compatibilidad
+  const star = "\u2B50";  // ⭐ (Estrella clásica)
+  const pen = "\u270F";   // ✏️ (Lápiz/Nota)
+  const phone = "\u260E"; // ☎ (Teléfono clásico)
 
-  const fullMessage = [line1, "", line2, line3, line4, "", line5, line6].join("\n");
-  
-  // Codificamos el texto plano
-  const waUrl = "https://api.whatsapp.com/send?phone=34617642564&text=" + encodeURIComponent(fullMessage);
+  const lines = [
+    "*Contacto desde la web Neoka*",
+    "",
+    `${star} *Nombre:* ${data.name}`,
+    `${star} *Interés:* ${data.interest}`,
+    `${pen} *Mensaje:* ${data.message}`,
+    "",
+    "---",
+    "Sent from Neoka Web"
+  ];
+
+  const fullMessage = lines.join("\n");
+  const waUrl = `https://api.whatsapp.com/send?phone=34617642564&text=${encodeURIComponent(fullMessage)}`;
 
   window.open(waUrl, "_blank");
 };
