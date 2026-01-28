@@ -83,7 +83,7 @@ export const HeroSection = () => {
           <div className="mt-16 pt-10 border-t border-border/50 animate-fade-up animation-delay-400">
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16">
               <div className="text-center">
-                <p className="text-3xl md:text-4xl font-serif font-semibold text-primary">+2500</p>
+                <p className="text-3xl md:text-4xl font-serif font-semibold text-primary">+8440</p>
                 <p className="text-sm text-muted-foreground mt-1">Pacientes atendidos</p>
               </div>
               <div className="hidden sm:block w-px h-12 bg-border" />
