@@ -45,26 +45,21 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
   const onSubmit = (data: ContactFormData) => {
-    // Definimos los emojis por sus códigos para evitar errores de lectura del archivo
-    const emojiPlanta = "\u{1F33F}"; // 🌿
-    const emojiUser = "\u{1F464}";   // 👤
-    const emojiChispas = "\u{2728}"; // ✨
-    const emojiMensaje = "\u{1F4AC}"; // 💬
-    const emojiWeb = "\u{1F310}";     // 🌐
+  const loto = "%F0%9F%AA%B7";    // 🪷
+  const usuario = "%F0%9F%91%A4"; // 👤
+  const chispas = "%E2%9C%A8";    // ✨
+  const mensaje = "%F0%9F%92%AC"; // 💬
+  const web = "%F0%9F%8C%90";     // 🌐
 
-    // Construimos el mensaje con los códigos
-    const line1 = `${emojiPlanta} *Contacto desde la web Neoka*`;
-    const line2 = `${emojiUser} *Nombre:* ${data.name}`;
-    const line3 = `${emojiChispas} *Interés:* ${data.interest}`;
-    const line4 = `${emojiMensaje} *Mensaje:* ${data.message}`;
-    const line5 = `${emojiWeb} _Enviado desde el formulario web_`;
-
-    const rawMessage = `${line1}\n\n${line2}\n${line3}\n${line4}\n\n${line5}`;
-    
-    // Codificamos y enviamos
-    const encodedMessage = encodeURIComponent(rawMessage);
-    window.open(`https://wa.me/34617642564?text=${encodedMessage}`, "_blank");
-  };
+  const textoWhatsApp = 
+    loto + " *Contacto desde la web Neoka*%0A%0A" +
+    usuario + " *Nombre:* " + data.name + "%0A" +
+    chispas + " *Interés:* " + data.interest + "%0A" +
+    mensaje + " *Mensaje:* " + data.message + "%0A%0A" +
+    "---%0A" +
+    web + " _Enviado desde el formulario web_";
+  window.open(`https://wa.me/34617642564?text=${textoWhatsApp}`, "_blank");
+};
 
   return (
     <section id="formulario-contacto" className="py-20 lg:py-28 bg-muted/30">
