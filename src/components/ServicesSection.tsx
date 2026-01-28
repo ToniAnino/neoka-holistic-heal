@@ -6,7 +6,7 @@ const services = [
   {
     icon: Heart,
     title: "Terapia de Pareja",
-    description: "Mejora la comunicación y resuelve conflictos. Fortalece los vínculos y reconstruye la confianza en tu relación.",
+    description: "Acompañamiento en dificultades de pareja, crisis, y problemas de comunicación. Fortalece vínculos y construye confianza. Resolución de conflictos.",
     color: "text-rose-500",
     bgColor: "bg-rose-50",
     link: "/terapia-pareja",
@@ -14,7 +14,7 @@ const services = [
   {
     icon: Brain,
     title: "Psicología Sanitaria",
-    description: "Terapia individual para ansiedad, depresión, estrés y otros trastornos. Enfoque personalizado basado en evidencia científica.",
+    description: "Atención psicológica profesional para el cuidado de la salud mental, ansiedad, depresión, trastornos.",
     color: "text-primary",
     bgColor: "bg-primary/10",
     link: "/psicologia-sanitaria",
@@ -22,7 +22,7 @@ const services = [
   {
     icon: Sparkles,
     title: "Terapia emocional / transpersonal",
-    description: "Explora tu crecimiento personal y espiritual. Conecta con tu esencia y encuentra un mayor sentido de propósito.",
+    description: "Un espacio para fortalecer tu autoestima y encontrar sentido y propósito en los procesos vitales que atraviesas, y trabajar la dimensión emocional y espiritual, profundizar en tu crecimiento personal o comprender tus bloqueos.",
     color: "text-violet-500",
     bgColor: "bg-violet-50",
     link: "/terapia-transpersonal",
@@ -30,7 +30,7 @@ const services = [
   {
     icon: Activity,
     title: "Fisioterapia",
-    description: "Rehabilitación, terapia manual y tratamiento del dolor. Recupera tu movilidad y calidad de vida.",
+    description: "Tratamiento personalizado para aliviar el dolor, mejorar la movilidad y favorecer la recuperación física, con un enfoque cercano y profesional. Recuperación de lesiones y rehabilitación.",
     color: "text-emerald-500",
     bgColor: "bg-emerald-50",
     link: "/fisioterapia",
@@ -38,7 +38,7 @@ const services = [
   {
     icon: Apple,
     title: "Nutrición y Dietética",
-    description: "Asesoramiento personalizado y planes nutricionales basados en evidencia científica. Tratamiento de patologías, educación alimentaria y mejora del rendimiento físico y la salud.",
+    description: "Asesoramiento nutricional adaptado a tus necesidades para mejorar tu salud, tu energía y tu relación con la alimentación. Tratamiento de patologías, educación alimentaria.",
     color: "text-lime-600",
     bgColor: "bg-lime-50",
     link: "/nutricion-dietetica",
@@ -46,7 +46,7 @@ const services = [
   {
     icon: Footprints,
     title: "Podología",
-    description: "Cuidado integral del pie: estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
+    description: "Cuidado integral del pie para prevenir molestias, tratar afecciones y mejorar tu bienestar en el día a día. Estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
     color: "text-amber-600",
     bgColor: "bg-amber-50",
     link: "/podologia",
