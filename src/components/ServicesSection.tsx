@@ -4,14 +4,6 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: Brain,
-    title: "Psicología Sanitaria",
-    description: "Terapia individual para ansiedad, depresión, estrés y otros trastornos. Enfoque personalizado basado en evidencia científica.",
-    color: "text-primary",
-    bgColor: "bg-primary/10",
-    link: "/psicologia-sanitaria",
-  },
-  {
     icon: Heart,
     title: "Terapia de Pareja",
     description: "Mejora la comunicación y resuelve conflictos. Fortalece los vínculos y reconstruye la confianza en tu relación.",
@@ -20,8 +12,16 @@ const services = [
     link: "/terapia-pareja",
   },
   {
+    icon: Brain,
+    title: "Psicología Sanitaria",
+    description: "Terapia individual para ansiedad, depresión, estrés y otros trastornos. Enfoque personalizado basado en evidencia científica.",
+    color: "text-primary",
+    bgColor: "bg-primary/10",
+    link: "/psicologia-sanitaria",
+  },
+  {
     icon: Sparkles,
-    title: "Terapia Transpersonal",
+    title: "Terapia emocional / transpersonal",
     description: "Explora tu crecimiento personal y espiritual. Conecta con tu esencia y encuentra un mayor sentido de propósito.",
     color: "text-violet-500",
     bgColor: "bg-violet-50",
@@ -36,20 +36,20 @@ const services = [
     link: "/fisioterapia",
   },
   {
-    icon: Footprints,
-    title: "Podología",
-    description: "Cuidado integral del pie: estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
-    color: "text-amber-600",
-    bgColor: "bg-amber-50",
-    link: "/podologia",
-  },
-  {
     icon: Apple,
     title: "Nutrición y Dietética",
     description: "Asesoramiento personalizado y planes nutricionales basados en evidencia científica. Tratamiento de patologías, educación alimentaria y mejora del rendimiento físico y la salud.",
     color: "text-lime-600",
     bgColor: "bg-lime-50",
     link: "/nutricion-dietetica",
+  },
+  {
+    icon: Footprints,
+    title: "Podología",
+    description: "Cuidado integral del pie: estudios biomecánicos, tratamiento de patologías y plantillas personalizadas.",
+    color: "text-amber-600",
+    bgColor: "bg-amber-50",
+    link: "/podologia",
   },
 ];
 
@@ -63,7 +63,7 @@ export const ServicesSection = () => {
             Nuestros Servicios
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
-            Atención integral para tu bienestar
+            Servicios de psicología, terapia y salud integral
           </h2>
           <p className="text-muted-foreground text-lg">
             Un equipo multidisciplinar de profesionales cualificados para cuidar 
@@ -96,13 +96,13 @@ export const ServicesSection = () => {
               {service.link ? (
                 <Button variant="ghost" className="p-0 h-auto text-primary hover:bg-transparent group/btn" asChild>
                   <Link to={service.link}>
-                    <span className="font-medium">Saber más</span>
+                    <span className="font-medium">{service.title}</span>
                     <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
               ) : (
                 <Button variant="ghost" className="p-0 h-auto text-primary hover:bg-transparent group/btn">
-                  <span className="font-medium">Saber más</span>
+                  <span className="font-medium">{service.title}</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>
               )}
