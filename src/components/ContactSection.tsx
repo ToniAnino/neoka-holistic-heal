@@ -45,15 +45,14 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
 const onSubmit = (data: ContactFormData) => {
-  // Usamos la codificación exacta que WhatsApp Web requiere para emojis complejos
-  const loto = decodeURIComponent("%F0%9F%AA%B7"); // 🪷
+  // Usamos la codificación que ya comprobamos que funciona
   const user = decodeURIComponent("%F0%9F%91%A4"); // 👤
   const sparkles = decodeURIComponent("%E2%9C%A8"); // ✨
   const messageIcon = decodeURIComponent("%F0%9F%92%AC"); // 💬
   const webIcon = decodeURIComponent("%F0%9F%8C%90"); // 🌐
 
   const lines = [
-    `${loto} *Contacto desde la web Neoka*`,
+    "*Contacto desde la web Neoka*", // Primera línea sin iconos
     "",
     `${user} *Nombre:* ${data.name}`,
     `${sparkles} *Interés:* ${data.interest}`,
@@ -65,7 +64,7 @@ const onSubmit = (data: ContactFormData) => {
 
   const fullMessage = lines.join("\n");
   
-  // Forzamos la apertura con api.whatsapp.com que suele ser más estable para estos casos
+  // Mantenemos la API estable
   const waUrl = `https://api.whatsapp.com/send?phone=34617642564&text=${encodeURIComponent(fullMessage)}`;
 
   window.open(waUrl, "_blank", "noopener,noreferrer");
