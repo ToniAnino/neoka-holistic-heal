@@ -45,19 +45,16 @@ export const ContactSection = () => {
   const selectedInterest = watch("interest");
 
   const onSubmit = (data: ContactFormData) => {
-    // Build WhatsApp message with emojis and line breaks
-    const rawMessage = `🌿 *Contacto desde la web Neoka*
+    const line1 = "🌿 *Contacto desde la web Neoka*";
+    const line2 = `👤 *Nombre:* ${data.name}`;
+    const line3 = `✨ *Interés:* ${data.interest}`;
+    const line4 = `💬 *Mensaje:* ${data.message}`;
+    const line5 = "🌐 _Enviado desde el formulario web_";
 
-👤 *Nombre:* ${data.name}
-✨ *Interés:* ${data.interest}
-💬 *Mensaje:* ${data.message}
+    const rawMessage = `${line1}\n\n${line2}\n${line3}\n${line4}\n\n${line5}`;
 
-🌐 _Enviado desde el formulario web_`;
-    
-    // Encode the entire message at once
     const encodedMessage = encodeURIComponent(rawMessage);
     
-    // Open WhatsApp with the formatted message
     window.open(`https://wa.me/34617642564?text=${encodedMessage}`, "_blank");
   };
 
