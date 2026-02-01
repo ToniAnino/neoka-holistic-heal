@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TeamModal } from "./TeamModal";
+import equipoNeoka from "@/assets/equipo-neoka.png";
 
 const features = [
   "Equipo multidisciplinar cualificado",
@@ -23,8 +24,8 @@ export const AboutSection = () => {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden card-shadow">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10" />
               <img
-                src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=800&q=80"
-                alt="Instalaciones del Centro Neoka en Huelva"
+                src={equipoNeoka}
+                alt="Equipo del Centro Neoka en Huelva"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
