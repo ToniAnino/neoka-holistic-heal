@@ -1,48 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Sparkles, TreeDeciduous, Star, Target, Briefcase, Trophy, Users } from "lucide-react";
+import { ArrowLeft, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
 import heroImage from "@/assets/terapia-transpersonal-hero.jpg";
 import nereaImage from "@/assets/nerea-terapeuta.jpg";
-
-const transpersonalData = [
-  {
-    icon: TreeDeciduous,
-    title: "Árbol transgeneracional",
-    description: "Exploramos tu historia familiar para identificar patrones heredados que pueden estar influyendo en tu vida actual, liberándote de cargas que no te pertenecen.",
-  },
-  {
-    icon: Star,
-    title: "Psicoastrología",
-    description: "Utilizamos tu carta astral como herramienta de autoconocimiento para comprender tus talentos innatos, desafíos y propósito de vida.",
-  },
-  {
-    icon: Sparkles,
-    title: "Crecimiento espiritual",
-    description: "Te acompañamos en tu búsqueda de sentido y conexión con tu esencia más profunda, facilitando una transformación auténtica y duradera.",
-  },
-];
-
-const coachingData = [
-  {
-    icon: Trophy,
-    title: "Deporte de alto rendimiento",
-    description: "Potencia tu rendimiento deportivo trabajando la mentalidad, la gestión del estrés competitivo y la visualización para alcanzar tus metas.",
-  },
-  {
-    icon: Target,
-    title: "Vida personal",
-    description: "Define y alcanza tus objetivos personales. Te ayudamos a identificar lo que realmente quieres y a diseñar un plan de acción efectivo.",
-  },
-  {
-    icon: Briefcase,
-    title: "Empresas y liderazgo",
-    description: "Desarrolla tus habilidades de liderazgo, gestión de equipos y comunicación efectiva para maximizar el potencial de tu organización.",
-  },
-];
 
 const TerapiaTranspersonal = () => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
@@ -56,7 +20,7 @@ const TerapiaTranspersonal = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Terapia Transpersonal y Coaching - Neoka"
+            alt="Terapia Transpersonal - Neoka"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
@@ -70,24 +34,27 @@ const TerapiaTranspersonal = () => {
             <span className="text-sm font-medium">Volver a servicios</span>
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
-            Terapia Transpersonal y Coaching
+            Terapia transpersonal
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
-            Descubre tu potencial y conecta con tu verdadera esencia
+          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4">
+            Un camino de autoconocimiento, sentido y transformación interior
           </p>
+          <h2 className="text-xl md:text-2xl text-foreground/90 font-medium max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
+            Cuando lo de afuera ya no te sirve, toca mirar hacia dentro.
+          </h2>
           <Button size="lg" className="bg-violet-500 hover:bg-violet-600 animate-fade-up animation-delay-200" asChild>
             <a 
-              href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita%20de%20terapia%20transpersonal" 
+              href="https://wa.me/34617642564?text=Me%20gustaría%20reservar%20una%20sesión%20de%20terapia%20transpersonal" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Pedir cita
+              Reservar sesión
             </a>
           </Button>
         </div>
       </section>
 
-      {/* Introduction Section */}
+      {/* Introduction Section - ¿Qué es la terapia transpersonal? */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
@@ -97,113 +64,174 @@ const TerapiaTranspersonal = () => {
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
               ¿Qué es la terapia transpersonal?
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              La terapia transpersonal te ayuda en tu <strong className="text-foreground">búsqueda personal</strong>, identificando patrones repetitivos que se dan en tu vida y que te impiden avanzar o ser feliz. Es un viaje hacia tu interior para descubrir quién eres realmente.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Trabajamos con herramientas como el <strong className="text-foreground">árbol transgeneracional</strong> para explorar tu historia familiar y la <strong className="text-foreground">psicoastrología</strong> como mapa de autoconocimiento, facilitando tu crecimiento personal y espiritual.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Esta terapia te permite conectar con dimensiones más profundas de tu ser, encontrando un mayor <strong className="text-foreground">sentido de propósito</strong> y una vida más alineada con tu verdadera esencia.
-            </p>
+            <div className="text-left space-y-6">
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Hay personas que no vienen a terapia porque "tienen un problema". Vienen porque sienten que algo no encaja. Va más allá del síntoma, del diagnóstico o del "qué me pasa", para adentrarse en el <strong className="text-foreground">porqué profundo</strong> de tu historia, de tus patrones repetidos y de tu manera de vivir y relacionarte. La terapia no debe confundirse la psicología clínica. Es un enfoque terapéutico holístico totalmente distinto.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Si estás aquí, probablemente ya has probado lo convencional. Has hablado, has entendido cosas con la cabeza… pero <strong className="text-foreground">algo dentro de ti sigue sin resolverse</strong>.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                La terapia transpersonal parte de una idea sencilla y profunda: <strong className="text-foreground">no todo lo que dirige tu vida es consciente</strong>.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Existen patrones internos, memorias emocionales y estructuras profundas que configuran tu manera de amar, de elegir, de reaccionar y de colocarte en el mundo.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Patrones que no se rompen solo hablando de ellos, porque no nacieron en la mente racional.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Aquí no buscamos únicamente aliviar el síntoma. <strong className="text-foreground">Buscamos comprender el sentido</strong>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Transpersonal Benefits Section */}
+      {/* Tu historia no empezó contigo */}
       <section className="py-16 lg:py-24 bg-violet-50/30">
         <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block text-sm font-medium text-violet-500 uppercase tracking-widest mb-4">
-              Terapia Transpersonal
-            </span>
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
-              Herramientas de transformación
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
+              Tu historia no empezó contigo
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Utilizamos diversas técnicas para facilitar tu proceso de autoconocimiento y crecimiento personal.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {transpersonalData.map((item, index) => (
-              <article
-                key={item.title}
-                className="group bg-card rounded-2xl p-8 card-shadow hover:card-shadow-hover transition-all duration-300 border border-border/50 hover:border-violet-200"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-14 h-14 rounded-xl bg-violet-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <item.icon className="w-7 h-7 text-violet-500" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {item.description}
-                </p>
-              </article>
-            ))}
+            <div className="space-y-6">
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Muchas de las vivencias que hoy te duelen no comenzaron en tu vida adulta. Algunas ni siquiera comenzaron en tu historia personal.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Existen lealtades invisibles, mandatos familiares y relatos internos que has asumido como propios y que configuran tu identidad y tu manera de vivir. <strong className="text-foreground">Esto puede verse como:</strong>
+              </p>
+              <ul className="space-y-3 text-muted-foreground text-lg">
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Patrones emocionales inconscientes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Dinámicas familiares que dejan huella</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Creencias profundas que te condicionan</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Bloqueos internos que frenan tu evolución</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>La búsqueda de propósito y sentido vital</span>
+                </li>
+              </ul>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                La terapia transpersonal te invita a mirar más allá de lo evidente, a observar tu vida como un <strong className="text-foreground">mapa simbólico</strong> que puede ser leído, comprendido y transformado.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Coaching Section */}
+      {/* Cuando la vida se repite */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block text-sm font-medium text-violet-500 uppercase tracking-widest mb-4">
-              Coaching
-            </span>
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
-              Ámbitos de aplicación
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
+              Cuando la vida se repite… no es casualidad
             </h2>
-            <p className="text-muted-foreground text-lg">
-              El coaching es una herramienta orientada a objetivos que te ayuda a maximizar tu potencial en diferentes áreas de tu vida.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {coachingData.map((item, index) => (
-              <article
-                key={item.title}
-                className="group bg-card rounded-2xl p-8 card-shadow hover:card-shadow-hover transition-all duration-300 border border-border/50 hover:border-violet-200"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-14 h-14 rounded-xl bg-violet-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <item.icon className="w-7 h-7 text-violet-500" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {item.description}
-                </p>
-              </article>
-            ))}
+            <div className="space-y-6">
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Hay momentos en los que una persona siente que:
+              </p>
+              <ul className="space-y-3 text-muted-foreground text-lg">
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Siempre acaba en relaciones similares</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Repite conflictos emocionales una y otra vez</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Vive una desconexión profunda consigo misma</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>Siente que "algo falta", aunque aparentemente todo esté bien</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
+                  <span>No encuentra respuestas en los enfoques tradicionales</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Important Message Section */}
-      <section className="py-16 lg:py-20 bg-violet-50/30">
+      {/* El para qué de tu camino */}
+      <section className="py-16 lg:py-24 bg-violet-50/30">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-2xl p-8 lg:p-12 border border-violet-100 card-shadow">
-              <div className="flex items-center justify-center mb-6">
-                <Users className="w-10 h-10 text-violet-500" />
-              </div>
-              <h3 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6 text-center">
-                Un camino hacia tu mejor versión
-              </h3>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Tanto la terapia transpersonal como el coaching son herramientas poderosas para quienes buscan <strong className="text-foreground">algo más en la vida</strong>. No se trata solo de resolver problemas, sino de descubrir tu verdadero potencial y vivir de manera más auténtica.
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
+              El para qué de tu camino
+            </h2>
+            <div className="space-y-6">
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Cuando una persona empieza a comprender el <strong className="text-foreground">para qué</strong> de su historia, todo cambia.
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Cada persona es única, por eso nuestro enfoque es completamente <strong className="text-foreground">personalizado</strong>. Trabajamos contigo para identificar tus objetivos, superar los obstáculos que te frenan y diseñar el camino hacia la vida que realmente deseas.
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Lo que antes parecía castigo empieza a adquirir sentido.
               </p>
-              <p className="text-violet-600 font-medium text-lg text-center">
-                ¿Estás listo para comenzar tu viaje de transformación personal?
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Lo que antes dolía sin explicación comienza a ordenarse.
               </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Este trabajo no busca darte respuestas cerradas, sino <strong className="text-foreground">abrir conciencia</strong>.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Que puedas reconocerte, entender tus ciclos, tus repeticiones, tus momentos de bloqueo y de expansión, y empezar a vivir desde un lugar más alineado con quien realmente eres.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Un trabajo profundo, consciente y simbólico */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
+              Un trabajo profundo, consciente y simbólico
+            </h2>
+            <div className="space-y-6 text-left">
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                En este proceso se utilizan herramientas de exploración y autoconocimiento profundo, adaptadas a cada persona, que permiten observar la experiencia vital desde distintos niveles: <strong className="text-foreground">emocional, simbólico y transgeneracional</strong>.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                No se trata de creer.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Se trata de ver.</strong>
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Si todo esto te resuena, este es el momento para iniciar tu proceso.
+              </p>
+              <p className="text-violet-600 font-medium text-lg">
+                Cuando comprendes el mapa de tu vida, dejas de caminar a ciegas.
+              </p>
+            </div>
+            <div className="mt-10">
+              <Button size="lg" className="bg-violet-500 hover:bg-violet-600" asChild>
+                <a 
+                  href="https://wa.me/34617642564?text=Me%20gustaría%20iniciar%20un%20proceso%20de%20terapia%20transpersonal" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Iniciar proceso de terapia transpersonal
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -217,7 +245,7 @@ const TerapiaTranspersonal = () => {
               Nuestro Equipo
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Nerea, Terapeuta Transpersonal y Coach
+              Conoce a Nerea, terapeuta transpersonal en Neoka
             </h2>
           </div>
 
@@ -228,7 +256,7 @@ const TerapiaTranspersonal = () => {
                 <div className="relative aspect-square md:aspect-auto">
                   <img
                     src={nereaImage}
-                    alt="Nerea B. - Terapeuta Transpersonal y Coach"
+                    alt="Nerea B. - Terapeuta Transpersonal"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent md:bg-gradient-to-r" />
@@ -240,21 +268,27 @@ const TerapiaTranspersonal = () => {
                     <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground mb-2">
                       Soy Nerea
                     </h3>
-                    <p className="text-violet-500 font-medium mb-1">Terapeuta Transpersonal y Coach</p>
+                    <p className="text-violet-500 font-medium mb-1">Terapeuta Transpersonal</p>
                     <p className="text-sm text-muted-foreground">Directora del Centro Neoka</p>
                   </div>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">
-                    Nerea es la directora y fundadora de Neoka. Especializada en terapia transpersonal y coaching, acompaña a personas en su proceso de <strong className="text-foreground">crecimiento personal y transformación</strong>. Su enfoque integrador combina herramientas terapéuticas con técnicas de coaching para lograr resultados profundos y duraderos, tanto en el ámbito personal como profesional.
+                    Desde hace más de 9 años acompaña procesos de crecimiento personal, conciencia y transformación interior. Su enfoque integra el trabajo emocional, el autoconocimiento y la lectura profunda de los procesos vitales, respetando siempre los límites profesionales y el ritmo de cada persona.
                   </p>
 
                   <Button 
                     variant="default" 
                     size="lg" 
-                    onClick={() => setIsTeamModalOpen(true)}
                     className="w-fit bg-violet-500 hover:bg-violet-600"
+                    asChild
                   >
-                    Conoce al equipo
+                    <a 
+                      href="https://wa.me/34617642564?text=Me%20gustaría%20pedir%20cita%20de%20terapia%20transpersonal" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Pedir cita
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -268,26 +302,26 @@ const TerapiaTranspersonal = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">
-              ¿Listo para descubrir tu verdadero potencial?
+              ¿Sientes que es momento de mirar hacia dentro?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Contacta con nosotros y comienza tu camino hacia una vida más plena y auténtica.
+              Si estás en un momento de búsqueda, crisis o cambio vital, la terapia transpersonal puede ser el espacio que necesitas para comprender tu historia desde un lugar más profundo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-violet-500 hover:bg-violet-600 gap-2" asChild>
                 <a 
-                  href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita%20de%20terapia%20transpersonal" 
+                  href="https://wa.me/34617642564?text=Me%20gustaría%20pedir%20cita%20de%20terapia%20transpersonal" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                   </svg>
-                  Contacta ahora
+                  Pedir cita de terapia transpersonal
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="border-violet-200 text-violet-600 hover:bg-violet-50" asChild>
-                <Link to="/#contacto">Más información</Link>
+                <Link to="/#contacto">Contactar para resolver dudas</Link>
               </Button>
             </div>
           </div>
