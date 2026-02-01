@@ -188,7 +188,7 @@ const TerapiaPareja = () => {
               Nuestro Equipo
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Nerea, terapeuta transpersonal y de pareja en Neoka
+              Conoce a Nerea, Directora y creadora de Neoka. Coach, Terapeuta transpersonal y de pareja en Huelva
             </h2>
           </div>
 
