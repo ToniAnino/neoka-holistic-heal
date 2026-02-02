@@ -12,7 +12,7 @@ const benefitsData = [
   {
     icon: Shield,
     title: "Proteger",
-    description: "Es prioritario entender los posibles condicionantes que hacen que el problema perdure en el tiempo. La educación en salud es una de nuestras prioridades. Ayudar a conseguir estrategias prácticas y realistas es uno de los grandes retos.",
+    description: "Es prioritario entender los posibles condicionantes que hacen que el problema perdure en el tiempo. La educación en salud es una de nuestras prioridades. Ayudar a conseguir estrategias prácticas y realistas es uno de los grandes retos. La prevención y la educación en salud son claves para evitar recaídas.",
   },
   {
     icon: Wrench,
@@ -22,7 +22,7 @@ const benefitsData = [
   {
     icon: Dumbbell,
     title: "Fortalecer",
-    description: "Habiendo conseguido las dos primeras partes, toca afianzar el proceso fortaleciendo los eslabones débiles, recuperando un equilibrio y armonía para mantener un cuerpo robusto y resiliente.",
+    description: "Habiendo conseguido las dos primeras partes, toca afianzar el proceso fortaleciendo los eslabones débiles, recuperando un equilibrio y armonía para mantener un cuerpo robusto y resiliente. Buscamos no solo recuperar, sino mejorar el estado físico a largo plazo.",
   },
 ];
 
@@ -30,7 +30,7 @@ const pathologiesData = [
   {
     icon: Stethoscope,
     title: "Dolor muscular y articular",
-    description: "Contracturas, cervicalgias, dorsalgias, lumbalgias de tipo agudo y crónico. Tratamiento especializado para el alivio del dolor.",
+    description: "Contracturas, cervicalgias, dorsalgias, lumbalgias de tipo agudo y crónico. Tratamiento especializado para el alivio del dolor. Especialmente indicado para dolor crónico y recurrente.",
   },
   {
     icon: Activity,
@@ -73,7 +73,7 @@ const Fisioterapia = () => {
             Fisioterapia
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
-            Recupera tu movilidad y calidad de vida
+            Recupera tu movilidad y calidad de vida con fisioterapia en Huelva
           </p>
           <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 animate-fade-up animation-delay-200" asChild>
             <a 
@@ -95,20 +95,40 @@ const Fisioterapia = () => {
               <Activity className="w-8 h-8 text-emerald-500" />
             </div>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
-              ¿Qué es la fisioterapia?
+              ¿Qué es la fisioterapia y cómo puede ayudarte?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              La Fisioterapia es el conjunto de métodos, actuaciones y técnicas que, mediante la aplicación de <strong className="text-foreground">medios físicos</strong>, curan, previenen, recuperan y adaptan a personas afectadas de disfunciones somáticas o a las que se desea mantener en un nivel adecuado de salud.
+              La fisioterapia es una disciplina sanitaria orientada a prevenir, tratar y recuperar lesiones, mejorar la movilidad y aliviar el dolor mediante técnicas manuales y terapias físicas especializadas.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Mediante el conjunto de métodos, actuaciones y técnicas, a través de la aplicación tanto manual como instrumental de medios físicos, la fisioterapia procura una <strong className="text-foreground">amplia mejoría en la patología a tratar</strong>. También tiene un carácter preventivo y puede recomendarse a las personas que desean mantener un nivel adecuado de salud.
+              En Neoka trabajamos la fisioterapia desde un enfoque personalizado e integral, adaptando cada tratamiento a la persona, su historia y sus necesidades reales, ya sea para aliviar el dolor, recuperarse de una lesión o mejorar su calidad de vida.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Fisioterapia a domicilio Section */}
+      <section className="py-16 lg:py-24 bg-secondary/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
+              Fisioterapia a domicilio en Huelva centro
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              En Neoka ofrecemos servicio de fisioterapia a domicilio en la zona centro de Huelva, dirigido exclusivamente a personas con movilidad reducida, dificultad severa para desplazarse o limitación funcional derivada de su patología.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Este servicio está pensado para pacientes que, por su situación física o clínica, no pueden acudir al centro y necesitan una atención profesional adaptada a su entorno, garantizando siempre un tratamiento seguro, eficaz y personalizado.
+            </p>
+            <p className="text-foreground text-lg leading-relaxed font-semibold">
+              La disponibilidad del servicio a domicilio está sujeta a valoración profesional previa.
             </p>
           </div>
         </div>
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-16 lg:py-24 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-emerald-600 uppercase tracking-widest mb-4">
@@ -155,7 +175,7 @@ const Fisioterapia = () => {
               ¿Qué patologías tratamos?
             </h2>
             <p className="text-muted-foreground text-lg">
-              Abordamos una amplia variedad de patologías con tratamientos personalizados y basados en la evidencia científica.
+              Abordamos una amplia variedad de patologías musculoesqueléticas con tratamientos personalizados, basados en la evidencia científica y adaptados a cada paciente.
             </p>
           </div>
 
@@ -177,6 +197,58 @@ const Fisioterapia = () => {
                 </p>
               </article>
             ))}
+          </div>
+          {/* Note about domicilio */}
+          <div className="mt-12 text-center">
+            <p className="text-muted-foreground text-lg italic">
+              Todos los tratamientos se adaptan tanto en consulta como, cuando está indicado, en fisioterapia a domicilio en Huelva centro.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Técnicas y tecnología Section */}
+      <section className="py-16 lg:py-24 bg-secondary/30">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
+                Técnicas y tecnología aplicada en Fisioterapia en Neoka
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                En Neoka combinamos la terapia manual con técnicas avanzadas y tecnología especializada para optimizar la recuperación, aliviar el dolor y acelerar los procesos de rehabilitación, siempre adaptándonos a cada paciente y a su patología.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Utilizamos, entre otras, las siguientes técnicas:
+              </p>
+            </div>
+            
+            <ul className="space-y-4 text-muted-foreground text-lg max-w-2xl mx-auto">
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 font-bold">·</span>
+                <span><strong className="text-foreground">Infrarrojos</strong>, para aliviar el dolor y mejorar la circulación.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 font-bold">·</span>
+                <span><strong className="text-foreground">TENS</strong>, indicado para el control del dolor y la estimulación neuromuscular.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 font-bold">·</span>
+                <span><strong className="text-foreground">Punción seca</strong>, eficaz en el tratamiento del dolor miofascial.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 font-bold">·</span>
+                <span><strong className="text-foreground">Electropunción</strong>, combinando estimulación eléctrica y punción para potenciar resultados.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 font-bold">·</span>
+                <span><strong className="text-foreground">Vendaje neuromuscular y funcional</strong>, para soporte, corrección y prevención de lesiones.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-500 font-bold">·</span>
+                <span><strong className="text-foreground">Ultrasonido terapéutico</strong>, utilizado para favorecer la regeneración de tejidos y reducir inflamación.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -213,11 +285,11 @@ const Fisioterapia = () => {
                       Soy Estefanía
                     </h3>
                     <p className="text-emerald-600 font-medium mb-1">Fisioterapeuta</p>
-                    <p className="text-sm text-muted-foreground">Diplomada en 2000</p>
+                    <p className="text-sm text-muted-foreground">Diplomada en 2009</p>
                   </div>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">
-                    Con más de dos décadas de experiencia, Estefanía combina su amplio conocimiento técnico con un enfoque <strong className="text-foreground">humano y cercano</strong>. Su pasión por la fisioterapia y su compromiso con la recuperación de cada paciente la convierten en una profesional excepcional. Especializada en terapia manual y rehabilitación.
+                    Estefanía combina su amplio conocimiento técnico con un enfoque <strong className="text-foreground">humano y cercano</strong>. Su pasión por la fisioterapia y su compromiso con la recuperación de cada paciente la convierten en una profesional excepcional. Especializada en terapia manual y rehabilitación.
                   </p>
 
                   <Button 
