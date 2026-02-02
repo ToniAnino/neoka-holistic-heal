@@ -24,7 +24,7 @@ const director: TeamMember = {
   role: "Directora del centro Neoka",
   subtitle: "Terapeuta transpersonal y de pareja, Coach, Conferenciante y Escritora",
   image: nereaTerapeuta,
-  imagePosition: "object-top",
+  imagePosition: "object-top scale-100",
   description: `Aunque parezca raro, lo más difícil es definirse uno mismo. Esa ha sido mi lucha toda la vida, hacer que otros sepan quienes son para poder enfrentar la vida con todas las herramientas que conozcan y guardan en su interior. La clave de una vida plena es el autoconocimiento.
 
 Soy terapeuta transpersonal y psico-social, coach integral, conferenciante, escritora además de trabajadora social. Me he criado en una familia con creencias espirituales y científicas que me han calado en mi forma de pensar y actuar frente a la vida uniendo ambas cosas. Soy una apasionada de la mente y las emociones.
@@ -59,7 +59,7 @@ const teamMembers: TeamMember[] = [
     subtitle: "Colegiada: 838212329",
     colegiado: "838212329",
     image: paolaPodologa,
-    imagePosition: "object-[center_15%]",
+    imagePosition: "object-[center_5%]",
     description: "Con 10 años de experiencia y formación con diferentes Post grados. Apasionada de la podología, siempre está en constante evolución. Ofrece tratamientos de quiropodia, papilomas, verrugas, exploraciones biomecánicas y ortesis plantares a medida.",
   },
   {
