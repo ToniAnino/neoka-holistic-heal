@@ -1,3 +1,7 @@
+/**
+ * Home Page - Versión optimizada para SEO v1.1
+ * Incluye metadatos, estructura semántica y contenido optimizado para buscadores.
+ */
 import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
