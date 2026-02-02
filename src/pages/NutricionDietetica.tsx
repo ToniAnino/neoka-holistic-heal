@@ -12,17 +12,17 @@ const benefitsData = [
   {
     icon: Target,
     title: "Planes personalizados",
-    description: "Cada persona es única. Diseñamos planes nutricionales adaptados a tus objetivos, preferencias alimentarias, estilo de vida y condiciones de salud específicas.",
+    description: "Diseñamos planes nutricionales adaptados a tus objetivos, preferencias, estilo de vida y estado de salud.",
   },
   {
     icon: Heart,
-    title: "Basado en evidencia",
-    description: "Nuestras recomendaciones se fundamentan en la última evidencia científica. Nada de dietas milagro ni modas pasajeras, solo nutrición real y efectiva.",
+    title: "Basado en evidencia científica",
+    description: "Trabajamos desde la nutrición clínica actual, sin modas ni soluciones rápidas.",
   },
   {
     icon: Activity,
     title: "Seguimiento continuo",
-    description: "Te acompañamos en todo el proceso con revisiones periódicas, ajustes del plan según tu progreso y apoyo constante para alcanzar tus metas.",
+    description: "Revisiones periódicas, ajustes del plan y acompañamiento durante todo el proceso.",
   },
 ];
 
@@ -30,32 +30,32 @@ const servicesData = [
   {
     icon: Scale,
     title: "Control de peso",
-    description: "Pérdida de peso saludable y sostenible, ganancia de masa muscular o mantenimiento. Sin dietas restrictivas ni efecto rebote.",
+    description: "Pérdida o ganancia de peso de forma saludable y sostenible. Sin dietas restrictivas ni efecto rebote.",
   },
   {
     icon: Salad,
     title: "Patologías digestivas",
-    description: "Tratamiento nutricional para intolerancias alimentarias, síndrome de intestino irritable, enfermedad celíaca y otras patologías digestivas.",
+    description: "Abordaje nutricional de intolerancias alimentarias, síndrome del intestino irritable, enfermedad celíaca y SIBO, entre otras alteraciones digestivas.",
   },
   {
     icon: Heart,
     title: "Enfermedades crónicas",
-    description: "Nutrición especializada para diabetes, hipertensión, colesterol elevado, enfermedades cardiovasculares y otras patologías crónicas.",
+    description: "Nutrición adaptada a diabetes, hipertensión, colesterol elevado, patologías cardiovasculares u otras patologías crónicas.",
   },
   {
     icon: Dumbbell,
     title: "Rendimiento deportivo",
-    description: "Optimiza tu alimentación para mejorar el rendimiento, acelerar la recuperación y alcanzar tus objetivos deportivos.",
+    description: "Optimización de la alimentación para mejorar el rendimiento, la recuperación y la composición corporal.",
   },
   {
     icon: Apple,
     title: "Educación alimentaria",
-    description: "Aprende a comer bien de forma autónoma. Te enseñamos a interpretar etiquetas, planificar menús y hacer elecciones saludables.",
+    description: "Aprende a comer de forma autónoma: lectura de etiquetas, planificación de menús y toma de decisiones conscientes.",
   },
   {
     icon: Target,
     title: "Nutrición oncológica",
-    description: "Apoyo nutricional especializado durante y después del tratamiento oncológico, basado en la experiencia en la AECC.",
+    description: "Apoyo nutricional especializado durante y después del tratamiento oncológico, basado en la experiencia clínica y protocolos específicos.",
   },
 ];
 
@@ -85,18 +85,18 @@ const NutricionDietetica = () => {
             <span className="text-sm font-medium">Volver a servicios</span>
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
-            Nutrición y Dietética
+            Nutrición y dietética en Huelva
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
             Tu alimentación, tu salud, tu bienestar
           </p>
           <Button size="lg" className="bg-lime-600 hover:bg-lime-700 animate-fade-up animation-delay-200" asChild>
             <a 
-              href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita%20de%20nutrición" 
+              href="https://wa.me/34617642564?text=Me%20gustaría%20reservar%20una%20cita%20de%20nutrición" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Pedir cita
+              Reservar cita en nutrición
             </a>
           </Button>
         </div>
@@ -113,57 +113,20 @@ const NutricionDietetica = () => {
               Alimentación consciente para una vida plena
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              La nutrición es mucho más que contar calorías. Es entender cómo los alimentos afectan a nuestro cuerpo, nuestra energía, nuestro estado de ánimo y nuestra <strong className="text-foreground">calidad de vida</strong>.
+              La nutrición es mucho más que contar calorías. Es comprender cómo lo que comes influye en tu cuerpo, tu energía, tu estado de ánimo y tu calidad de vida.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Ofrecemos <strong className="text-foreground">asesoramiento personalizado y planes nutricionales basados en evidencia científica</strong>. Tratamiento de patologías, educación alimentaria y mejora del rendimiento físico y la salud.
+              En Neoka ofrecemos un <strong className="text-foreground">enfoque cercano y personalizado de la nutrición</strong>, basado en la evidencia científica pero adaptado a tu realidad, tus hábitos y tus necesidades. Sin dietas milagro, sin prohibiciones innecesarias y sin culpa.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Nuestro objetivo es que aprendas a alimentarte de forma saludable, sostenible y placentera. Sin prohibiciones, sin culpa, con conocimiento y autonomía.
+              Nuestro objetivo es ayudarte a mejorar tu salud y tu relación con la comida de forma sostenible, realista y respetuosa contigo.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Approach Section */}
+      {/* Services Section - Now first */}
       <section className="py-16 lg:py-24 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
-              Nuestro enfoque
-            </span>
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
-              ¿Cómo trabajamos?
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Un enfoque integral y personalizado para ayudarte a alcanzar tus objetivos nutricionales.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {benefitsData.map((benefit, index) => (
-              <article
-                key={benefit.title}
-                className="group bg-card rounded-2xl p-8 card-shadow hover:card-shadow-hover transition-all duration-300 border border-border/50 hover:border-lime-500/20"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-14 h-14 rounded-xl bg-lime-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon className="w-7 h-7 text-lime-600" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                  {benefit.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {benefit.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
@@ -173,7 +136,7 @@ const NutricionDietetica = () => {
               ¿Cómo podemos ayudarte?
             </h2>
             <p className="text-muted-foreground text-lg">
-              Soluciones nutricionales para cada etapa de la vida y cada objetivo de salud.
+              Ofrecemos acompañamiento nutricional en distintas etapas y situaciones de la vida, siempre con un enfoque individualizado.
             </p>
           </div>
 
@@ -199,6 +162,43 @@ const NutricionDietetica = () => {
         </div>
       </section>
 
+      {/* Our Approach Section - Now second */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
+              Nuestro enfoque
+            </span>
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
+              ¿Cómo trabajamos?
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Nuestro enfoque se basa en el acompañamiento cercano, la personalización y el respeto por tus tiempos y objetivos.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+            {benefitsData.map((benefit, index) => (
+              <article
+                key={benefit.title}
+                className="group bg-card rounded-2xl p-8 card-shadow hover:card-shadow-hover transition-all duration-300 border border-border/50 hover:border-lime-500/20"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="w-14 h-14 rounded-xl bg-lime-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <benefit.icon className="w-7 h-7 text-lime-600" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+                  {benefit.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {benefit.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Mario Profile Section */}
       <section className="py-16 lg:py-24 bg-secondary/30">
         <div className="container">
@@ -207,7 +207,7 @@ const NutricionDietetica = () => {
               Nuestro Equipo
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Mario, Dietista-Nutricionista en Neoka
+              Conoce a Mario, Nutricionista y dietista en Neoka
             </h2>
           </div>
 
@@ -234,8 +234,11 @@ const NutricionDietetica = () => {
                     <p className="text-sm text-muted-foreground">Colegiado: AND-01673</p>
                   </div>
                   
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Mario es dietista-nutricionista colegiado, con formación y experiencia en <strong className="text-foreground">nutrición clínica y oncológica</strong> (AECC), así como en optimización del <strong className="text-foreground">rendimiento deportivo</strong>.
+                  </p>
                   <p className="text-muted-foreground leading-relaxed mb-8">
-                    Mario combina su formación especializada con experiencia en <strong className="text-foreground">nutrición clínica y oncológica</strong> (AECC) y en optimización del <strong className="text-foreground">rendimiento deportivo</strong>. Su enfoque se basa en la evidencia científica, pero siempre adaptado a las necesidades y preferencias de cada persona. Cree firmemente que comer bien debe ser un placer, no una obligación.
+                    Su enfoque combina rigor científico con cercanía y empatía, adaptando cada plan a las necesidades y preferencias reales de la persona. Cree firmemente que comer bien debe ser un placer y una herramienta de salud, no una obligación ni una fuente de estrés.
                   </p>
 
                   <Button 
@@ -258,28 +261,23 @@ const NutricionDietetica = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">
-              ¿Listo para mejorar tu alimentación?
+              Empieza a cuidar tu alimentación de forma consciente
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Contacta con nosotros y da el primer paso hacia una nutrición saludable y consciente.
+              Si quieres mejorar tu salud, tu energía y tu relación con la comida, estamos aquí para ayudarte.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-lime-600 hover:bg-lime-700 gap-2" asChild>
-                <a 
-                  href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita%20de%20nutrición" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                  </svg>
-                  Contacta ahora
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link to="/#contacto">Más información</Link>
-              </Button>
-            </div>
+            <Button size="lg" className="bg-lime-600 hover:bg-lime-700 gap-2" asChild>
+              <a 
+                href="https://wa.me/34617642564?text=Me%20gustaría%20reservar%20una%20cita%20de%20nutrición" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Reservar cita en nutrición
+              </a>
+            </Button>
           </div>
         </div>
       </section>
