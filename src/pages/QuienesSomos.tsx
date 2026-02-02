@@ -17,7 +17,7 @@ interface TeamMember {
 const director: TeamMember = {
   name: "Nerea",
   role: "Directora del centro Neoka",
-  subtitle: "Terapeuta transpersonal, Coach, Conferenciante y Escritora",
+  subtitle: "Terapeuta transpersonal y de pareja, Coach, Conferenciante y Escritora",
   image: "https://static.wixstatic.com/media/281c03_280aa5ac46294e9992e386d5821cb9dc~mv2.jpeg/v1/crop/x_0,y_75,w_777,h_777/fill/w_289,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/WhatsApp%20Image%202020-03-16%20at%2021_28_02_jp.jpeg",
   description: `Aunque parezca raro, lo más difícil es definirse uno mismo. Esa ha sido mi lucha toda la vida, hacer que otros sepan quienes son para poder enfrentar la vida con todas las herramientas que conozcan y guardan en su interior. La clave de una vida plena es el autoconocimiento.
 
@@ -66,7 +66,7 @@ const teamMembers: TeamMember[] = [
 const curiosities = [
   {
     question: "¿Qué me mueve?",
-    answer: "Ayudar a las personas a alcanzar su máximo potencial y bienestar integral.",
+    answer: "Ayudar a las personas a alcanzar su máximo potencial y bienestar integral, comprendiendo sus procesos emocionales y vitales.",
   },
   {
     question: "¿Quién me inspira?",
@@ -88,14 +88,16 @@ const QuienesSomos = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
-              Conócenos
+              Quiénes somos
             </span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              Nuestro Equipo
+              Neoka: Las personas y el espacio que te acompañan.
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Un equipo multidisciplinar comprometido con tu bienestar integral. 
-              Profesionales cualificados que trabajan juntos para ofrecerte la mejor atención.
+              Neoka nace como un espacio de salud integral donde cuerpo, mente y emociones se trabajan de forma coordinada.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+              Aquí entendemos la salud como un proceso global, no como compartimentos estancos. Por eso reunimos bajo un mismo techo a profesionales de diferentes disciplinas que comparten una misma forma de acompañar: cercana, consciente y personalizada.
             </p>
           </div>
         </div>
@@ -160,8 +162,7 @@ const QuienesSomos = () => {
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl md:text-4xl text-primary mb-4">Equipo Colaborador</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Contamos con diferentes profesionales colaboradores creando así un servicio 
-                multidisciplinar para llegar a todas las personas.
+                Contamos con diferentes profesionales colaboradores en Huelva, creando un servicio multidisciplinar para llegar a todas las personas.
               </p>
             </div>
 
@@ -198,15 +199,31 @@ const QuienesSomos = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Nuestra consulta, tu casa
+              Nuestra clínica en Huelva, tu espacio de confianza
+            </h2>
+            <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+              Neoka es más que una clínica. Es un espacio pensado para que cualquier persona se sienta cómoda, escuchada y acompañada desde el primer momento.
+            </p>
+            <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+              Cada rincón de la clínica está diseñado para transmitir calma, cercanía y confianza, creando un entorno seguro donde poder trabajar el bienestar físico y emocional con profesionales de diferentes disciplinas.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Creemos que el espacio también forma parte del proceso. Por eso cuidamos cada detalle para que, desde que entras, puedas bajar el ritmo y centrarte en ti.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-20 lg:py-28 bg-secondary/30">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
+              Neoka es un espacio creado para ti
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Un espacio diseñado para tu tranquilidad y bienestar. En Neoka creemos que 
-              la salud es un concepto integral que abarca cuerpo, mente y emociones. 
-              Por eso, reunimos bajo un mismo techo a profesionales de diferentes disciplinas 
-              que trabajan de forma coordinada para ofrecerte la mejor atención.
+              Si buscas un lugar donde sentirte acompañado y trabajar tu bienestar desde una mirada integral, estás en el sitio adecuado.
             </p>
-            
             <a 
               href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
               target="_blank"
