@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -76,6 +77,10 @@ const curiosities = [
 const QuienesSomos = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contacto Clínica Neoka | Psicología y Salud Integral en Huelva</title>
+        <meta name="description" content="Contacta con la clínica Neoka en Huelva y reserva tu cita en psicología, terapia de pareja o salud integral. Estamos aquí para ayudarte." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Footprints, Bone, Activity, Stethoscope, Shield, HeartPulse, Eye, User, Calendar, Sparkles, Bug } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -64,6 +65,10 @@ const Podologia = () => {
 
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Podología en Huelva | Cuidado Integral del Pie – Neoka</title>
+        <meta name="description" content="Podología en Huelva para tratamiento del pie, estudio biomecánico y plantillas personalizadas. Atención profesional y cercana en Neoka." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

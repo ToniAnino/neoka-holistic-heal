@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Brain, Shield, Users, Heart, Sparkles, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -46,6 +47,10 @@ const PsicologiaSanitaria = () => {
 
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Psicología en Huelva | Ansiedad, Fobias y Trastornos Emocionales – Neoka</title>
+        <meta name="description" content="Psicología en Huelva para ansiedad, miedos, fobias, trastornos emocionales y procesos vitales. Atención profesional en psicología general sanitaria en Neoka." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

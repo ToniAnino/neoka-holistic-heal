@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Heart, MessageCircle, Users, Shield, Sparkles, HandHeart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -43,6 +43,10 @@ const benefitsData = [
 const TerapiaPareja = () => {
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Terapia de Pareja en Huelva | Especialistas en Relaciones – Neoka</title>
+        <meta name="description" content="Terapia de pareja en Huelva para crisis, infidelidades, celos, comunicación y rutina. Acompañamiento profesional para recuperar el vínculo." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
