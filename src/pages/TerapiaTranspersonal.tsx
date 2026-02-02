@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -13,6 +14,10 @@ const TerapiaTranspersonal = () => {
 
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Terapia Transpersonal en Huelva | Crecimiento Personal – Neoka</title>
+        <meta name="description" content="Terapia transpersonal en Huelva orientada al crecimiento personal, los patrones vitales y el sentido de vida. Un enfoque profundo y consciente." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

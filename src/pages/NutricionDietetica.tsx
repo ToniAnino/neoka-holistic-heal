@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Apple, Heart, Activity, Target, Salad, Scale, Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -64,6 +65,10 @@ const NutricionDietetica = () => {
 
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Nutrición y Dietética en Huelva | Dietista-Nutricionista Neoka</title>
+        <meta name="description" content="Nutrición y dietética en Huelva. Control de peso, digestivo, SIBO, nutrición oncológica y deportiva con planes personalizados." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

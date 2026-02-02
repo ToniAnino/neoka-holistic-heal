@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Activity, Shield, Wrench, Dumbbell, Stethoscope, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
@@ -49,6 +50,10 @@ const Fisioterapia = () => {
 
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Fisioterapia en Huelva | Clínica de Fisioterapia Neoka</title>
+        <meta name="description" content="Fisioterapia en Huelva para dolor muscular, lesiones y rehabilitación. Tratamientos personalizados y fisioterapia a domicilio en casos necesarios." />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
