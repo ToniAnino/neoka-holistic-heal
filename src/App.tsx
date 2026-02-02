@@ -1,6 +1,5 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
-//import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
@@ -14,12 +13,14 @@ import Fisioterapia from "./pages/Fisioterapia";
 import Podologia from "./pages/Podologia";
 import NutricionDietetica from "./pages/NutricionDietetica";
 import QuienesSomos from "./pages/QuienesSomos";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
-    {/*<TooltipProvider>*/}
       <Toaster />
       <Sonner />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
@@ -33,11 +34,12 @@ const App = () => (
           <Route path="/fisioterapia" element={<Fisioterapia />} />
           <Route path="/podologia" element={<Podologia />} />
           <Route path="/nutricion-dietetica" element={<NutricionDietetica />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    {/*</TooltipProvider>*/}
     </HelmetProvider>
   </QueryClientProvider>
 );
