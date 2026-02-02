@@ -7,7 +7,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import mariaPsicologa from "@/assets/maria-psicologa-new.jpg";
 import estefaniaFisioterapeuta from "@/assets/estefania-fisioterapeuta-new.jpg";
-import paolaPodologa from "@/assets/paola-podologa-new.jpg";
+import paolaPodologa from "@/assets/paola-podologa-recortada.png";
 import marioNutricionista from "@/assets/mario-nutricionista-new.jpg";
 import nereaTerapeuta from "@/assets/nerea-terapeuta-new.jpg";
 
@@ -61,8 +61,8 @@ const teamMembers: TeamMember[] = [
     subtitle: "Colegiada: 838212329",
     colegiado: "838212329",
     image: paolaPodologa,
-    // Recorta más la parte superior para que el rostro quede más arriba en el marco circular
-    imagePosition: "object-[center_-18%]",
+    // Foto ya recortada: evitamos ajustes extra
+    imagePosition: "object-center scale-100",
     description: "Con 10 años de experiencia y formación con diferentes Post grados. Apasionada de la podología, siempre está en constante evolución. Ofrece tratamientos de quiropodia, papilomas, verrugas, exploraciones biomecánicas y ortesis plantares a medida.",
   },
   {
