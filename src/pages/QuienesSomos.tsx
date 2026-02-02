@@ -59,7 +59,7 @@ const teamMembers: TeamMember[] = [
     subtitle: "Colegiada: 838212329",
     colegiado: "838212329",
     image: paolaPodologa,
-    imagePosition: "object-[center_5%]",
+    imagePosition: "object-top",
     description: "Con 10 años de experiencia y formación con diferentes Post grados. Apasionada de la podología, siempre está en constante evolución. Ofrece tratamientos de quiropodia, papilomas, verrugas, exploraciones biomecánicas y ortesis plantares a medida.",
   },
   {
