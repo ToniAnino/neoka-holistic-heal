@@ -67,7 +67,7 @@ export const HeroSection = () => {
 
           {/* Second paragraph */}
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up animation-delay-250">
-            Además de psicología y terapia de pareja, el centro ofrece servicios de nutrición, fisioterapia y podología.
+            Además de psicología y terapia de pareja, el centro ofrece <span className="text-foreground font-medium">servicios de nutrición, fisioterapia y podología</span>.
           </p>
 
           {/* CTA Buttons */}
