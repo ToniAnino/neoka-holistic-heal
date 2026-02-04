@@ -66,8 +66,7 @@ export const ServicesSection = () => {
             Servicios de psicología, terapia y salud integral
           </h2>
           <p className="text-muted-foreground text-lg">
-            Un equipo multidisciplinar de profesionales cualificados para cuidar 
-            cada aspecto de tu salud física y emocional.
+            Un equipo multidisciplinar de profesionales cualificados para cuidar cada aspecto de tu salud física y emocional.
           </p>
         </div>
 

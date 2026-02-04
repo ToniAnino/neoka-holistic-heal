@@ -49,34 +49,59 @@ export const HeroSection = () => {
           </div>
 
           {/* Main Heading - H1 with SEO keyword */}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-foreground leading-tight mb-6 animate-fade-up animation-delay-100">
-            Tu Centro de{" "}
-            <span className="text-gradient">Psicología en Huelva</span>
-            <br />
-            y Salud Integral
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-foreground leading-tight mb-4 animate-fade-up animation-delay-100">
+            Clínica de{" "}
+            <span className="text-gradient">psicología y terapia de pareja</span>
+            {" "}en Huelva
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up animation-delay-200">
-            Cuidamos tu bienestar <strong className="text-foreground">mental, emocional y físico</strong>. 
-            Un equipo de profesionales comprometidos con tu salud en un espacio diseñado para tu tranquilidad.
+          {/* H2 Subtitle */}
+          <h2 className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground/90 font-medium mb-6 animate-fade-up animation-delay-150">
+            Cuidamos tu bienestar mental y emocional en cada etapa de tu vida
+          </h2>
+
+          {/* First paragraph */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed animate-fade-up animation-delay-200">
+            Contamos con un equipo de profesionales comprometidos y especializados en psicología y terapia de pareja, en un espacio pensado para tu cuidado integral.
+          </p>
+
+          {/* Second paragraph */}
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up animation-delay-250">
+            Además de psicología y terapia de pareja, el centro ofrece servicios de nutrición, fisioterapia y podología.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-300">
             <a 
-              href="https://wa.me/34617642564?text=Me%20gustaría%20concertar%20una%20cita"
+              href="https://wa.me/34617642564?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20una%20cita%20de%20terapia%20de%20pareja"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button variant="hero" size="xl">
-                Reservar Primera Consulta
+                Cita para terapia de pareja
                 <ArrowRight className="w-5 h-5 ml-1" />
               </Button>
             </a>
-            <Button variant="outline" size="xl">
-              Conoce Nuestros Servicios
-            </Button>
+            <a 
+              href="https://wa.me/34617642564?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20una%20cita%20de%20psicolog%C3%ADa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="xl">
+                Cita para psicología
+              </Button>
+            </a>
+          </div>
+
+          {/* Link to other services */}
+          <div className="mt-6 animate-fade-up animation-delay-350">
+            <a 
+              href="#servicios" 
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+            >
+              Otros servicios del centro
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
 
           {/* Trust indicators */}
