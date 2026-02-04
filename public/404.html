@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirigiendo... | Neoka</title>
+    <script>
+      // SPA redirect script for static hosting
+      // Preserves the path and query string for client-side routing
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      
+      // Redirect to the root with the original path encoded in the URL
+      // The main app will handle the routing
+      sessionStorage.setItem('spa-redirect', path + search + hash);
+      window.location.replace('/');
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/" />
+    </noscript>
+    <p>Redirigiendo...</p>
+  </body>
+</html>
