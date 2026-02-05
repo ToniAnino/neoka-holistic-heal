@@ -99,7 +99,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-serif text-lg font-semibold mb-6">Servicios</h3>
             <ul className="space-y-3">
-              {["Psicología Sanitaria", "Terapia de Pareja", "Terapia Transpersonal", "Fisioterapia", "Podología"].map((service) => (
+              {["Terapia de Pareja", "Psicología Sanitaria", "Terapia emocional / transpersonal", "Fisioterapia", "Nutrición y Dietética", "Podología"].map((service) => (
                 <li key={service}>
                   <a href="#servicios" className="text-background/70 hover:text-primary transition-colors">
                     {service}
