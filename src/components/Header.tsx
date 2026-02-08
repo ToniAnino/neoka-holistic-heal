@@ -71,14 +71,14 @@ export const Header = () => {
             onMouseLeave={() => setIsServicesOpen(false)}
           >
             <button
-              className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              className="flex items-center gap-1 px-4 py-2 pb-4 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             >
               Servicios
               <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
             </button>
             
             {isServicesOpen && (
-              <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-xl shadow-lg py-2 z-50 animate-fade-in">
+              <div className="absolute top-full left-0 w-64 bg-card border border-border rounded-xl shadow-lg py-2 z-50 animate-fade-in">
                 {services.map((service) => (
                   <Link
                     key={service.href}
