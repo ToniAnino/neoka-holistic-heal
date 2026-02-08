@@ -144,7 +144,7 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-card/98 backdrop-blur-lg shadow-lg border-t border-border animate-fade-in">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-card backdrop-blur-lg shadow-lg border-t border-border animate-fade-in">
           <nav className="container py-6 flex flex-col gap-2">
             <a
               href="/#inicio"
