@@ -48,11 +48,40 @@ const pathologiesData = [
 const Fisioterapia = () => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
 
+  // Datos estructurados para SEO (Schema.org)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Physiotherapy",
+    "name": "Fisioterapia en Huelva | Clínica Neoka",
+    "description": "Servicios profesionales de fisioterapia en Huelva. Especialistas en lesiones deportivas, dolor de espalda y rehabilitación. Fisioterapia a domicilio disponible.",
+    "provider": {
+      "@type": "MedicalOrganization",
+      "name": "Neoka",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Huelva",
+        "addressCountry": "ES"
+      }
+    },
+    "areaServed": "Huelva",
+    "availableService": [
+      "Rehabilitación post-quirúrgica",
+      "Tratamiento de lesiones deportivas",
+      "Fisioterapia para dolor crónico",
+      "Fisioterapia a domicilio"
+    ]
+  };
+
   return (
     <main className="min-h-screen">
       <Helmet>
         <title>Fisioterapia en Huelva | Clínica de Fisioterapia Neoka</title>
-        <meta name="description" content="Fisioterapia en Huelva para dolor muscular, lesiones y rehabilitación. Tratamientos personalizados y fisioterapia a domicilio en casos necesarios." />
+        <meta name="description" content="¿Buscas fisioterapeuta en Huelva? Especialistas en dolor muscular, lesiones deportivas y rehabilitación. Ofrecemos fisioterapia a domicilio en Huelva centro." />
+        <meta name="keywords" content="fisioterapia huelva, fisioterapeuta huelva, fisioterapia a domicilio huelva, rehabilitación huelva, tratamiento dolor espalda huelva" />
+        <link rel="canonical" href="https://centroneoka.es/fisioterapia" />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
       </Helmet>
       <Header />
       
@@ -61,7 +90,7 @@ const Fisioterapia = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Fisioterapia - Neoka"
+            alt="Fisioterapeuta realizando tratamiento en Clínica Neoka Huelva"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
@@ -75,10 +104,10 @@ const Fisioterapia = () => {
             <span className="text-sm font-medium">Volver a servicios</span>
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
-            Fisioterapia
+            Fisioterapia en Huelva
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
-            Recupera tu movilidad y calidad de vida con fisioterapia en Huelva
+            Recupera tu movilidad y calidad de vida con un enfoque integral y profesional
           </p>
           <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 animate-fade-up animation-delay-200" asChild>
             <a 
@@ -86,7 +115,7 @@ const Fisioterapia = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Pedir cita
+              Pedir cita ahora
             </a>
           </Button>
         </div>
@@ -106,7 +135,7 @@ const Fisioterapia = () => {
               La fisioterapia es una disciplina sanitaria orientada a prevenir, tratar y recuperar lesiones, mejorar la movilidad y aliviar el dolor mediante técnicas manuales y terapias físicas especializadas.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              En Neoka trabajamos la fisioterapia desde un enfoque personalizado e integral, adaptando cada tratamiento a la persona, su historia y sus necesidades reales, ya sea para aliviar el dolor, recuperarse de una lesión o mejorar su calidad de vida.
+              En Neoka trabajamos la <strong>fisioterapia en Huelva</strong> desde un enfoque personalizado e integral, adaptando cada tratamiento a la persona, su historia y sus necesidades reales, ya sea para aliviar el dolor, recuperarse de una lesión o mejorar su calidad de vida.
             </p>
           </div>
         </div>
@@ -120,7 +149,7 @@ const Fisioterapia = () => {
               Fisioterapia a domicilio en Huelva centro
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              En Neoka ofrecemos servicio de fisioterapia a domicilio en la zona centro de Huelva, dirigido exclusivamente a personas con movilidad reducida, dificultad severa para desplazarse o limitación funcional derivada de su patología.
+              En Neoka ofrecemos servicio de <strong>fisioterapia a domicilio en la zona centro de Huelva</strong>, dirigido exclusivamente a personas con movilidad reducida, dificultad severa para desplazarse o limitación funcional derivada de su patología.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Este servicio está pensado para pacientes que, por su situación física o clínica, no pueden acudir al centro y necesitan una atención profesional adaptada a su entorno, garantizando siempre un tratamiento seguro, eficaz y personalizado.
@@ -180,7 +209,7 @@ const Fisioterapia = () => {
               ¿Qué patologías tratamos?
             </h2>
             <p className="text-muted-foreground text-lg">
-              Abordamos una amplia variedad de patologías musculoesqueléticas con tratamientos personalizados, basados en la evidencia científica y adaptados a cada paciente.
+              Abordamos una amplia variedad de patologías musculoesqueléticas con tratamientos personalizados en nuestra <strong>clínica de fisioterapia en Huelva</strong>.
             </p>
           </div>
 
@@ -221,14 +250,14 @@ const Fisioterapia = () => {
                 Técnicas y tecnología aplicada en Fisioterapia en Neoka
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                En Neoka combinamos la terapia manual con técnicas avanzadas y tecnología especializada para optimizar la recuperación, aliviar el dolor y acelerar los procesos de rehabilitación, siempre adaptándonos a cada paciente y a su patología.
+                En Neoka combinamos la terapia manual con técnicas avanzadas y tecnología especializada para optimizar la recuperación, aliviar el dolor y acelerar los procesos de rehabilitación.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Utilizamos, entre otras, las siguientes técnicas:
               </p>
             </div>
             
-            <ul className="space-y-4 text-muted-foreground text-lg max-w-2xl mx-auto">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-muted-foreground text-lg max-w-3xl mx-auto">
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 font-bold">·</span>
                 <span><strong className="text-foreground">Infrarrojos</strong>, para aliviar el dolor y mejorar la circulación.</span>
@@ -243,15 +272,15 @@ const Fisioterapia = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 font-bold">·</span>
-                <span><strong className="text-foreground">Electropunción</strong>, combinando estimulación eléctrica y punción para potenciar resultados.</span>
+                <span><strong className="text-foreground">Electropunción</strong>, combinando estimulación eléctrica y punción.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 font-bold">·</span>
-                <span><strong className="text-foreground">Vendaje neuromuscular y funcional</strong>, para soporte, corrección y prevención de lesiones.</span>
+                <span><strong className="text-foreground">Vendaje neuromuscular</strong>, para soporte y corrección.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-500 font-bold">·</span>
-                <span><strong className="text-foreground">Ultrasonido terapéutico</strong>, utilizado para favorecer la regeneración de tejidos y reducir inflamación.</span>
+                <span><strong className="text-foreground">Ultrasonido terapéutico</strong>, para regeneración de tejidos.</span>
               </li>
             </ul>
           </div>
@@ -266,7 +295,7 @@ const Fisioterapia = () => {
               Nuestro Equipo
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Estefanía, Fisioterapeuta en Neoka
+              Conoce a Estefanía, Fisioterapeuta en Huelva
             </h2>
           </div>
 
@@ -277,7 +306,7 @@ const Fisioterapia = () => {
                 <div className="relative aspect-square md:aspect-auto">
                   <img
                     src={estefaniaImage}
-                    alt="Estefanía Molina - Fisioterapeuta"
+                    alt="Estefanía Molina - Fisioterapeuta Colegiada en Neoka Huelva"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent md:bg-gradient-to-r" />
@@ -289,12 +318,12 @@ const Fisioterapia = () => {
                     <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground mb-2">
                       Soy Estefanía
                     </h3>
-                    <p className="text-emerald-600 font-medium mb-1">Fisioterapeuta</p>
+                    <p className="text-emerald-600 font-medium mb-1">Fisioterapeuta Colegiada</p>
                     <p className="text-sm text-muted-foreground">Diplomada en 2009</p>
                   </div>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">
-                    Estefanía combina su amplio conocimiento técnico con un enfoque <strong className="text-foreground">humano y cercano</strong>. Su pasión por la fisioterapia y su compromiso con la recuperación de cada paciente la convierten en una profesional excepcional. Especializada en terapia manual y rehabilitación.
+                    Estefanía combina su amplio conocimiento técnico con un enfoque <strong className="text-foreground">humano y cercano</strong>. Su pasión por la fisioterapia y su compromiso con la recuperación de cada paciente la convierten en una profesional excepcional. Especializada en terapia manual y rehabilitación funcional.
                   </p>
 
                   <Button 
@@ -303,7 +332,7 @@ const Fisioterapia = () => {
                     onClick={() => setIsTeamModalOpen(true)}
                     className="w-fit bg-emerald-600 hover:bg-emerald-700"
                   >
-                    Conoce al equipo
+                    Ver formación completa
                   </Button>
                 </div>
               </div>
@@ -320,7 +349,7 @@ const Fisioterapia = () => {
               ¿Listo para recuperar tu bienestar?
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Contacta con nosotros y comienza tu proceso de rehabilitación y recuperación.
+              Pide tu cita con nuestro servicio de fisioterapia en Huelva y comienza hoy tu recuperación.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 gap-2" asChild>
@@ -332,11 +361,11 @@ const Fisioterapia = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                   </svg>
-                  Contacta ahora
+                  Contactar por WhatsApp
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link to="/#contacto">Más información</Link>
+                <Link to="/#contacto">Ver ubicación clínica</Link>
               </Button>
             </div>
           </div>
