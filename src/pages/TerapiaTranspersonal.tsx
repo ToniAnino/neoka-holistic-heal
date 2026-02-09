@@ -170,25 +170,25 @@ const TerapiaTranspersonal = () => {
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Hay momentos en los que una persona siente que:
               </p>
-              <ul className="space-y-3 text-muted-foreground text-lg">
-                <li className="flex items-start gap-3">
-                  <span className="text-violet-500 mt-1">•</span>
+              <ul className="grid md:grid-cols-2 gap-4 text-muted-foreground text-lg">
+                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+                  <span className="text-violet-500 font-bold">✓</span>
                   <span>Siempre acaba en relaciones similares</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-violet-500 mt-1">•</span>
+                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+                  <span className="text-violet-500 font-bold">✓</span>
                   <span>Repite conflictos emocionales una y otra vez</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-violet-500 mt-1">•</span>
+                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+                  <span className="text-violet-500 font-bold">✓</span
                   <span>Vive una desconexión profunda consigo misma</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-violet-500 mt-1">•</span>
+                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+                  <span className="text-violet-500 font-bold">✓</span
                   <span>Siente que "algo falta", aunque aparentemente todo esté bien</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-violet-500 mt-1">•</span>
+                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+                  <span className="text-violet-500 font-bold">✓</span>
                   <span>No encuentra respuestas en los enfoques tradicionales</span>
                 </li>
               </ul>
