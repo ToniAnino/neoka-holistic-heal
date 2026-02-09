@@ -89,8 +89,9 @@ const QuienesSomos = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Contacto Clínica Neoka | Psicología y Salud Integral en Huelva</title>
-        <meta name="description" content="Contacta con la clínica Neoka en Huelva y reserva tu cita en psicología, terapia de pareja o salud integral. Estamos aquí para ayudarte." />
+        <title>Quiénes Somos | Clínica de Psicología y Terapia de Pareja en Huelva | Neoka</title>
+        <meta name="description" content="Conoce al equipo de Neoka, clínica de psicología y terapia de pareja en Huelva. Profesionales en salud mental, fisioterapia, podología y nutrición." />
+        <link rel="canonical" href="https://centroneoka.es/quienes-somos" />
       </Helmet>
       <Header />
       
@@ -102,7 +103,7 @@ const QuienesSomos = () => {
               Quiénes somos
             </span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              Neoka: Las personas y el espacio que te acompañan.
+              Clínica de psicología y terapia de pareja en Huelva
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Neoka nace como un espacio de salud integral donde cuerpo, mente y emociones se trabajan de forma coordinada.
