@@ -149,59 +149,62 @@ const PsicologiaSanitaria = () => {
         </div>
       </section>
 
-      {/* María Profile Section */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
-              Nuestro Equipo
-            </span>
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a María, Psicóloga General Sanitaria en Neoka
-            </h2>
+{/* María Profile Section */}
+<section className="py-16 lg:py-24 bg-background" itemScope itemType="https://schema.org/Physician">
+  <div className="container">
+    <div className="text-center max-w-2xl mx-auto mb-12">
+      <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
+        Nuestro Equipo
+      </span>
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
+        Conoce a María, Psicóloga General Sanitaria en Huelva
+      </h2>
+    </div>
+
+    <div className="max-w-4xl mx-auto">
+      <div className="bg-card rounded-2xl card-shadow border border-border/50 overflow-hidden">
+        <div className="grid md:grid-cols-[300px_1fr] gap-0">
+          {/* Image */}
+          <div className="relative aspect-square md:aspect-auto">
+            <img
+              src={mariaImage}
+              alt="María D. - Psicóloga General Sanitaria en Centro Neoka Huelva"
+              className="w-full h-full object-cover"
+              itemProp="image"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent md:bg-gradient-to-r" />
           </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-2xl card-shadow border border-border/50 overflow-hidden">
-              <div className="grid md:grid-cols-[300px_1fr] gap-0">
-                {/* Image */}
-                <div className="relative aspect-square md:aspect-auto">
-                  <img
-                    src={mariaImage}
-                    alt="María D. - Psicóloga General Sanitaria"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent md:bg-gradient-to-r" />
-                </div>
-                
-                {/* Content */}
-                <div className="p-8 lg:p-10 flex flex-col justify-center">
-                  <div className="mb-6">
-                    <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground mb-2">
-                      Soy María
-                    </h3>
-                    <p className="text-primary font-medium mb-1">Psicóloga General Sanitaria</p>
-                    <p className="text-sm text-muted-foreground">Colegiada: AN10746</p>
-                  </div>
-                  
-                  <p className="text-muted-foreground leading-relaxed mb-8">
-                    María es psicóloga general sanitaria, graduada en Psicología y especializada en intervención psicológica en adultos. Su trabajo se basa en un enfoque profesional y cercano, adaptado a las necesidades de cada persona y orientado al bienestar emocional. María es <strong className="text-foreground">humanitaria, valiente, generosa, cercana y noble</strong>.
-                  </p>
-
-                  <Button 
-                    variant="default" 
-                    size="lg" 
-                    onClick={() => setIsTeamModalOpen(true)}
-                    className="w-fit"
-                  >
-                    Conoce al equipo
-                  </Button>
-                </div>
-              </div>
+          
+          {/* Content */}
+          <div className="p-8 lg:p-10 flex flex-col justify-center">
+            <div className="mb-6">
+              <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground mb-2" itemProp="name">
+                Soy María
+              </h3>
+              <p className="text-primary font-medium mb-1" itemProp="jobTitle">Psicóloga General Sanitaria</p>
+              <p className="text-sm text-muted-foreground">
+                Colegiada: <span itemProp="credentialCategory">AN10746</span>
+              </p>
             </div>
+            
+            <p className="text-muted-foreground leading-relaxed mb-8" itemProp="description">
+              María es <strong>psicóloga en Huelva</strong>, graduada en Psicología y especializada en intervención psicológica en adultos y <strong>terapia de pareja</strong>. Su trabajo se basa en un enfoque profesional y cercano, adaptado a las necesidades de cada persona y orientado al bienestar emocional. María es <strong className="text-foreground">humanitaria, valiente, generosa, cercana y noble</strong>.
+            </p>
+
+            <Button 
+              variant="default" 
+              size="lg" 
+              onClick={() => setIsTeamModalOpen(true)}
+              className="w-fit"
+            >
+              Conoce al equipo
+            </Button>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="py-16 lg:py-20 bg-primary/5">
