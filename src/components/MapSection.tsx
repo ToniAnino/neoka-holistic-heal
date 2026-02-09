@@ -9,10 +9,10 @@ export const MapSection = () => {
             Encuéntranos
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nuestra Ubicación
+            Dónde encontrarnos en Huelva
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Estamos en el centro de Huelva, fácilmente accesible
+            Centro de psicología y salud integral en el corazón de Huelva, fácilmente accesible
           </p>
         </div>
 

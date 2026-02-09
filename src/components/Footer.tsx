@@ -99,10 +99,17 @@ export const Footer = () => {
           <div>
             <h3 className="font-serif text-lg font-semibold mb-6">Servicios</h3>
             <ul className="space-y-3">
-              {["Terapia de Pareja", "Psicología Sanitaria", "Terapia emocional / transpersonal", "Fisioterapia", "Nutrición y Dietética", "Podología"].map((service) => (
-                <li key={service}>
-                  <a href="#servicios" className="text-background/70 hover:text-primary transition-colors">
-                    {service}
+              {[
+                { name: "Terapia de Pareja", link: "/terapia-pareja" },
+                { name: "Psicología Sanitaria", link: "/psicologia-sanitaria" },
+                { name: "Terapia emocional / transpersonal", link: "/terapia-transpersonal" },
+                { name: "Fisioterapia", link: "/fisioterapia" },
+                { name: "Nutrición y Dietética", link: "/nutricion-dietetica" },
+                { name: "Podología", link: "/podologia" },
+              ].map((service) => (
+                <li key={service.name}>
+                  <a href={service.link} className="text-background/70 hover:text-primary transition-colors">
+                    {service.name}
                   </a>
                 </li>
               ))}

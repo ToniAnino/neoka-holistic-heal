@@ -13,15 +13,20 @@ const Blog = () => {
   return (
     <main className="min-h-screen">
       <Helmet>
-        <title>Blog de Psicología, Terapia y Salud Integral | Neoka</title>
-        <meta name="description" content="Artículos sobre psicología, relaciones, bienestar emocional y salud integral escritos por profesionales del centro Neoka en Huelva." />
+        <title>Blog de Psicología y Terapia de Pareja en Huelva | Neoka</title>
+        <meta name="description" content="Artículos sobre psicología, terapia de pareja, bienestar emocional y salud integral escritos por profesionales del centro Neoka en Huelva." />
+        <link rel="canonical" href="https://centroneoka.es/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Blog de Psicología y Terapia de Pareja en Huelva | Neoka" />
+        <meta property="og:description" content="Artículos sobre psicología, terapia de pareja, bienestar emocional y salud integral escritos por profesionales en Huelva." />
+        <meta property="og:url" content="https://centroneoka.es/blog" />
       </Helmet>
       <Header />
       
       <section className="py-20 bg-background">
         <div className="bg-primary py-6 mb-12">
           <h1 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground text-center">
-            Nuestro blog
+            Blog de Psicología y Terapia de Pareja en Huelva
           </h1>
         </div>
 

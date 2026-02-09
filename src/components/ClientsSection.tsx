@@ -7,13 +7,13 @@ import clientMancomunidad from "@/assets/client-mancomunidad.jpg";
 import clientSporting from "@/assets/client-sporting.jpg";
 
 const clients = [
-  { name: "Cliente 1", logo: client1 },
-  { name: "Canal Costa", logo: clientCanalcosta },
-  { name: "Economía Social", logo: clientEconomiaSocial },
-  { name: "Hi", logo: clientHi },
-  { name: "Cliente Twitter", logo: clientTwitter },
-  { name: "Mancomunidad", logo: clientMancomunidad },
-  { name: "Sporting", logo: clientSporting },
+  { name: "Colaborador institucional", logo: client1 },
+  { name: "Canal Costa TV - Medio de comunicación", logo: clientCanalcosta },
+  { name: "Economía Social de Huelva", logo: clientEconomiaSocial },
+  { name: "Huelva Información - Medio de comunicación", logo: clientHi },
+  { name: "Neoka en redes sociales", logo: clientTwitter },
+  { name: "Mancomunidad de Municipios", logo: clientMancomunidad },
+  { name: "Sporting Club de Huelva", logo: clientSporting },
 ];
 
 export const ClientsSection = () => {
