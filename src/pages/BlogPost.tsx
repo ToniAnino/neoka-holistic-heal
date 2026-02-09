@@ -44,11 +44,40 @@ const BlogPost = () => {
     setIsSubmitting(false);
   };
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.metaDescription,
+    "image": post.image,
+    "datePublished": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "Neoka",
+      "url": "https://centroneoka.es"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Neoka - Centro de Psicología en Huelva",
+      "url": "https://centroneoka.es"
+    },
+    "mainEntityOfPage": `https://centroneoka.es/blog/${post.slug}`
+  };
+
   return (
     <main className="min-h-screen">
       <Helmet>
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
+        <link rel="canonical" href={`https://centroneoka.es/blog/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.metaTitle} />
+        <meta property="og:description" content={post.metaDescription} />
+        <meta property="og:url" content={`https://centroneoka.es/blog/${post.slug}`} />
+        <meta property="og:image" content={post.image} />
+        <script type="application/ld+json">
+          {JSON.stringify(articleJsonLd)}
+        </script>
       </Helmet>
       <Header />
       
