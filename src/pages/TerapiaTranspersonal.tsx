@@ -116,48 +116,48 @@ const TerapiaTranspersonal = () => {
       </section>
 
       {/* Tu historia no empezó contigo */}
-      <section className="py-16 lg:py-24 bg-violet-50/30">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
-              Tu historia no empezó contigo
-            </h2>
-            <div className="space-y-6">
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Muchas de las vivencias que hoy te duelen no comenzaron en tu vida adulta. Algunas ni siquiera comenzaron en tu historia personal.
-              </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Existen lealtades invisibles, mandatos familiares y relatos internos que has asumido como propios y que configuran tu identidad y tu manera de vivir. <strong className="text-foreground">Esto puede verse como:</strong>
-              </p>
-              <ul className="grid md:grid-cols-2 gap-4 text-muted-foreground text-lg">
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  span className="text-violet-500 font-bold">✓</span>
-                  <span>Patrones emocionales inconscientes</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  span className="text-violet-500 font-bold">✓</span>
-                  <span>Dinámicas familiares que dejan huella</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  span className="text-violet-500 font-bold">✓</span>
-                  <span>Creencias profundas que te condicionan</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  span className="text-violet-500 font-bold">✓</span>
-                  <span>Bloqueos internos que frenan tu evolución</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  span className="text-violet-500 font-bold">✓</span>
-                  <span>La búsqueda de propósito y sentido vital</span>
-                </li>
-              </ul>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                La terapia transpersonal te invita a mirar más allá de lo evidente, a observar tu vida como un <strong className="text-foreground">mapa simbólico</strong> que puede ser leído, comprendido y transformado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="py-16 lg:py-24 bg-violet-50/30">
+  <div className="container">
+    <div className="max-w-4xl mx-auto">
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
+        Tu historia no empezó contigo
+      </h2>
+      <div className="space-y-6">
+        <p className="text-muted-foreground text-lg leading-relaxed">
+          Muchas de las vivencias que hoy te duelen no comenzaron en tu vida adulta. Algunas ni siquiera comenzaron en tu historia personal.
+        </p>
+        <p className="text-muted-foreground text-lg leading-relaxed">
+          Existen lealtades invisibles, mandatos familiares y relatos internos que has asumido como propios y que configuran tu identidad y tu manera de vivir. <strong className="text-foreground">Esto puede verse como:</strong>
+        </p>
+        <ul className="grid md:grid-cols-2 gap-4 text-muted-foreground text-lg">
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Patrones emocionales inconscientes</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Dinámicas familiares que dejan huella</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Creencias profundas que te condicionan</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Bloqueos internos que frenan tu evolución</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>La búsqueda de propósito y sentido vital</span>
+          </li>
+        </ul>
+        <p className="text-muted-foreground text-lg leading-relaxed">
+          La terapia transpersonal te invita a mirar más allá de lo evidente, a observar tu vida como un <strong className="text-foreground">mapa simbólico</strong> que puede ser leído, comprendido y transformado.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Cuando la vida se repite */}
       <section className="py-16 lg:py-24 bg-background">
