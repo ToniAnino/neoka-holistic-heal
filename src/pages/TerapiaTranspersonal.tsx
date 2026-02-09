@@ -12,12 +12,12 @@ import nereaImage from "@/assets/nerea-terapeuta.jpg";
 const TerapiaTranspersonal = () => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
 
-  // Datos estructurados para Google
+  // Datos estructurados para mejorar el posicionamiento local y de servicio
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Terapia Transpersonal en Huelva",
-    "description": "Acompañamiento profundo en crecimiento personal y sentido de vida en Neoka.",
+    "description": "Acompañamiento profundo en crecimiento personal, patrones vitales y sentido de vida en Huelva.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Neoka",
@@ -33,8 +33,8 @@ const TerapiaTranspersonal = () => {
     <main className="min-h-screen">
       <Helmet>
         <title>Terapia Transpersonal en Huelva | Crecimiento Personal – Neoka</title>
-        <meta name="description" content="Terapia transpersonal en Huelva orientada al crecimiento personal, los patrones vitales y el sentido de vida. Un enfoque profundo y consciente." />
-        <meta name="keywords" content="terapia transpersonal huelva, crecimiento personal, autoconocimiento, nerea neoka" />
+        <meta name="description" content="Terapia transpersonal en Huelva orientada al crecimiento personal, los patrones vitales y el sentido de vida. Un enfoque profundo y consciente con Nerea B." />
+        <meta name="keywords" content="terapia transpersonal huelva, crecimiento personal huelva, autoconocimiento, transgeneracional huelva, nerea neoka" />
         <link rel="canonical" href="https://centroneoka.es/terapia-transpersonal" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
@@ -47,7 +47,7 @@ const TerapiaTranspersonal = () => {
         <div className="absolute inset-0">
           <img
             src={heroImage}
-            alt="Terapia Transpersonal en Huelva - Neoka"
+            alt="Sesión de Terapia Transpersonal en Huelva - Centro Neoka"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
@@ -64,7 +64,7 @@ const TerapiaTranspersonal = () => {
             Terapia transpersonal
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4">
-            Un camino de autoconocimiento, sentido y transformation interior
+            Un camino de autoconocimiento, sentido y transformación interior
           </p>
           <h2 className="text-xl md:text-2xl text-foreground/90 font-medium max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
             Cuando lo de afuera ya no te sirve, toca mirar hacia dentro.
@@ -130,24 +130,24 @@ const TerapiaTranspersonal = () => {
                 Existen lealtades invisibles, mandatos familiares y relatos internos que has asumido como propios y que configuran tu identidad y tu manera de vivir. <strong className="text-foreground">Esto puede verse como:</strong>
               </p>
               <ul className="space-y-3 text-muted-foreground text-lg">
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Patrones emocionales inconscientes</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Dinámicas familiares que dejan huella</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Creencias profundas que te condicionan</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Bloqueos internos que frenan tu evolución</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>La búsqueda de propósito y sentido vital</span>
                 </li>
               </ul>
@@ -171,24 +171,24 @@ const TerapiaTranspersonal = () => {
                 Hay momentos en los que una persona siente que:
               </p>
               <ul className="space-y-3 text-muted-foreground text-lg">
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Siempre acaba en relaciones similares</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Repite conflictos emocionales una y otra vez</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Vive una desconexión profunda consigo misma</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>Siente que "algo falta", aunque aparentemente todo esté bien</span>
                 </li>
-                <li className="flex flex-col items-start">
-                  <span className="text-violet-500">•</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-violet-500 mt-1">•</span>
                   <span>No encuentra respuestas en los enfoques tradicionales</span>
                 </li>
               </ul>
