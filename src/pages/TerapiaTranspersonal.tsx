@@ -160,42 +160,44 @@ const TerapiaTranspersonal = () => {
 </section>
 
       {/* Cuando la vida se repite */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
-              Cuando la vida se repite… no es casualidad
-            </h2>
-            <div className="space-y-6">
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Hay momentos en los que una persona siente que:
-              </p>
-              <ul className="grid md:grid-cols-2 gap-4 text-muted-foreground text-lg">
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  <span className="text-violet-500 font-bold">✓</span>
-                  <span>Siempre acaba en relaciones similares</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  <span className="text-violet-500 font-bold">✓</span>
-                  <span>Repite conflictos emocionales una y otra vez</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  <span className="text-violet-500 font-bold">✓</span
-                  <span>Vive una desconexión profunda consigo misma</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  <span className="text-violet-500 font-bold">✓</span
-                  <span>Siente que "algo falta", aunque aparentemente todo esté bien</span>
-                </li>
-                <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
-                  <span className="text-violet-500 font-bold">✓</span>
-                  <span>No encuentra respuestas en los enfoques tradicionales</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="py-16 lg:py-24 bg-background">
+  <div className="container">
+    <div className="max-w-4xl mx-auto">
+      <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
+        Cuando la vida se repite… no es casualidad
+      </h2>
+      <div className="space-y-6">
+        <p className="text-muted-foreground text-lg leading-relaxed">
+          Hay momentos en los que una persona siente que:
+        </p>
+        <ul className="grid md:grid-cols-2 gap-4 text-muted-foreground text-lg">
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Siempre acaba en relaciones similares</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Repite conflictos emocionales una y otra vez</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            {/* CORREGIDO ABAJO: se añadió el > después de ✓ */}
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Vive una desconexión profunda consigo misma</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            {/* CORREGIDO ABAJO: se añadió el > después de ✓ */}
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>Siente que "algo falta", aunque aparentemente todo esté bien</span>
+          </li>
+          <li className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-violet-100">
+            <span className="text-violet-500 font-bold">✓</span>
+            <span>No encuentra respuestas en los enfoques tradicionales</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* El para qué de tu camino */}
       <section className="py-16 lg:py-24 bg-violet-50/30">
