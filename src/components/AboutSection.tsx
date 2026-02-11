@@ -26,7 +26,7 @@ export const AboutSection = () => {
               <img
                 src={equipoNeoka}
                 alt="Equipo del Centro Neoka en Huelva"
-                className="w-full h-full object-cover object-bottom"
+                className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
             </div>
