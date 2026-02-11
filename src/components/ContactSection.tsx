@@ -71,7 +71,7 @@ const onSubmit = (data: ContactFormData) => {
 };
 
   return (
-    <section id="formulario-contacto" className="py-20 lg:py-28 bg-muted/30">
+    <section id="formulario-contacto" className="py-12 lg:py-16 bg-muted/30">
       <div className="container">
         <div className="max-w-3xl mx-auto">
           {/* Header */}

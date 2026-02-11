@@ -46,7 +46,7 @@ export const BlogSection = () => {
   const selectedPost = selectedPostSlug ? blogPosts.find(p => p.slug === selectedPostSlug) : null;
 
   return (
-    <section id="blog" className="py-20 bg-background">
+    <section id="blog" className="py-12 bg-background">
       <div className="bg-primary py-6 mb-12">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground text-center">
           Nuestro Blog | Novedades

@@ -2,7 +2,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 
 export const MapSection = () => {
   return (
-    <section id="ubicacion" className="py-16 bg-secondary/30">
+    <section id="ubicacion" className="py-12 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">

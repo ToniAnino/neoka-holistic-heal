@@ -16,7 +16,7 @@ export const AboutSection = () => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
 
   return (
-    <section id="nosotros" className="py-20 lg:py-28 bg-secondary/30">
+    <section id="nosotros" className="py-12 lg:py-16 bg-secondary/30">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Column */}
