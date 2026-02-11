@@ -73,7 +73,7 @@ export const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section className="py-20 lg:py-28 bg-background">
+    <section className="py-12 lg:py-16 bg-background">
       <div className="container">
         {/* Stats Counter */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 p-8 md:p-12 bg-primary rounded-2xl text-primary-foreground">

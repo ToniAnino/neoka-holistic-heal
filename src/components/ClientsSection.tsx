@@ -18,7 +18,7 @@ const clients = [
 
 export const ClientsSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-10 bg-background">
       <div className="container">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
