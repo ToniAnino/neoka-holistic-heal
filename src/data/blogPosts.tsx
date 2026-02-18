@@ -89,6 +89,7 @@ export const blogPosts: BlogPost[] = [
         <p>Están los dos bandos. <strong>¿En cuál estás tu?</strong> Yo sigo apostando por la gente que hace la vida de los demás mejor, más amable y justa. La vida es más hermosa con buena gente en ella y a tu lado, con gente que se une a tu lucha y no mira hacia a otro lado, que te agarra de la mano con miedo, pero no te suelta. Sigo apostando por <strong>Lorca, por Hipatia, por Jesucristo, por Martin Luther King, por Gandhi, Guevara, Kennedy, Espartaco</strong> y cientos más. <strong>¡Salud por los inocentes, los vulnerables, los nobles de alma, los generosos y agradecidos, por los pobres de espíritu, por los humildes de corazón! Por los valientes, honrados, ¡y con coraje!</strong> Por los que luchan por lo que quieren y creen. Brindo por todos. Yo seguiré creyendo. Yo seguiré estando ahí, de pie. Nunca de rodillas. Yo seguiré mirando de frente y si desvío la mirada, que alguien me haga saber que estoy errando lo antes posible.</p>
         <p><strong>Por que los reyes de hoy serán los sirvientes del mañana, y los sirvientes de hoy, serán los reyes del futuro.</strong></p>
         <p><strong>Levantensé. Miren al frente.</strong></p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(350 100% 97%)', borderColor: 'hsl(350 100% 90%)'}}>Si sientes que la evitación emocional está dañando tu relación, en Neoka podemos ayudaros. <a href="/terapia-pareja" style={{color: 'hsl(350 80% 50%)', fontWeight: 600}}>Descubre nuestra terapia de pareja en Huelva</a> y da el primer paso.</p>
       </>
     ),
   },
@@ -212,7 +213,7 @@ export const blogPosts: BlogPost[] = [
         <p>Gracias sí has llegado hasta aquí. Porque este texto era para mí y me he sanado a través de tu lectura. Y que sepas que no estás solo, te sigo mandando amor, pues incluso en mi vacío, hay un amor tan grande dentro de mí que siempre se puede seguir dando amor allí donde saben apreciarlo. Y si lo necesitas, aquí te mando un poquito.</p>
         <p>Cabeza alta. <strong>El universo ve, mira, observa y RECOMPENSA. Todo irá bien.</strong> No te machaques más.</p>
         <p>P.D: Que hartón de llorar me he dado escribiendo esto, <strong>pero qué bonito es limpiar y sanar. Qué bonito es ser transparente, no controlar la emoción, no cohibirse en expresar sentimientos. Qué bonito es ser valiente, amar anchando el alma y ser libre para hacerlo.</strong></p>
-        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si estás atravesando un proceso difícil y necesitas apoyo profesional, <a href="/#formulario-contacto" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>escríbenos y cuéntanos cómo te sientes</a>. En Neoka estamos aquí para acompañarte.</p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si estás atravesando un proceso difícil y quieres apoyo profesional para reencontrarte, descubre nuestra <a href="/psicologia-sanitaria" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>Psicología Sanitaria en Huelva</a>. En Neoka estamos aquí para acompañarte.</p>
       </>
     ),
   },
@@ -247,6 +248,7 @@ export const blogPosts: BlogPost[] = [
         <p><strong>Vivimos exclavizados del qué dirán,</strong> pero no nos damos cuenta de que lo provocamos nosotros exponiéndonos a ello. Si mostramos una mentira, ¿qué esperamos que nos llegue de vuelta? Si encontramos una relación que ha surgido de las redes sociales en las que sólo mostramos/vendemos nuestro cuerpo y lo empepinados que estamos (ego por doquier, eeeejeeemm) con nuestros "filtros" (reales y metafóricos), ¿qué esperamos atraer? Una relación basada en la profundidad y la esencia, seguro que no.</p>
         <p>Vivan ustedes de mentiras y apariencias, que así nos va pues.</p>
         <p><strong>Bienvenidos al circo, ¿qué careta te toca hoy?</strong></p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si las máscaras y las relaciones tóxicas te pesan, un profesional puede ayudarte a encontrarte de verdad. Conoce nuestra <a href="/psicologia-sanitaria" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>Psicología Sanitaria en Huelva</a> y empieza a cuidarte.</p>
       </>
     ),
   },
@@ -283,7 +285,7 @@ export const blogPosts: BlogPost[] = [
         <p>No hay montaña alta, sino mente débil que cree no poder lograrla alcanzar.</p>
         <p>Gracias 2020. Bendito 2020. Feliz Navidad.</p>
         <p className="mt-6">Nerea Ballester Goytia.<br/>Terapeuta y Coach.<br/>www.neoka.es</p>
-        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si también sientes que es el momento de tu propia transformación y quieres apoyo profesional, <a href="/#formulario-contacto" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>ponte en contacto con el equipo de Neoka</a>. Estamos aquí para acompañarte.</p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si sientes que ha llegado tu momento de transformación y quieres apoyo profesional, descubre nuestra <a href="/psicologia-sanitaria" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>Psicología Sanitaria en Huelva</a>. En Neoka estamos aquí para acompañarte en el proceso.</p>
         
         <img 
           src="https://static.wixstatic.com/media/281c03_9d263f6f4d424e4d9a09a3c44570dd8c~mv2.jpg/v1/fill/w_157,h_158,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/281c03_9d263f6f4d424e4d9a09a3c44570dd8c~mv2.jpg" 
