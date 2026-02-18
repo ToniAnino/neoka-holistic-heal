@@ -358,6 +358,7 @@ const Fisioterapia = () => {
                     src={estefaniaImage}
                     alt="Estefanía Molina - Fisioterapeuta Colegiada en Neoka Huelva"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent md:bg-gradient-to-r" />
                 </div>

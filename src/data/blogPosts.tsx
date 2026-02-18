@@ -46,6 +46,7 @@ export const blogPosts: BlogPost[] = [
         <p>Nostalgia de alguien que te deja huella y "le debas" un cambio profundo en ti, para hacerte mejor persona, para sacarte lo mejor y pulir lo peor. Nostalgia para saber morir y nacer dentro de un mismo compromiso, sin tener que echar a la otra persona.</p>
         <p>Que pena de aquellos que, buscan y cambian de compañeros de vida constantemente porque se dejan atraer por lo "nuevo", por ideales que luego no resultan ser, por querer buscar fuera lo que no son capaces de valorar o promover dentro. Que pena de aquellas personas que se dejan cautivar por mensajes, mentes o cuerpos, que son estacionales, ilusorios. Que pena de los débiles, que no saben amar hasta el final sabiendo llegar a un equilibrio donde ambas almas puedan llegarse a entender y respetar.</p>
         <p>Amar. Que bonitos recuerdos aquellos. A mí que me dejen, que yo quiero seguir soñando y amando. Yo quiero seguir vibrando, cantándole una canción al amor de mi vida a pleno pulmón en el coche, escribirle una nota, sorprenderle, darle todo mi amor, paciencia, comprensión, mi tiempo y quitárselo a otras cosas o personas; mis miedos, alegrías, pasión, entrega, mis sueños y… volar, lejos, muy lejos, dónde las almas se encuentran y los egos se pierden. Donde todo es volver a empezar, pero con la misma persona. Para el resto de lo que nos quede. En esta vida y en la otra.</p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(350 100% 97%)', borderColor: 'hsl(350 100% 90%)'}}>Si sientes que el amor en tu relación se ha apagado, en Neoka podemos ayudaros. <a href="/terapia-pareja" style={{color: 'hsl(350 80% 50%)', fontWeight: 600}}>Descubre nuestra terapia de pareja en Huelva</a> y da el primer paso.</p>
       </>
     ),
   },
@@ -170,6 +171,7 @@ export const blogPosts: BlogPost[] = [
         3. m. Acuerdo pactado entre distintas partes.</p>
         <p>Si no cumples lo que dices, no lo digas. Pues en el compromiso no solo está implícita la otra parte, sino tu mismo, tus valores, tu integridad y tu palabra.</p>
         <p>Sal del egoísmo, que aburre. Vive en equilibrio entre el TÚ y el YO.</p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(350 100% 97%)', borderColor: 'hsl(350 100% 90%)'}}>¿Sientes que el compromiso en tu relación se ha debilitado? Nuestros especialistas en <a href="/terapia-pareja" style={{color: 'hsl(350 80% 50%)', fontWeight: 600}}>terapia de pareja en Huelva</a> pueden acompañaros en el proceso de reconectar.</p>
       </>
     ),
   },
@@ -210,6 +212,7 @@ export const blogPosts: BlogPost[] = [
         <p>Gracias sí has llegado hasta aquí. Porque este texto era para mí y me he sanado a través de tu lectura. Y que sepas que no estás solo, te sigo mandando amor, pues incluso en mi vacío, hay un amor tan grande dentro de mí que siempre se puede seguir dando amor allí donde saben apreciarlo. Y si lo necesitas, aquí te mando un poquito.</p>
         <p>Cabeza alta. <strong>El universo ve, mira, observa y RECOMPENSA. Todo irá bien.</strong> No te machaques más.</p>
         <p>P.D: Que hartón de llorar me he dado escribiendo esto, <strong>pero qué bonito es limpiar y sanar. Qué bonito es ser transparente, no controlar la emoción, no cohibirse en expresar sentimientos. Qué bonito es ser valiente, amar anchando el alma y ser libre para hacerlo.</strong></p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si estás atravesando un proceso difícil y necesitas apoyo profesional, <a href="/#formulario-contacto" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>escríbenos y cuéntanos cómo te sientes</a>. En Neoka estamos aquí para acompañarte.</p>
       </>
     ),
   },
@@ -280,6 +283,7 @@ export const blogPosts: BlogPost[] = [
         <p>No hay montaña alta, sino mente débil que cree no poder lograrla alcanzar.</p>
         <p>Gracias 2020. Bendito 2020. Feliz Navidad.</p>
         <p className="mt-6">Nerea Ballester Goytia.<br/>Terapeuta y Coach.<br/>www.neoka.es</p>
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si también sientes que es el momento de tu propia transformación y quieres apoyo profesional, <a href="/#formulario-contacto" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>ponte en contacto con el equipo de Neoka</a>. Estamos aquí para acompañarte.</p>
         
         <img 
           src="https://static.wixstatic.com/media/281c03_9d263f6f4d424e4d9a09a3c44570dd8c~mv2.jpg/v1/fill/w_157,h_158,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/281c03_9d263f6f4d424e4d9a09a3c44570dd8c~mv2.jpg" 
