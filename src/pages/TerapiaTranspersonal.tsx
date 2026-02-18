@@ -116,7 +116,7 @@ const TerapiaTranspersonal = () => {
       </section>
 
       {/* Tu historia no empezó contigo */}
-<section className="py-16 lg:py-24 bg-violet-50/30">
+<section className="py-10 lg:py-14 bg-violet-50/30">
   <div className="container">
     <div className="max-w-4xl mx-auto">
       <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
@@ -200,7 +200,7 @@ const TerapiaTranspersonal = () => {
 </section>
 
       {/* El para qué de tu camino */}
-      <section className="py-16 lg:py-24 bg-violet-50/30">
+      <section className="py-10 lg:py-14 bg-violet-50/30">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 text-center">
@@ -228,7 +228,7 @@ const TerapiaTranspersonal = () => {
       </section>
 
       {/* Un trabajo profundo, consciente y simbólico */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
@@ -267,7 +267,7 @@ const TerapiaTranspersonal = () => {
       </section>
 
       {/* Nerea Profile Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-violet-500 uppercase tracking-widest mb-4">
@@ -325,7 +325,7 @@ const TerapiaTranspersonal = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-violet-50/50">
+      <section className="py-10 lg:py-14 bg-violet-50/50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">

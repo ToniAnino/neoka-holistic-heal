@@ -111,7 +111,7 @@ const TerapiaPareja = () => {
       </section>
 
       {/* Introduction Section con Microdatos */}
-      <section className="py-16 lg:py-24 bg-background" itemScope itemType="https://schema.org/Service">
+      <section className="py-10 lg:py-14 bg-background" itemScope itemType="https://schema.org/Service">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-16 h-16 rounded-2xl bg-rose-50 flex items-center justify-center mx-auto mb-8">
@@ -133,7 +133,7 @@ const TerapiaPareja = () => {
       </section>
 
       {/* Benefits Section - Usando etiquetas Article para SEO */}
-      <section className="py-16 lg:py-24 bg-rose-50/30">
+      <section className="py-10 lg:py-14 bg-rose-50/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-rose-500 uppercase tracking-widest mb-4">
@@ -166,7 +166,7 @@ const TerapiaPareja = () => {
       </section>
 
       {/* Nerea Profile Section - Optimización E-E-A-T */}
-      <section className="py-16 lg:py-24 bg-secondary/30" itemScope itemType="https://schema.org/Person">
+      <section className="py-10 lg:py-14 bg-secondary/30" itemScope itemType="https://schema.org/Person">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-card rounded-2xl card-shadow overflow-hidden">
