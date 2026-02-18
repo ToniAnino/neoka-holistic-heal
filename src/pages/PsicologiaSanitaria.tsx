@@ -73,8 +73,48 @@ const PsicologiaSanitaria = () => {
         <title>Psicóloga en Huelva | Ansiedad y Salud Mental – Centro Neoka</title>
         <meta name="description" content="¿Necesitas un psicólogo en Huelva? María D. ofrece atención sanitaria profesional para ansiedad, fobias y bienestar emocional en Neoka. ¡Pide tu cita hoy!" />
         <link rel="canonical" href="https://centroneoka.es/psicologia-sanitaria" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Psicóloga en Huelva | Ansiedad y Salud Mental – Centro Neoka" />
+        <meta property="og:description" content="Atención psicológica profesional en Huelva para ansiedad, fobias, regulación emocional y bienestar mental. Pide tu cita." />
+        <meta property="og:url" content="https://centroneoka.es/psicologia-sanitaria" />
+        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Psicóloga en Huelva | Centro Neoka" />
+        <meta name="twitter:description" content="Atención psicológica profesional en Huelva para ansiedad, fobias y bienestar emocional." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Cuánto dura una sesión de psicología?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Las sesiones de psicología en Neoka tienen una duración aproximada de 50-60 minutos. La frecuencia se adapta a cada caso, generalmente semanal o quincenal."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo sé si necesito ir al psicólogo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Si sientes que el malestar emocional, la ansiedad, el estrés o los problemas de relación interfieren en tu vida diaria, es recomendable pedir ayuda. No hace falta tener un trastorno grave para beneficiarse de la psicología."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿La psicología sanitaria está cubierta por la Seguridad Social?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "En Neoka ofrecemos atención privada. Las listas de espera de la sanidad pública en Huelva pueden ser largas, por lo que la atención privada permite acceder antes a tratamiento profesional."
+                }
+              }
+            ]
+          })}
         </script>
       </Helmet>
       

@@ -68,9 +68,49 @@ const TerapiaPareja = () => {
       <Helmet>
         <title>Terapia de Pareja en Huelva | Especialistas en Relaciones – Neoka</title>
         <meta name="description" content="¿Buscas terapia de pareja en Huelva? En Neoka ayudamos a superar crisis, infidelidades y problemas de comunicación. Recupera el vínculo con terapia profesional." />
-        <link rel="canonical" href="https://centroneoka.es/terapia-de-pareja" />
+        <link rel="canonical" href="https://centroneoka.es/terapia-pareja" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Terapia de Pareja en Huelva | Neoka" />
+        <meta property="og:description" content="Especialistas en terapia de pareja en Huelva. Supera crisis, infidelidades y problemas de comunicación con terapia profesional." />
+        <meta property="og:url" content="https://centroneoka.es/terapia-pareja" />
+        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Terapia de Pareja en Huelva | Neoka" />
+        <meta name="twitter:description" content="Especialistas en terapia de pareja en Huelva. Supera crisis e infidelidades con terapia profesional." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Cuánto dura la terapia de pareja?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La duración de la terapia de pareja varía según el conflicto. En Neoka realizamos una valoración inicial y adaptamos el número de sesiones al proceso de cada pareja, sin plazos rígidos."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Puede ir solo uno de la pareja a terapia?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Es posible comenzar un proceso individual cuando la pareja no está dispuesta a acudir. Trabajamos desde el contexto relacional de cada persona."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿La terapia de pareja sirve para decidir si separarse?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. La terapia ayuda tanto a reconstruir la relación como a tomar una decisión de separación de forma consciente y con el menor daño emocional posible."
+                }
+              }
+            ]
+          })}
         </script>
       </Helmet>
       

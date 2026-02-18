@@ -94,7 +94,15 @@ const NutricionDietetica = () => {
         <title>Nutricionista en Huelva | Dietética y Nutrición Clínica Neoka</title>
         <meta name="description" content="¿Buscas un nutricionista en Huelva? Mario C. ofrece planes personalizados para SIBO, nutrición oncológica, deportiva y pérdida de peso. ¡Reserva tu cita!" />
         <meta name="keywords" content="nutricionista huelva, dietista huelva, nutrición oncológica huelva, tratamiento sibo huelva, nutrición deportiva huelva, adelgazar huelva" />
-        <link rel="canonical" href="https://centroneoka.es/nutricion-y-dietetica" />
+        <link rel="canonical" href="https://centroneoka.es/nutricion-dietetica" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Nutricionista en Huelva | Clínica Neoka" />
+        <meta property="og:description" content="Planes nutricionales personalizados en Huelva. SIBO, nutrición oncológica, deportiva y pérdida de peso saludable." />
+        <meta property="og:url" content="https://centroneoka.es/nutricion-dietetica" />
+        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nutricionista en Huelva | Clínica Neoka" />
+        <meta name="twitter:description" content="Planes nutricionales personalizados en Huelva para SIBO, nutrición oncológica y pérdida de peso saludable." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
