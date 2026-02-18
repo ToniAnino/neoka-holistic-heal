@@ -67,7 +67,7 @@ const TerapiaPareja = () => {
     <main className="min-h-screen">
       <Helmet>
         <title>Terapia de Pareja en Huelva | Especialistas en Relaciones – Neoka</title>
-        <meta name="description" content="¿Buscas terapia de pareja en Huelva? En Neoka ayudamos a superar crisis, infidelidades y problemas de comunicación. Recupera el vínculo con terapia profesional." />
+        <meta name="description" content="¿Buscas terapia de pareja en Huelva? Nuestro Psicólogo Sanitario en Huelva te ayuda a superar crisis, infidelidades y problemas de comunicación. Recupera el vínculo." />
         <link rel="canonical" href="https://centroneoka.es/terapia-pareja" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Terapia de Pareja en Huelva | Neoka" />
@@ -216,6 +216,7 @@ const TerapiaPareja = () => {
                     src={nereaImage}
                     alt="Nerea B. - Especialista en Terapia de Pareja en Huelva"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                     itemProp="image"
                   />
                 </div>

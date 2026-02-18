@@ -225,6 +225,7 @@ const PsicologiaSanitaria = () => {
                     src={mariaImage}
                     alt="María D. - Psicóloga General Sanitaria Colegiada en Huelva"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                     itemProp="image"
                   />
                 </div>
