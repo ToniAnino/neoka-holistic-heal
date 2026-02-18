@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
 import heroImage from "@/assets/fisioterapia-hero.jpg";
-import paolaImage from "@/assets/paola-podologa.jpg";
+import paolaImage from "@/assets/paola-podologa-recortada.png";
 
 const servicesData = [
   {
