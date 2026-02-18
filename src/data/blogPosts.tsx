@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     date: "8 may 2024",
     readTime: "6 Min. de lectura",
     image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400&h=300&fit=crop",
-    metaTitle: "El amor se ha perdido: Cómo superar una crisis de pareja | Neoka",
+    metaTitle: "El amor se ha perdido: Cómo superar una crisis de pareja | Terapia de Pareja Huelva",
     metaDescription: "¿Sientes que la conexión ha desaparecido? Analizamos las fases de la crisis de pareja y cómo la terapia en Huelva puede ayudaros a reconstruir el vínculo.",
     content: (
       <>
@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     date: "1 may 2024",
     readTime: "5 Min. de lectura",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
-    metaTitle: "Mirar hacia otro lado: La evitación emocional en la relación | Neoka",
+    metaTitle: "Mirar hacia otro lado: La evitación emocional en la relación | Terapia de Pareja Huelva",
     metaDescription: "La evitación emocional es un obstáculo para el bienestar. Aprende a identificar por qué evitamos los problemas y cómo afrontarlos con ayuda profesional.",
     content: (
       <>
@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
     date: "11 oct 2023",
     readTime: "8 Min. de lectura",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
-    metaTitle: "La importancia del compromiso en la pareja y la terapia | Neoka",
+    metaTitle: "La importancia del compromiso en la pareja y la terapia | Terapia de Pareja Huelva",
     metaDescription: "El compromiso va más allá de un acuerdo. Descubre por qué es el pilar fundamental en la terapia de pareja y en el crecimiento personal.",
     content: (
       <>
@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
     date: "8 jun 2023",
     readTime: "7 Min. de lectura",
     image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=400&h=300&fit=crop",
-    metaTitle: "Perderse para Encontrarse: Superar un proceso de crisis personal | Neoka",
+    metaTitle: "Perderse para Encontrarse: Superar un proceso de crisis personal | Psicólogo Huelva",
     metaDescription: "Los procesos de crisis son oportunidades de catarsis. Una guía sobre el crecimiento personal y cómo reencontrar tu sentido de vida en momentos difíciles.",
     content: (
       <>
@@ -223,7 +223,7 @@ export const blogPosts: BlogPost[] = [
     date: "20 sept 2020",
     readTime: "3 Min. de lectura",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=300&fit=crop",
-    metaTitle: "Ídolos del circo: Identificando relaciones tóxicas y máscaras | Neoka",
+    metaTitle: "Ídolos del circo: Identificando relaciones tóxicas y máscaras | Psicólogo Huelva",
     metaDescription: "A veces vivimos bajo máscaras sociales. Aprende a identificar relaciones tóxicas y patrones de conducta que limitan tu salud emocional.",
     content: (
       <>
@@ -257,7 +257,7 @@ export const blogPosts: BlogPost[] = [
     date: "11 dic 2020",
     readTime: "7 Min. de lectura",
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop",
-    metaTitle: "Bendito 2020: Superando una crisis personal | Neoka",
+    metaTitle: "Bendito 2020: Superando una crisis personal | Psicólogo Huelva",
     metaDescription: "Cómo una crisis personal se convirtió en un proceso de transformación. Un relato sobre la resiliencia, el amor propio y el crecimiento personal.",
     content: (
       <>
