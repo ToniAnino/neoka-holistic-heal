@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
 import heroImage from "@/assets/fisioterapia-hero.jpg";
-import paolaImage from "@/assets/paola-podologa-recortada.png";
+import paolaImage from "@/assets/paola-podologa-new.png";
 
 const servicesData = [
   {
@@ -208,7 +208,7 @@ const Podologia = () => {
                   <img
                     src={paolaImage}
                     alt="Paola Buitrago - Especialista en Podología y Biomecánica en Huelva"
-                    className="w-full h-full object-cover object-top scale-125 origin-top"
+                    className="w-full h-full object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent md:bg-gradient-to-r" />
                 </div>
