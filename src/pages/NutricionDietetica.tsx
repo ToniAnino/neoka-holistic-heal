@@ -138,7 +138,7 @@ const NutricionDietetica = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <div className="w-16 h-16 rounded-2xl bg-lime-50 flex items-center justify-center mx-auto mb-8">
@@ -161,7 +161,7 @@ const NutricionDietetica = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
@@ -198,7 +198,7 @@ const NutricionDietetica = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
@@ -235,7 +235,7 @@ const NutricionDietetica = () => {
       </section>
 
       {/* Mario Profile Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
@@ -292,7 +292,7 @@ const NutricionDietetica = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-lime-50">
+      <section className="py-10 lg:py-14 bg-lime-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">

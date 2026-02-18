@@ -142,7 +142,7 @@ const Fisioterapia = () => {
       </section>
 
       {/* Fisioterapia a domicilio Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
@@ -162,7 +162,7 @@ const Fisioterapia = () => {
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-emerald-600 uppercase tracking-widest mb-4">
@@ -199,7 +199,7 @@ const Fisioterapia = () => {
       </section>
 
       {/* Pathologies Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-emerald-600 uppercase tracking-widest mb-4">
@@ -288,7 +288,7 @@ const Fisioterapia = () => {
       </section>
 
       {/* Estefanía Profile Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-emerald-600 uppercase tracking-widest mb-4">
@@ -342,7 +342,7 @@ const Fisioterapia = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-emerald-50">
+      <section className="py-10 lg:py-14 bg-emerald-50">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">

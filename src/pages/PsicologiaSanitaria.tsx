@@ -120,7 +120,7 @@ const PsicologiaSanitaria = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center" itemScope itemType="https://schema.org/MedicalEntity">
             <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-8">
@@ -142,7 +142,7 @@ const PsicologiaSanitaria = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
@@ -175,7 +175,7 @@ const PsicologiaSanitaria = () => {
       </section>
 
       {/* María Profile Section - Implementando los Microdatos que pediste */}
-      <section className="py-16 lg:py-24 bg-background" itemScope itemType="https://schema.org/Physician">
+      <section className="py-10 lg:py-14 bg-background" itemScope itemType="https://schema.org/Physician">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-card rounded-2xl card-shadow border border-border/50 overflow-hidden">
@@ -220,7 +220,7 @@ const PsicologiaSanitaria = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-primary/5">
+      <section className="py-10 lg:py-14 bg-primary/5">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">

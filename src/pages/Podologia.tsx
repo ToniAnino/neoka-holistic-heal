@@ -153,7 +153,7 @@ const Podologia = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-amber-600 uppercase tracking-widest mb-4">
@@ -190,7 +190,7 @@ const Podologia = () => {
       </section>
 
       {/* Paola Profile Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-amber-600 uppercase tracking-widest mb-4">
@@ -242,7 +242,7 @@ const Podologia = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-amber-50">
+      <section className="py-10 lg:py-14 bg-amber-50">
         <div className="container text-center max-w-2xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">
             ¿Buscas plantillas a medida o estudio de la pisada en Huelva?
