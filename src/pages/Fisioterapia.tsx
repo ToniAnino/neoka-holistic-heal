@@ -72,6 +72,45 @@ const Fisioterapia = () => {
     ]
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuántas sesiones de fisioterapia necesito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El número de sesiones depende de cada caso y patología. En Neoka realizamos una valoración inicial personalizada para establecer un plan de tratamiento adaptado a tus necesidades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrece Neoka fisioterapia a domicilio en Huelva?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, ofrecemos fisioterapia a domicilio en la zona centro de Huelva, exclusivamente para personas con movilidad reducida o dificultad severa para desplazarse. El servicio está sujeto a valoración profesional previa."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué lesiones trata la fisioterapia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En Neoka tratamos contracturas, cervicalgias, lumbalgias, lesiones deportivas (tendinitis, esguinces, fascitis plantar), rehabilitación post-quirúrgica y dolor crónico."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es el precio de una sesión de fisioterapia en Huelva?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El precio varía según el tipo de tratamiento y duración. Contáctanos por WhatsApp o teléfono para recibir información personalizada sobre tarifas."
+        }
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen">
       <Helmet>
@@ -79,8 +118,19 @@ const Fisioterapia = () => {
         <meta name="description" content="¿Buscas fisioterapeuta en Huelva? Especialistas en dolor muscular, lesiones deportivas y rehabilitación. Ofrecemos fisioterapia a domicilio en Huelva centro." />
         <meta name="keywords" content="fisioterapia huelva, fisioterapeuta huelva, fisioterapia a domicilio huelva, rehabilitación huelva, tratamiento dolor espalda huelva" />
         <link rel="canonical" href="https://centroneoka.es/fisioterapia" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Fisioterapia en Huelva | Clínica Neoka" />
+        <meta property="og:description" content="Especialistas en fisioterapia en Huelva. Dolor muscular, lesiones deportivas, rehabilitación y fisioterapia a domicilio." />
+        <meta property="og:url" content="https://centroneoka.es/fisioterapia" />
+        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fisioterapia en Huelva | Clínica Neoka" />
+        <meta name="twitter:description" content="Especialistas en fisioterapia en Huelva. Dolor muscular, lesiones deportivas, rehabilitación y fisioterapia a domicilio." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqJsonLd)}
         </script>
       </Helmet>
       <Header />

@@ -89,6 +89,14 @@ const Podologia = () => {
         <meta name="description" content="¿Buscas podólogo en Huelva? Paola Buitrago ofrece estudio biomecánico de la pisada, plantillas a medida, tratamiento de hongos, papilomas y pie diabético. ¡Reserva cita!" />
         <meta name="keywords" content="podologo huelva, podologia huelva, plantillas a medida huelva, estudio pisada huelva, tratamiento papiloma pie huelva, uñas encarnadas huelva, pie diabetico huelva" />
         <link rel="canonical" href="https://centroneoka.es/podologia" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Podólogo en Huelva | Plantillas y Estudio de la Pisada | Neoka" />
+        <meta property="og:description" content="Especialistas en podología en Huelva. Estudio biomecánico de la pisada, plantillas a medida y tratamiento de pie diabético." />
+        <meta property="og:url" content="https://centroneoka.es/podologia" />
+        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Podólogo en Huelva | Clínica Neoka" />
+        <meta name="twitter:description" content="Especialistas en podología en Huelva. Plantillas a medida, estudio de pisada y pie diabético." />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
