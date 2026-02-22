@@ -51,21 +51,18 @@ const Counter = ({ end, suffix = "", duration = 2000 }: CounterProps) => {
 };
 
 export const TestimonialsSection = () => {
-  const trustindexRef = useRef<HTMLDivElement>(null);
+  const senjaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Load Trustindex script
     const script = document.createElement('script');
-    script.src = 'https://cdn.trustindex.io/loader.js?d26506f628ff634ddb264d78de8';
+    script.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
     script.defer = true;
-    script.async = true;
     
-    if (trustindexRef.current) {
-      trustindexRef.current.appendChild(script);
+    if (senjaRef.current) {
+      senjaRef.current.appendChild(script);
     }
 
     return () => {
-      // Cleanup script on unmount
       if (script.parentNode) {
         script.parentNode.removeChild(script);
       }
@@ -118,13 +115,15 @@ export const TestimonialsSection = () => {
 
         {/* Trustindex Google Reviews Widget */}
         <div 
-          ref={trustindexRef} 
+          ref={senjaRef} 
           className="w-full min-h-[300px] flex items-center justify-center"
         >
-          {/* Trustindex widget will be loaded here */}
-          <div className="text-muted-foreground animate-pulse">
-            Cargando reseñas...
-          </div>
+          <div 
+            className="senja-embed w-full" 
+            data-id="3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f" 
+            data-mode="shadow" 
+            data-lazyloaded="true"
+          />
         </div>
       </div>
     </section>
