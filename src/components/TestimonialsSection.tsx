@@ -52,31 +52,19 @@ const Counter = ({ end, suffix = "", duration = 2000 }: CounterProps) => {
 
 export const TestimonialsSection = () => {
   const senjaRef = useRef<HTMLDivElement>(null);
-  const senjaTopRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Script for top widget (async)
-    const scriptTop = document.createElement('script');
-    scriptTop.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
-    scriptTop.type = 'text/javascript';
-    scriptTop.async = true;
-
-    if (senjaTopRef.current) {
-      senjaTopRef.current.appendChild(scriptTop);
-    }
-
-    // Script for bottom widget (defer)
-    const scriptBottom = document.createElement('script');
-    scriptBottom.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
-    scriptBottom.defer = true;
+    const script = document.createElement('script');
+    script.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
+    script.type = 'text/javascript';
+    script.async = true;
 
     if (senjaRef.current) {
-      senjaRef.current.appendChild(scriptBottom);
+      senjaRef.current.appendChild(script);
     }
 
     return () => {
-      if (scriptTop.parentNode) scriptTop.parentNode.removeChild(scriptTop);
-      if (scriptBottom.parentNode) scriptBottom.parentNode.removeChild(scriptBottom);
+      if (script.parentNode) script.parentNode.removeChild(script);
     };
   }, []);
 
@@ -124,27 +112,14 @@ export const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* Senja Widget - Top */}
-        <div ref={senjaTopRef} className="w-full mb-8">
+        {/* Senja Widget */}
+        <div ref={senjaRef} className="w-full">
           <div 
             className="senja-embed w-full" 
             data-id="3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f" 
             data-mode="shadow" 
             data-lazyload="false"
             style={{ display: 'block', width: '100%' }}
-          />
-        </div>
-
-        {/* Senja Widget - Bottom */}
-        <div 
-          ref={senjaRef} 
-          className="w-full min-h-[300px] flex items-center justify-center"
-        >
-          <div 
-            className="senja-embed w-full" 
-            data-id="3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f" 
-            data-mode="shadow" 
-            data-lazyloaded="true"
           />
         </div>
       </div>
