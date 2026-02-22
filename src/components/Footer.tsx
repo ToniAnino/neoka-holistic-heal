@@ -24,7 +24,7 @@ export const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-3">
               <a
-                href="https://www.facebook.com/neokapsicologia/"
+                href="https://www.facebook.com/NeokaOficial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"
@@ -42,7 +42,7 @@ export const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com/neokaterapia"
+                href="https://twitter.com/neokaoficial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-primary flex items-center justify-center transition-colors"

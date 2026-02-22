@@ -50,9 +50,9 @@ const jsonLd = {
     "Nutrición y Dietética"
   ],
   "sameAs": [
-    "https://www.facebook.com/neokapsicologia/",
+    "https://www.facebook.com/NeokaOficial",
     "https://www.instagram.com/neokaoficial/",
-    "https://twitter.com/neokaterapia",
+    "https://twitter.com/neokaoficial",
     "https://www.youtube.com/channel/UCBrhtnUQXf86RAxp4-Hlo2g"
   ]
 };
