@@ -52,20 +52,31 @@ const Counter = ({ end, suffix = "", duration = 2000 }: CounterProps) => {
 
 export const TestimonialsSection = () => {
   const senjaRef = useRef<HTMLDivElement>(null);
+  const senjaTopRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
-    script.defer = true;
-    
+    // Script for top widget (async)
+    const scriptTop = document.createElement('script');
+    scriptTop.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
+    scriptTop.type = 'text/javascript';
+    scriptTop.async = true;
+
+    if (senjaTopRef.current) {
+      senjaTopRef.current.appendChild(scriptTop);
+    }
+
+    // Script for bottom widget (defer)
+    const scriptBottom = document.createElement('script');
+    scriptBottom.src = 'https://widget.senja.io/widget/3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f/platform.js';
+    scriptBottom.defer = true;
+
     if (senjaRef.current) {
-      senjaRef.current.appendChild(script);
+      senjaRef.current.appendChild(scriptBottom);
     }
 
     return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
+      if (scriptTop.parentNode) scriptTop.parentNode.removeChild(scriptTop);
+      if (scriptBottom.parentNode) scriptBottom.parentNode.removeChild(scriptBottom);
     };
   }, []);
 
@@ -114,7 +125,7 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* Senja Widget - Top */}
-        <div className="w-full mb-8">
+        <div ref={senjaTopRef} className="w-full mb-8">
           <div 
             className="senja-embed w-full" 
             data-id="3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f" 
