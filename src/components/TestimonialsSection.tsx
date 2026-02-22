@@ -113,7 +113,18 @@ export const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* Trustindex Google Reviews Widget */}
+        {/* Senja Widget - Top */}
+        <div className="w-full mb-8">
+          <div 
+            className="senja-embed w-full" 
+            data-id="3c5821bb-6ca8-4f97-b9f8-2165ec58ab7f" 
+            data-mode="shadow" 
+            data-lazyload="false"
+            style={{ display: 'block', width: '100%' }}
+          />
+        </div>
+
+        {/* Senja Widget - Bottom */}
         <div 
           ref={senjaRef} 
           className="w-full min-h-[300px] flex items-center justify-center"
