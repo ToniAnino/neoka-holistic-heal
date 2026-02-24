@@ -167,7 +167,7 @@ const PsicologiaSanitaria = () => {
               <Brain className="w-8 h-8 text-primary" />
             </div>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8">
-              Psicoterapia individualizada: Un camino hacia la calma
+              Psicoterapia individualizada, un camino hacia la calma
             </h2>
             <div className="text-muted-foreground text-lg leading-relaxed space-y-6">
               <p>
