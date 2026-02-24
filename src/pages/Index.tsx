@@ -61,7 +61,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <Helmet>
-        <title>Clínica de Psicología y Terapia de Pareja en Huelva | Neoka</title>
+        <title>Centro de Psicología y Terapia de Pareja en Huelva | Neoka</title>
         <meta name="description" content="Clínica de psicología y terapia de pareja en Huelva. Psicólogo Sanitario en Huelva con equipo multidisciplinar. Bienestar emocional, salud mental y atención integral. Reserva tu cita." />
         <link rel="canonical" href="https://centroneoka.es" />
         <meta property="og:type" content="website" />
