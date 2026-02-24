@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
-import heroImage from "@/assets/psicologia-hero.jpg";
+import heroImage from "@/assets/psicologia-huelva-hero.jpg";
 import mariaImage from "@/assets/maria-psicologa.jpg";
 
 const benefitsData = [
