@@ -51,7 +51,9 @@ export const HeroSection = () => {
           {/* Main Heading - H1 with SEO keyword */}
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-foreground leading-tight mb-4 animate-fade-up animation-delay-100">
             Clínica de{" "}
-            <span className="text-gradient">psicología y terapia de pareja</span>
+            <span className="text-primary">psicología y terapia</span>
+            {" "}
+            <span style={{ color: "hsl(174, 60%, 45%)" }}>de pareja</span>
             {" "}en Huelva
           </h1>
 
