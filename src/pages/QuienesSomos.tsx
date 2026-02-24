@@ -104,7 +104,7 @@ const QuienesSomos = () => {
               Quiénes somos
             </span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              Clínica de psicología y terapia de pareja en Huelva
+              Centro de psicología y terapia de pareja en Huelva
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Neoka nace como un espacio de salud integral donde cuerpo, mente y emociones se trabajan de forma coordinada.
