@@ -182,7 +182,7 @@ const PsicologiaSanitaria = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-10 lg:py-14 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-primary/5">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
