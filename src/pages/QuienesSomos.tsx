@@ -124,7 +124,7 @@ const QuienesSomos = () => {
             
             <div className="flex flex-col lg:flex-row gap-12 items-start">
               {/* Photo and info */}
-              <div className="flex-shrink-0 mx-auto lg:mx-0">
+              <div className="flex-shrink-0 mx-auto lg:mx-0 flex flex-col items-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl">
                   <img
                     src={director.image}
@@ -132,10 +132,10 @@ const QuienesSomos = () => {
                     className={`w-full h-full object-cover scale-110 ${director.imagePosition || ''}`}
                   />
                 </div>
-                <div className="text-center mt-6">
+                <div className="text-center mt-6 w-64">
                   <h3 className="font-serif text-2xl text-foreground italic">{director.name}</h3>
                   <p className="text-primary font-medium mt-1">{director.role}</p>
-                  <p className="text-sm text-muted-foreground mt-2 max-w-xs">{director.subtitle}</p>
+                  <p className="text-sm text-muted-foreground mt-2">{director.subtitle}</p>
                 </div>
               </div>
 
