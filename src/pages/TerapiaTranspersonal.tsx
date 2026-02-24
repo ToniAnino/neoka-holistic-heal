@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
-import heroImage from "@/assets/terapia-transpersonal-hero.jpg";
+import heroImage from "@/assets/terapia-transpersonal-huelva-hero.jpg";
 import nereaImage from "@/assets/nerea-terapeuta.jpg";
 
 const TerapiaTranspersonal = () => {

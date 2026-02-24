@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
-import heroImage from "@/assets/nutricion-hero.jpg";
+import heroImage from "@/assets/nutricion-huelva-hero.jpg";
 import marioImage from "@/assets/mario-nutricionista.png";
 
 const benefitsData = [
