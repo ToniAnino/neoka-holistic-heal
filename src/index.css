@@ -19,8 +19,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 25% 15%;
 
-    /* Primary - Teal original */
-    --primary: 168 50% 41%;
+    /* Primary - #199386 */
+    --primary: 174 78% 31%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Light sage for backgrounds */
@@ -39,7 +39,7 @@
 
     --border: 183 15% 88%;
     --input: 183 15% 88%;
-    --ring: 168 50% 41%;
+    --ring: 174 78% 31%;
 
     --radius: 0.75rem;
 
