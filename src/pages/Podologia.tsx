@@ -79,7 +79,13 @@ const Podologia = () => {
         "addressCountry": "ES"
       }
     },
-    "knowsAbout": ["Estudio biomecánico de la pisada", "Plantillas personalizadas", "Pie Diabético", "Fascitis Plantar", "Quiropodia"]
+    "knowsAbout": ["Estudio biomecánico de la pisada", "Plantillas personalizadas", "Pie Diabético", "Fascitis Plantar", "Quiropodia"],
+    "employee": {
+      "@type": "Person",
+      "name": "Paola Buitrago",
+      "jobTitle": "Podóloga Colegiada",
+      "identifier": "838212329"
+    }
   };
 
   return (
@@ -227,7 +233,7 @@ const Podologia = () => {
                       Paola Buitrago
                     </h3>
                     <p className="text-amber-600 font-medium mb-1">Especialista en Biomecánica y Pie Diabético</p>
-                    <p className="text-sm text-muted-foreground">Más de 10 años cuidando la salud de tus pies</p>
+                    <p className="text-sm text-muted-foreground">Número de colegiado: 838212329</p>
                   </div>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">
