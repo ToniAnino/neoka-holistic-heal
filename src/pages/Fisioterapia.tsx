@@ -61,6 +61,12 @@ const Fisioterapia = () => {
         "@type": "PostalAddress",
         "addressLocality": "Huelva",
         "addressCountry": "ES"
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Estefanía M.",
+        "jobTitle": "Fisioterapeuta Colegiada",
+        "identifier": "4399"
       }
     },
     "areaServed": "Huelva",
@@ -370,7 +376,7 @@ const Fisioterapia = () => {
                       Soy Estefanía
                     </h3>
                     <p className="text-emerald-600 font-medium mb-1">Fisioterapeuta Colegiada</p>
-                    <p className="text-sm text-muted-foreground">Diplomada en 2009</p>
+                    <p className="text-sm text-muted-foreground">Número de colegiado: 4399</p>
                   </div>
                   
                   <p className="text-muted-foreground leading-relaxed mb-8">

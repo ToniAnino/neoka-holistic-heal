@@ -57,11 +57,6 @@ export const HeroSection = () => {
             {" "}en Huelva
           </h1>
 
-          {/* H2 Subtitle */}
-          <h2 className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground/90 font-medium mb-6 animate-fade-up animation-delay-150">
-            Cuidamos tu bienestar mental y emocional en cada etapa de tu vida
-          </h2>
-
           {/* First paragraph */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed animate-fade-up animation-delay-200">
             Contamos con un equipo de profesionales comprometidos y especializados en psicología y terapia de pareja, en un espacio pensado para tu cuidado integral.

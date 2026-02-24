@@ -8,6 +8,7 @@ import estefaniaFisioterapeuta from "@/assets/estefania-fisioterapeuta-new.jpg";
 import paolaPodologa from "@/assets/paola-podologa-recortada.png";
 import marioNutricionista from "@/assets/mario-nutricionista-new.jpg";
 import nereaTerapeuta from "@/assets/nerea-terapeuta-new.jpg";
+import centroImage from "@/assets/centro-psicologia-terapia-huelva.png";
 
 interface TeamMember {
   name: string;
@@ -116,7 +117,7 @@ const QuienesSomos = () => {
       </section>
 
       {/* Director Section */}
-      <section className="py-20 lg:py-28 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl text-primary text-center mb-12">Sobre mí</h2>
@@ -168,7 +169,7 @@ const QuienesSomos = () => {
       </section>
 
       {/* Team Members Section */}
-      <section className="py-20 lg:py-28 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -207,7 +208,7 @@ const QuienesSomos = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 lg:py-28 bg-background">
+      <section className="py-10 lg:py-14 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
@@ -219,15 +220,23 @@ const QuienesSomos = () => {
             <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
               Cada rincón de la clínica está diseñado para transmitir calma, cercanía y confianza, creando un entorno seguro donde poder trabajar el bienestar físico y emocional con profesionales de diferentes disciplinas.
             </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Creemos que el espacio también forma parte del proceso. Por eso cuidamos cada detalle para que, desde que entras, puedas bajar el ritmo y centrarte en ti.
             </p>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={centroImage}
+                alt="Centro de psicología y terapia en Huelva - Clínica Neoka"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 lg:py-28 bg-secondary/30">
+      <section className="py-10 lg:py-14 bg-secondary/30">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
