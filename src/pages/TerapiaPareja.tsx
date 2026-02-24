@@ -180,7 +180,7 @@ const TerapiaPareja = () => {
               Especialidades
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-6">
-              Áreas de intervención en psicología de pareja
+              Áreas de intervención en terapia de pareja
             </h2>
           </div>
 
