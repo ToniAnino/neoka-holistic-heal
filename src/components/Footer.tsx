@@ -70,7 +70,7 @@ export const Footer = () => {
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-background/70">
                   Calle La Palma, 4, Local derecha<br />
-                  21001 Huelva, España
+                  21002 Huelva, España
                 </span>
               </li>
               <li className="flex gap-3">
