@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
 import heroImage from "@/assets/terapia-transpersonal-huelva-hero.jpg";
-import nereaImage from "@/assets/nerea-terapeuta.jpg";
+import nereaImage from "@/assets/nerea-terapeuta-new.jpg";
 
 const TerapiaTranspersonal = () => {
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
@@ -259,17 +259,6 @@ const TerapiaTranspersonal = () => {
                 Cuando comprendes el mapa de tu vida, dejas de caminar a ciegas.
               </p>
             </div>
-            <div className="mt-10">
-              <Button size="lg" className="bg-violet-500 hover:bg-violet-600" asChild>
-                <a 
-                  href="https://wa.me/34617642564?text=Me%20gustaría%20iniciar%20un%20proceso%20de%20terapia%20transpersonal" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Iniciar proceso de terapia transpersonal
-                </a>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -304,7 +293,7 @@ const TerapiaTranspersonal = () => {
                     <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground mb-2">
                       Soy Nerea
                     </h3>
-                    <p className="text-violet-500 font-medium mb-1">Terapeuta Transpersonal</p>
+                    <p className="text-violet-500 font-medium mb-1">Terapeuta Transpersonal y de Pareja</p>
                     <p className="text-sm text-muted-foreground">Directora del Centro Neoka</p>
                   </div>
                   
