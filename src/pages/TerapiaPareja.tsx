@@ -286,7 +286,7 @@ const TerapiaPareja = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="border-rose-200 text-rose-600 hover:bg-rose-50" asChild>
-                <Link to="/#ubicación">Ver ubicación clínica</Link>
+                <a href="/#ubicacion">Ver ubicación clínica</a>
               </Button>
             </div>
           </div>

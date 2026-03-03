@@ -422,7 +422,7 @@ const Fisioterapia = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link to="/#ubicación">Ver ubicación clínica</Link>
+                <a href="/#ubicacion">Ver ubicación clínica</a>
               </Button>
             </div>
           </div>
