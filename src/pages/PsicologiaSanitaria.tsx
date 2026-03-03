@@ -292,7 +292,7 @@ const PsicologiaSanitaria = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link to="/#contacto">Ver ubicación en Huelva</Link>
+                <Link to="/#ubicación">Ver ubicación clínica</Link>
               </Button>
             </div>
           </div>
