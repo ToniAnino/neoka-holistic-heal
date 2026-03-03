@@ -214,9 +214,19 @@ const PsicologiaSanitaria = () => {
         </div>
       </section>
 
-      {/* María Profile Section - Implementando los Microdatos que pediste */}
+      {/* Nuestro Equipo */}
       <section className="py-10 lg:py-14 bg-background" itemScope itemType="https://schema.org/Physician">
         <div className="container">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
+              Conoce a María
+            </span>
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
+              Nuestro Equipo
+            </h2>
+            <p className="text-muted-foreground mt-4">Psicóloga sanitaria en Huelva</p>
+          </div>
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-card rounded-2xl card-shadow border border-border/50 overflow-hidden">
               <div className="grid md:grid-cols-[300px_1fr] gap-0">
@@ -237,7 +247,7 @@ const PsicologiaSanitaria = () => {
                     </h3>
                     <p className="text-primary font-medium mb-1" itemProp="jobTitle">Psicóloga General Sanitaria</p>
                     <p className="text-sm text-muted-foreground">
-                      Colegiada: <span itemProp="credentialCategory">AN10746</span>
+                      Número de colegiado: <span itemProp="credentialCategory">AN10746</span>
                     </p>
                   </div>
                   
@@ -251,7 +261,7 @@ const PsicologiaSanitaria = () => {
                     onClick={() => setIsTeamModalOpen(true)}
                     className="w-fit"
                   >
-                    Conoce más sobre el equipo
+                    Ver equipo médico
                   </Button>
                 </div>
               </div>
