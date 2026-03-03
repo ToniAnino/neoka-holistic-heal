@@ -346,7 +346,7 @@ const TerapiaTranspersonal = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="border-violet-200 text-violet-600 hover:bg-violet-50" asChild>
-                <Link to="/#contacto">Contactar para resolver dudas</Link>
+                <Link to="/#ubicación">Ver ubicación clínica</Link>
               </Button>
             </div>
           </div>
