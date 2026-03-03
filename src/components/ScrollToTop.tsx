@@ -7,13 +7,15 @@ export const ScrollToTop = () => {
   useEffect(() => {
     // If there's a hash, scroll to that element
     if (hash) {
-      // Small delay to ensure the page has rendered
-      setTimeout(() => {
+      // Retry to ensure all sections have fully rendered
+      const scrollToHash = () => {
         const element = document.getElementById(hash.replace("#", ""));
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
-      }, 100);
+      };
+      setTimeout(scrollToHash, 300);
+      setTimeout(scrollToHash, 800);
     } else {
       // No hash, scroll to top
       window.scrollTo(0, 0);
