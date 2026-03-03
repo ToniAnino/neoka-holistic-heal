@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 import neokaLogo from "@/assets/neoka-logo.png";
 
 export const Footer = () => {
@@ -121,24 +122,24 @@ export const Footer = () => {
             <h3 className="font-serif text-lg font-semibold mb-6">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-background/70 hover:text-primary transition-colors">
+                <Link to="/aviso-legal" className="text-background/70 hover:text-primary transition-colors">
                   Aviso Legal
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-background/70 hover:text-primary transition-colors">
+                <Link to="/privacidad" className="text-background/70 hover:text-primary transition-colors">
                   Política de Privacidad
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-background/70 hover:text-primary transition-colors">
+                <Link to="/cookies" className="text-background/70 hover:text-primary transition-colors">
                   Política de Cookies
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-background/70 hover:text-primary transition-colors">
+                <Link to="/terminos" className="text-background/70 hover:text-primary transition-colors">
                   Términos y Condiciones
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
