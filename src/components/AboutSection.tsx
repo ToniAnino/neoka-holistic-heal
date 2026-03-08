@@ -21,12 +21,12 @@ export const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Column */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden card-shadow">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10" />
+            <div className="relative rounded-2xl overflow-hidden card-shadow">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10 z-10" />
               <img
                 src={equipoNeoka}
                 alt="Equipo del Centro Neoka en Huelva"
-                className="w-full h-full object-cover object-[center_25%]"
+                className="w-full h-auto block"
                 loading="lazy"
               />
             </div>
