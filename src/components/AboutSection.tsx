@@ -21,7 +21,7 @@ export const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Column */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden card-shadow">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden card-shadow">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10" />
               <img
                 src={equipoNeoka}
