@@ -4,7 +4,7 @@ const Privacidad = () => (
   <LegalPageLayout title="Política de Privacidad – Centro Neoka">
     <h2>1. Responsable del Tratamiento</h2>
     <p>
-      El responsable del tratamiento de sus datos es El responsable del tratamiento de sus datos es NEOKA, con domicilio, con domicilio
+      El responsable del tratamiento de sus datos es NEOKA, con domicilio
       en Calle La Palma, 4, Local derecha, 21002 Huelva.
     </p>
 
