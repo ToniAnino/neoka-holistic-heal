@@ -9,8 +9,7 @@ const AvisoLegal = () => (
       Comercio Electrónico, se reflejan los siguientes datos:
     </p>
     <ul>
-      <li><strong>Titular:</strong> [TU NOMBRE COMPLETO / RAZÓN SOCIAL]</li>
-      <li><strong>CIF/NIF:</strong> [TU DNI O CIF]</li>
+      <li><strong>Titular:</strong> NEOKA</li>
       <li><strong>Domicilio:</strong> Calle La Palma, 4, Local derecha, 21002 Huelva, España.</li>
       <li><strong>Teléfono:</strong> 617 64 25 64</li>
       <li><strong>Correo electrónico:</strong> <a href="mailto:webneoka@gmail.com">webneoka@gmail.com</a></li>
