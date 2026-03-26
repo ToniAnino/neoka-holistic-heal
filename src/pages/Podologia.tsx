@@ -131,7 +131,7 @@ const Podologia = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
             Podólogo en Huelva
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto animate-fade-up animation-delay-100 mb-8">
+          <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto animate-fade-up animation-delay-100 mb-8 font-medium bg-background/70 backdrop-blur-sm rounded-xl px-6 py-3">
             Expertos en plantillas personalizadas y estudio biomecánico de la pisada
           </p>
           <Button size="lg" className="bg-amber-600 hover:bg-amber-700 animate-fade-up animation-delay-200" asChild>
