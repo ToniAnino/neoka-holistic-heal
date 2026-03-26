@@ -140,7 +140,7 @@ const TerapiaPareja = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
             Terapia de Pareja en Huelva
           </h1>
-          <h2 className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto animate-fade-up font-medium">
+          <h2 className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto animate-fade-up font-medium bg-background/50 backdrop-blur-sm rounded-xl px-6 py-3">
             Acompañamiento profesional para superar crisis y fortalecer vuestro vínculo emocional.
           </h2>
           <div className="mt-8">
