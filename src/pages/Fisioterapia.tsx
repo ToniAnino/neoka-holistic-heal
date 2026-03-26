@@ -348,10 +348,10 @@ const Fisioterapia = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-emerald-600 uppercase tracking-widest mb-4">
-              Nuestro Equipo
+              Conoce a Estefanía
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Estefanía, Fisioterapeuta en Huelva
+              Fisioterapeuta en Huelva
             </h2>
           </div>
 
@@ -389,7 +389,7 @@ const Fisioterapia = () => {
                     onClick={() => setIsTeamModalOpen(true)}
                     className="w-fit bg-emerald-600 hover:bg-emerald-700"
                   >
-                    Ver formación completa
+                    Ver equipo médico
                   </Button>
                 </div>
               </div>

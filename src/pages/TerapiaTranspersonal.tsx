@@ -268,10 +268,10 @@ const TerapiaTranspersonal = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-violet-500 uppercase tracking-widest mb-4">
-              Nuestro Equipo
+              Conoce a Nerea
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Nerea, terapeuta transpersonal en Neoka
+              Terapeuta transpersonal en Huelva
             </h2>
           </div>
 
