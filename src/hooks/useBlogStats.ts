@@ -50,60 +50,26 @@ export const useBlogStats = (postId: string) => {
     fetchStats();
   }, [fetchStats]);
 
-  // Increment views
+  // Increment views via secure RPC
   const incrementViews = useCallback(async () => {
     try {
-      // Check if stats exist
-      const { data: existing } = await supabase
-        .from("posts_stats")
-        .select("id, views")
-        .eq("post_id", postId)
-        .maybeSingle();
-
-      if (existing) {
-        await supabase
-          .from("posts_stats")
-          .update({ views: existing.views + 1 })
-          .eq("post_id", postId);
-      } else {
-        await supabase
-          .from("posts_stats")
-          .insert({ post_id: postId, views: 1, likes: 0 });
-      }
-
+      await supabase.rpc("increment_post_views", { p_post_id: postId });
       setStats((prev) => ({ ...prev, views: prev.views + 1 }));
     } catch (error) {
       console.error("Error incrementing views:", error);
     }
   }, [postId]);
 
-  // Toggle like
+  // Toggle like via secure RPC
   const toggleLike = useCallback(async () => {
     try {
       const likedPosts = JSON.parse(localStorage.getItem("likedPosts") || "[]");
       const alreadyLiked = likedPosts.includes(postId);
 
-      // Check if stats exist
-      const { data: existing } = await supabase
-        .from("posts_stats")
-        .select("id, likes")
-        .eq("post_id", postId)
-        .maybeSingle();
-
-      const newLikeCount = alreadyLiked
-        ? Math.max(0, (existing?.likes || 1) - 1)
-        : (existing?.likes || 0) + 1;
-
-      if (existing) {
-        await supabase
-          .from("posts_stats")
-          .update({ likes: newLikeCount })
-          .eq("post_id", postId);
-      } else {
-        await supabase
-          .from("posts_stats")
-          .insert({ post_id: postId, views: 0, likes: 1 });
-      }
+      const { data: newLikeCount } = await supabase.rpc("toggle_post_like", {
+        p_post_id: postId,
+        p_increment: !alreadyLiked,
+      });
 
       // Update localStorage
       if (alreadyLiked) {
@@ -121,7 +87,7 @@ export const useBlogStats = (postId: string) => {
       setIsLiked(!alreadyLiked);
       setStats((prev) => ({
         ...prev,
-        likes: newLikeCount,
+        likes: newLikeCount ?? prev.likes,
       }));
     } catch (error) {
       console.error("Error toggling like:", error);

@@ -115,7 +115,11 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      increment_post_views: { Args: { p_post_id: string }; Returns: undefined }
+      toggle_post_like: {
+        Args: { p_increment: boolean; p_post_id: string }
+        Returns: number
+      }
     }
     Enums: {
       [_ in never]: never
