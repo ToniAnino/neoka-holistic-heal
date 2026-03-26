@@ -1,4 +1,9 @@
 import React from "react";
+import blogMirarOtroLado from "@/assets/blog-mirar-otro-lado.jpg";
+import blogCompromisoPareja from "@/assets/blog-compromiso-pareja.jpg";
+import blogCatarsisEmocional from "@/assets/blog-catarsis-emocional.jpg";
+import blogIdolosDelCirco from "@/assets/blog-idolos-del-circo.jpg";
+import blogNereaBallester from "@/assets/blog-nerea-ballester-terapeuta.jpg";
 
 export interface BlogPost {
   id: number;
@@ -74,8 +79,8 @@ export const blogPosts: BlogPost[] = [
         <p>Es curioso, pero, podría llevarlo a cualquier área de la vida. Vemos a una persona llorar por la calle y nadie se acerca a preguntar. Miramos a otro lado. Vemos a un emprendedor en apuros, y preferimos ir al Mercadona que a ese emprendedor que tiene una frutería en la esquina. Vemos a una persona hablar más profundo o cosas diferentes y nos alejamos, la tachamos de <em>"friki", "rara" o "loca"</em>. Seguimos mirando hacia otro lado.</p>
         
         <img 
-          src="https://static.wixstatic.com/media/281c03_e8f5dc2c2ca44a1f82686dd4127f165d~mv2.jpg/v1/fill/w_350,h_361,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/281c03_e8f5dc2c2ca44a1f82686dd4127f165d~mv2.jpg" 
-          alt="No querer ver" 
+          src={blogMirarOtroLado} 
+          alt="No querer ver - reflexión sobre mirar hacia otro lado" 
           className="my-6 mx-auto rounded-lg max-w-full"
         />
         
@@ -110,8 +115,8 @@ export const blogPosts: BlogPost[] = [
         <p>Tiempos estos que corren en los que todos dicen querer (que no amar) y en los que algún que otro atrevido/a, osa usar un "te amo" sin tener en cuenta la importancia de semejante palabra, pues, amar, no es lo mismo que querer. Querer es un intercambio, yo quiero algo de ti y tú de mi. No es altruista, no es limpio. Amar es incondicional, es estar por encima del ego, es entregar el alma.</p>
         
         <img 
-          src="https://static.wixstatic.com/media/281c03_f89766bcb9844f73a00a9adf592a73da~mv2.jpg/v1/fill/w_338,h_338,al_c,q_80,enc_avif,quality_auto/281c03_f89766bcb9844f73a00a9adf592a73da~mv2.jpg" 
-          alt="Compromiso" 
+          src={blogCompromisoPareja} 
+          alt="Compromiso en la pareja - terapia en Huelva" 
           className="my-6 mx-auto rounded-lg max-w-full"
         />
         
@@ -197,8 +202,8 @@ export const blogPosts: BlogPost[] = [
         <p>Es cuestión de que te des tiempo y seas tremendamente amoroso contigo mismo, ya que es la mejor manera para reconfortarte. <strong>Yo estoy jodida, no lo voy a negar</strong> (y eso que no he contado ni la mitad de lo que me ha pasado entre historias amorosas y enfermedades en lo que llevo de mes, todo juntito) pero <strong>también sé que saldré, como siempre. Porque yo siempre salgo. Porque mi fuerza interior es más grande que todo esto. Porque mi amor interior es más potente que todo el miedo que me pueda inundar. Y porque, aunque mil veces me pierda o caiga, mil veces vuelvo a beber de la misma fuente: la mía. Yo sé quién soy. Lo que doy. Lo que seré.</strong>(REPITE PARA TI MISMO ESTE PARRAFO, te lo regalo, como mantra).</p>
         
         <img 
-          src="https://static.wixstatic.com/media/281c03_ef87bc8b1389473996d6dbc79aff0afb~mv2.jpeg/v1/fill/w_350,h_263,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/281c03_ef87bc8b1389473996d6dbc79aff0afb~mv2.jpeg" 
-          alt="Catarsis" 
+          src={blogCatarsisEmocional} 
+          alt="Catarsis emocional - perderse y encontrarse" 
           className="my-6 mx-auto rounded-lg max-w-full"
         />
         
@@ -233,8 +238,8 @@ export const blogPosts: BlogPost[] = [
         <p>Siete y veinticinco de la mañana de un lunes. Me levanto y ¡zas! aparece una <strong>notificación en Facebook</strong> que me pregunta en qué estoy pensando. <strong>Empezamos bien la semana. Tengo siete notificaciones más</strong> y con la caraja típica de la mañana, voy deslizando con el dedo hacia la derecha para borrarlas con la mala pata que dejo pulsado demasiado tiempo (un segundo más) la notificación de Facebook con la consecuencia de que su apertura.</p>
         
         <img 
-          src="https://static.wixstatic.com/media/281c03_75885ac982494054841b84a0907b3f72~mv2.jpg/v1/fill/w_350,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/281c03_75885ac982494054841b84a0907b3f72~mv2.jpg" 
-          alt="Ídolos del circo" 
+          src={blogIdolosDelCirco} 
+          alt="Ídolos del circo - artículo Diario de Huelva" 
           className="my-6 mx-auto rounded-lg max-w-full"
         />
         
@@ -288,8 +293,8 @@ export const blogPosts: BlogPost[] = [
         <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si sientes que ha llegado tu momento de transformación y quieres apoyo profesional, descubre nuestra <a href="/psicologia-sanitaria" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>Psicología Sanitaria en Huelva</a>. En Neoka estamos aquí para acompañarte en el proceso.</p>
         
         <img 
-          src="https://static.wixstatic.com/media/281c03_9d263f6f4d424e4d9a09a3c44570dd8c~mv2.jpg/v1/fill/w_157,h_158,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/281c03_9d263f6f4d424e4d9a09a3c44570dd8c~mv2.jpg" 
-          alt="Nerea Ballester" 
+          src={blogNereaBallester} 
+          alt="Nerea Ballester - terapeuta transpersonal en Huelva" 
           className="my-6 mx-auto rounded-lg max-w-full"
         />
         

@@ -7,7 +7,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import mariaPsicologa from "@/assets/maria-psicologa-new.jpg";
 import estefaniaFisioterapeuta from "@/assets/estefania-fisioterapeuta-new.jpg";
-import paolaPodologa from "@/assets/paola-podologa-recortada.png";
+import paolaPodologa from "@/assets/paola-podologa-huelva.png";
 import marioNutricionista from "@/assets/mario-nutricionista-new.jpg";
 import nereaTerapeuta from "@/assets/nerea-terapeuta-new.jpg";
 

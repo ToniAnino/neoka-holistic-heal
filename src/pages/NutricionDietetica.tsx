@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { TeamModal } from "@/components/TeamModal";
 import heroImage from "@/assets/nutricion-huelva-hero.jpg";
-import marioImage from "@/assets/mario-nutricionista.png";
+import marioImage from "@/assets/mario-nutricionista-huelva.png";
 
 const benefitsData = [
   {

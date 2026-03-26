@@ -1,7 +1,7 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/centro-neoka-huelva-hero.jpg";
 
 export const HeroSection = () => {
   const [scrollY, setScrollY] = useState(0);
