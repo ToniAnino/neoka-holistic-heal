@@ -1,8 +1,8 @@
-import client1 from "@/assets/client-1.jpg";
+import client1 from "@/assets/client-colaborador-institucional.jpg";
 import clientCanalcosta from "@/assets/client-canalcosta.png";
 import clientEconomiaSocial from "@/assets/client-economia-social.png";
-import clientHi from "@/assets/client-hi.png";
-import clientTwitter from "@/assets/client-twitter.jpg";
+import clientHi from "@/assets/client-huelva-informacion.png";
+import clientTwitter from "@/assets/neoka-redes-sociales.jpg";
 import clientMancomunidad from "@/assets/client-mancomunidad.jpg";
 import clientSporting from "@/assets/client-sporting.jpg";
 
