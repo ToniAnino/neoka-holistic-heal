@@ -208,10 +208,10 @@ const Podologia = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-amber-600 uppercase tracking-widest mb-4">
-              Nuestro Equipo
+              Conoce a Paola
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Paola, Podóloga en Huelva
+              Podóloga en Huelva
             </h2>
           </div>
 

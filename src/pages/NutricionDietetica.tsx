@@ -130,7 +130,7 @@ const NutricionDietetica = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
             Nutricionista en Huelva
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
+          <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8 font-medium drop-shadow-sm">
             Mejora tu salud con nutrición clínica y deportiva basada en evidencia
           </p>
           <Button size="lg" className="bg-lime-600 hover:bg-lime-700 animate-fade-up animation-delay-200" asChild>
@@ -247,10 +247,10 @@ const NutricionDietetica = () => {
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="inline-block text-sm font-medium text-lime-600 uppercase tracking-widest mb-4">
-              Dietista-Nutricionista
+              Conoce a Mario
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground">
-              Conoce a Mario, tu Nutricionista en Huelva
+              Nutricionista en Huelva
             </h2>
           </div>
 

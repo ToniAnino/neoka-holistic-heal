@@ -97,14 +97,14 @@ const QuienesSomos = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-gradient-to-br from-primary/5 via-background to-secondary/30">
+      <section className="relative pt-32 pb-10 lg:pt-40 lg:pb-14 bg-gradient-to-br from-primary/5 via-background to-secondary/30">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block text-sm font-medium text-primary uppercase tracking-widest mb-4">
               Quiénes somos
             </span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              Centro de psicología y terapia de pareja en Huelva
+              Centro Sanitario Integral en Huelva: Psicología, Fisioterapia y Bienestar
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Neoka nace como un espacio de salud integral donde cuerpo, mente y emociones se trabajan de forma coordinada.
