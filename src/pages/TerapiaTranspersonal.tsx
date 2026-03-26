@@ -71,10 +71,10 @@ const TerapiaTranspersonal = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
             Terapia transpersonal
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4">
+          <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-4 font-medium bg-background/70 backdrop-blur-sm rounded-xl px-6 py-3">
             Un camino de autoconocimiento, sentido y transformación interior
           </p>
-          <h2 className="text-xl md:text-2xl text-foreground/90 font-medium max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
+          <h2 className="text-xl md:text-2xl text-foreground font-medium max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8 bg-background/70 backdrop-blur-sm rounded-xl px-6 py-3">
             Cuando lo de afuera ya no te sirve, toca mirar hacia dentro.
           </h2>
           <Button size="lg" className="bg-violet-500 hover:bg-violet-600 animate-fade-up animation-delay-200" asChild>
