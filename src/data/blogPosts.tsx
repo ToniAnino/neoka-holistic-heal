@@ -1,4 +1,9 @@
 import React from "react";
+import blogMirarOtroLado from "@/assets/blog-mirar-otro-lado.jpg";
+import blogCompromisoPareja from "@/assets/blog-compromiso-pareja.jpg";
+import blogCatarsisEmocional from "@/assets/blog-catarsis-emocional.jpg";
+import blogIdolosDelCirco from "@/assets/blog-idolos-del-circo.jpg";
+import blogNereaBallester from "@/assets/blog-nerea-ballester-terapeuta.jpg";
 
 export interface BlogPost {
   id: number;
