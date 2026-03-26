@@ -66,35 +66,17 @@ export const useAllBlogStats = (postIds: string[]) => {
     fetchAllStats();
   }, [fetchAllStats]);
 
-  // Toggle like for a specific post
+  // Toggle like via secure RPC
   const toggleLike = useCallback(async (postId: string) => {
     try {
       const stored = JSON.parse(localStorage.getItem("likedPosts") || "[]");
       const alreadyLiked = stored.includes(postId);
 
-      // Check if stats exist
-      const { data: existing } = await supabase
-        .from("posts_stats")
-        .select("id, likes")
-        .eq("post_id", postId)
-        .maybeSingle();
+      const { data: newLikeCount } = await supabase.rpc("toggle_post_like", {
+        p_post_id: postId,
+        p_increment: !alreadyLiked,
+      });
 
-      const newLikeCount = alreadyLiked
-        ? Math.max(0, (existing?.likes || 1) - 1)
-        : (existing?.likes || 0) + 1;
-
-      if (existing) {
-        await supabase
-          .from("posts_stats")
-          .update({ likes: newLikeCount })
-          .eq("post_id", postId);
-      } else {
-        await supabase
-          .from("posts_stats")
-          .insert({ post_id: postId, views: 0, likes: 1 });
-      }
-
-      // Update localStorage
       if (alreadyLiked) {
         const newStored = stored.filter((id: string) => id !== postId);
         localStorage.setItem("likedPosts", JSON.stringify(newStored));
@@ -109,7 +91,7 @@ export const useAllBlogStats = (postIds: string[]) => {
         ...prev,
         [postId]: {
           ...prev[postId],
-          likes: newLikeCount,
+          likes: newLikeCount ?? prev[postId]?.likes ?? 0,
         },
       }));
     } catch (error) {
@@ -117,26 +99,10 @@ export const useAllBlogStats = (postIds: string[]) => {
     }
   }, []);
 
-  // Increment views for a specific post
+  // Increment views via secure RPC
   const incrementViews = useCallback(async (postId: string) => {
     try {
-      const { data: existing } = await supabase
-        .from("posts_stats")
-        .select("id, views")
-        .eq("post_id", postId)
-        .maybeSingle();
-
-      if (existing) {
-        await supabase
-          .from("posts_stats")
-          .update({ views: existing.views + 1 })
-          .eq("post_id", postId);
-      } else {
-        await supabase
-          .from("posts_stats")
-          .insert({ post_id: postId, views: 1, likes: 0 });
-      }
-
+      await supabase.rpc("increment_post_views", { p_post_id: postId });
       setAllStats((prev) => ({
         ...prev,
         [postId]: {
