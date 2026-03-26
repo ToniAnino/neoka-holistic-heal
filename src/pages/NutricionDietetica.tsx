@@ -142,6 +142,7 @@ const NutricionDietetica = () => {
               Pedir cita con el nutricionista
             </a>
           </Button>
+        </div>
       </section>
 
       {/* Introduction Section */}
