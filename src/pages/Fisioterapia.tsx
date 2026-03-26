@@ -162,7 +162,7 @@ const Fisioterapia = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-4 animate-fade-up">
             Fisioterapia en Huelva
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8">
+          <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto animate-fade-up animation-delay-100 mb-8 font-medium bg-background/70 backdrop-blur-sm rounded-xl px-6 py-3">
             Recupera tu movilidad y calidad de vida con un enfoque integral y profesional
           </p>
           <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 animate-fade-up animation-delay-200" asChild>
