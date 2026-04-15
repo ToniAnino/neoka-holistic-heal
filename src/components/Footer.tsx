@@ -70,8 +70,9 @@ export const Footer = () => {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-background/70">
-                  C. La Palma, 4, Local derecha<br />
-                  21002 Huelva, España
+                  <strong className="text-background/90">Neoka - Centro de Psicología, Terapia de Pareja y Coaching</strong><br />
+                  C. la Palma, 4, Local derecha<br />
+                  21002 Huelva
                 </span>
               </li>
               <li className="flex gap-3">
