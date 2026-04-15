@@ -10,7 +10,8 @@ export const BlogSection = () => {
   const navigate = useNavigate();
   const location = useLocation();
   
-  const postSlugs = blogPosts.map(p => p.slug);
+  const visiblePosts = blogPosts.slice(0, 6);
+  const postSlugs = visiblePosts.map(p => p.slug);
   const { allStats, likedPosts, toggleLike, updateCommentCount, refetchStats } = useAllBlogStats(postSlugs);
 
   // Check if URL matches a blog post on mount (for refresh with modal open)
@@ -55,7 +56,7 @@ export const BlogSection = () => {
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {blogPosts.map((post) => {
+          {blogPosts.slice(0, 6).map((post) => {
             const stats = allStats[post.slug] || { views: 0, likes: 0, comments: 0 };
             const isLiked = likedPosts.has(post.slug);
             
