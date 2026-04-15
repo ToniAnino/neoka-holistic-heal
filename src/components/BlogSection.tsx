@@ -55,7 +55,7 @@ export const BlogSection = () => {
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {blogPosts.map((post) => {
+          {blogPosts.slice(0, 6).map((post) => {
             const stats = allStats[post.slug] || { views: 0, likes: 0, comments: 0 };
             const isLiked = likedPosts.has(post.slug);
             
