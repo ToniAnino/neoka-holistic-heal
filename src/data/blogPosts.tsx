@@ -4,6 +4,8 @@ import blogCompromisoPareja from "@/assets/blog-compromiso-pareja.jpg";
 import blogCatarsisEmocional from "@/assets/blog-catarsis-emocional.jpg";
 import blogIdolosDelCirco from "@/assets/blog-idolos-del-circo.jpg";
 import blogNereaBallester from "@/assets/blog-nerea-ballester-terapeuta.jpg";
+import blogComunicacionAsertiva from "@/assets/blog-comunicacion-asertiva.jpg";
+import blogComunicacionAsertivaMid from "@/assets/blog-comunicacion-asertiva-intermedia.jpg";
 
 export interface BlogPost {
   id: number;
@@ -18,6 +20,54 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 7,
+    slug: "comunicacion-asertiva-pareja",
+    title: "5 Claves para mejorar la comunicación asertiva en tu relación.",
+    date: "15 abr 2026",
+    readTime: "5 Min. de lectura",
+    image: blogComunicacionAsertiva,
+    metaTitle: "5 Claves para la comunicación asertiva en pareja | Terapia de Pareja Huelva",
+    metaDescription: "Descubre las 5 claves esenciales para mejorar la comunicación asertiva en tu relación de pareja. Escucha activa, validación emocional y más consejos profesionales.",
+    content: (
+      <>
+        <p>La comunicación es el pilar fundamental de cualquier relación de pareja. Sin embargo, <strong>comunicarse no es lo mismo que hablar</strong>. Muchas parejas hablan, discuten, se expresan… pero pocas realmente se comunican de forma asertiva. La comunicación asertiva implica expresar lo que sientes y necesitas de manera clara, respetuosa y empática, sin atacar ni someterte.</p>
+        <p>En nuestra experiencia como profesionales de la terapia de pareja en Huelva, hemos visto cómo la falta de comunicación asertiva es una de las principales causas de conflicto y desgaste en las relaciones. Por eso, hoy queremos compartir contigo <strong>cinco claves esenciales</strong> que pueden transformar la forma en que te relacionas con tu pareja.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">1. Escucha activa: oír no es escuchar</p>
+        <p>La escucha activa va mucho más allá de permanecer en silencio mientras el otro habla. Se trata de <strong>prestar atención plena</strong>, sin interrumpir, sin preparar mentalmente tu respuesta y sin juzgar. Cuando practicas la escucha activa, le transmites a tu pareja que lo que dice importa, que sus emociones tienen valor.</p>
+        <p>Un ejercicio útil es <strong>parafrasear</strong> lo que tu pareja acaba de decir: "Si te he entendido bien, lo que me dices es que…". Esto no solo demuestra que estás presente, sino que evita malentendidos que muchas veces escalan en discusiones innecesarias.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">2. Hablar desde el "yo": responsabilízate de tus emociones</p>
+        <p>Uno de los errores más comunes en las discusiones de pareja es utilizar el "tú" como arma: <em>"Tú nunca me escuchas"</em>, <em>"Tú siempre llegas tarde"</em>. Este tipo de frases generan una respuesta defensiva automática en la otra persona.</p>
+        <p>La alternativa asertiva es <strong>hablar desde el "yo"</strong>: <em>"Yo me siento ignorado/a cuando hablo y no recibo respuesta"</em>, <em>"Yo necesito que respetemos los horarios que acordamos"</em>. De esta forma, expresas tu emoción sin culpabilizar, abriendo la puerta al diálogo en lugar de al conflicto.</p>
+
+        <img 
+          src={blogComunicacionAsertivaMid} 
+          alt="Pareja comunicándose con empatía - comunicación asertiva en Huelva" 
+          className="my-6 mx-auto rounded-lg max-w-full"
+        />
+
+        <p className="text-xl font-semibold mt-8 mb-2">3. Validación emocional: no tienes que estar de acuerdo para entender</p>
+        <p>Validar las emociones de tu pareja significa <strong>reconocer que lo que siente es legítimo</strong>, aunque no compartas su punto de vista. Frases como <em>"Entiendo que te sientas así"</em> o <em>"Es normal que eso te haya molestado"</em> generan un espacio seguro donde ambos pueden expresarse sin miedo al juicio.</p>
+        <p>La invalidación emocional —minimizar, ridiculizar o ignorar los sentimientos del otro— es una de las dinámicas más destructivas en una relación. Cuando una persona siente que sus emociones no importan, <strong>deja de compartirlas</strong>, y ahí comienza el distanciamiento.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">4. Elegir el momento adecuado: no todas las conversaciones caben en cualquier instante</p>
+        <p>Hay conversaciones importantes que merecen un espacio y un momento adecuados. Intentar resolver un conflicto cuando uno de los dos está cansado, estresado por el trabajo o en medio de otra actividad, <strong>rara vez termina bien</strong>.</p>
+        <p>La comunicación asertiva también implica saber decir: <em>"Necesito hablar contigo sobre algo importante, ¿cuándo podemos sentarnos tranquilos?"</em>. Este simple gesto demuestra respeto por el otro y por la conversación misma, aumentando las posibilidades de que sea <strong>productiva y constructiva</strong>.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">5. Contacto visual y lenguaje corporal: lo que no se dice con palabras</p>
+        <p>Gran parte de nuestra comunicación es no verbal. <strong>El contacto visual, la postura corporal, el tono de voz</strong> y los gestos transmiten tanto o más que las palabras. Mirar a los ojos de tu pareja mientras habla le dice "estoy aquí, contigo". Cruzar los brazos o mirar el móvil le dice todo lo contrario.</p>
+        <p>Practica la <strong>coherencia entre lo que dices y lo que tu cuerpo expresa</strong>. Si dices "te escucho" mientras miras la pantalla del teléfono, el mensaje que realmente llega es de indiferencia. La comunicación asertiva requiere presencia total.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-4"><strong>Conclusión</strong></p>
+        <p>La comunicación asertiva no es un don innato, es una <strong>habilidad que se entrena</strong>. Requiere práctica, paciencia y, sobre todo, la voluntad de ambos miembros de la pareja de construir un espacio donde cada uno pueda expresarse con libertad y respeto.</p>
+        <p>Si sientes que la comunicación con tu pareja se ha convertido en un campo de batalla, o si simplemente quieres mejorar la calidad de vuestras conversaciones, <strong>dar el paso hacia la terapia de pareja puede marcar la diferencia</strong>. Un profesional os puede guiar para identificar patrones dañinos y desarrollar herramientas que fortalezcan vuestro vínculo.</p>
+
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(350 100% 97%)', borderColor: 'hsl(350 100% 90%)'}}>¿Quieres mejorar la comunicación en tu relación? En Neoka podemos ayudaros. <a href="/terapia-pareja" style={{color: 'hsl(350 80% 50%)', fontWeight: 600}}>Descubre nuestra terapia de pareja en Huelva</a> y da el primer paso hacia una relación más sana.</p>
+      </>
+    ),
+  },
   {
     id: 1,
     slug: "el-amor-se-ha-perdido",
@@ -254,51 +304,6 @@ export const blogPosts: BlogPost[] = [
         <p>Vivan ustedes de mentiras y apariencias, que así nos va pues.</p>
         <p><strong>Bienvenidos al circo, ¿qué careta te toca hoy?</strong></p>
         <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si las máscaras y las relaciones tóxicas te pesan, un profesional puede ayudarte a encontrarte de verdad. Conoce nuestra <a href="/psicologia-sanitaria" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>Psicología Sanitaria en Huelva</a> y empieza a cuidarte.</p>
-      </>
-    ),
-  },
-  {
-    id: 6,
-    slug: "bendito-2020",
-    title: "Bendito 2020.",
-    date: "11 dic 2020",
-    readTime: "7 Min. de lectura",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop",
-    metaTitle: "Bendito 2020: Superando una crisis personal | Psicólogo Huelva",
-    metaDescription: "Cómo una crisis personal se convirtió en un proceso de transformación. Un relato sobre la resiliencia, el amor propio y el crecimiento personal.",
-    content: (
-      <>
-        <p>Creo que es la frase que más he repetido en este año: Bendito 2020. La verdad es que <strong>he estado en alguna que otra mierda,</strong> algunas han sido pesadas, otras duraderas y las que menos, livianas. Sólo ha sido alguna que otra, porque en un alto porcentaje ha sido el mejor año de mi vida, pues <strong>ni el COVID ha podido con él.</strong> Es mi mejor año sin duda. En treinta años solo había cumplido un sueño. En el año que llevo, (ahora tengo treinta y uno), ya llevo cumplidos tres, más otro que está ya fraguándose. En proporción es mucho mejor, ¿no?</p>
-        <p>La realidad es que estaba estancada. <strong>No me gustaba la vida que llevaba, no era feliz, no me sentía plena y me estaba volviendo loca.</strong> A mí y a cualquiera que me rodeara. Enfadada con el mundo y conmigo misma, entré en un espiral del que no veía salida. Sabía que quería acabar y terminar, pero no sabía ni cómo, ni cuando sería el mejor momento. Tenía lazos de dependencia creados, compromisos y, en definitiva, <strong>zona de confort por doquier.</strong></p>
-        <p>Total, que la vida me dijo "tu qué pasa cobarde, ¿qué no te atreves?, pues agárrate que te vamos a dar el empujón de tu vida". Y tanto que me lo dio, literalmente. Tuve el accidente de mi vida el 1 de febrero. Me rompí de todo y más, y me mandaron cama y heparina durante dos meses y medio. <strong>Me dijeron que no volvería a andar</strong> sino pasaba por una operación que tampoco me daban seguridad ni garantía de que fuera a quedar bien. Pinta bien ¿eh?, bueno, pues aún no has leído todo. Me pilla el confinamiento y mi traumatólogo coge el COVID. Se cancela la operación hasta más ver. Solo me quedaba incertidumbre, miedo y dudas.</p>
-        <p>Reconozco que lloré lo que no había llorado en mi vida. <strong>Me veía con 30 años sin poder volver a andar y sin que nadie me diera solución</strong>. Mi traumatólogo desapareció y mis esperanzas con él. Para más inri, <strong>mi relación de pareja de siete años se terminó de manera brusca en mitad de todo esto.</strong> Estaba sin poder andar y con el corazón hecho añicos. Y ahí estaba yo, en medio de un huracán del que no entendía nada.</p>
-        <p>Una semana más tarde de aquella decisión estaba con <strong>mis maletas en la puerta, mi negocio cerrado, todo mi dinero invertido perdido y el orgullo...herido.</strong> Aunque fue tremendamente doloroso para mí, fue a su vez una auténtica liberación que luego explicaré.</p>
-        <p>Tuve que buscar en plena pandemia un nuevo piso para mi, un <strong>hogar</strong> que antes no había tenido y crearlo desde cero. Llevaba los bolsillos vacíos y el alma rota, pero algo que no había sentido nunca antes: Por primera vez después de muchísimos años sentía coherencia con mi vida y lo que hacía con ella.</p>
-        <p><strong>Os juro que no fue fácil</strong>. Tenía que aprender de nuevo a andar sola, pero el universo se encargó de ponerme ángeles en el camino que me iban dando pequeñas ayudas. <strong>Brutal</strong>, ha sido brutal todo el amor y el apoyo que yo he sentido. Familiares, amigos y amigas se volcaron conmigo, clientes que incluso vinieron a ayudarme a montar mi nuevo negocio, que cortaron conmigo maderas, cargaron muebles... lo recuerdo y me emociono de alegría. Que grandes sois. Yo iba coja, con muletas, pero tenía una fuerza que <strong>no sentí jamás.</strong></p>
-        <p>De toda esa fuerza, saqué la suficiente para lo más importante: <strong>YO</strong>. Me olvidé de mí, me empequeñecí y me volví dependiente (o más bien, dejé que me hicieran dependiente). No era yo. No me sentía libre ni feliz. Pero todo eso cambió debido a ese bendito 1 de febrero que trajo como consecuencia el crecerme como persona, el <strong>no apoyarme en nadie</strong> y realizar el trabajo más duro que llevaba años evitando: quererme a mi misma más que a los que me rodeaban. <strong>Me dediqué a dar, a amar. Menos a mi.</strong> Me centré tanto en lo que estaba fuera de mí que un día no supe reconocerme. Me miraba en el espejo y sentía que no era yo. Ya no me arreglaba, ya no me importaba nada, no hacía ejercicio, no me trataba con respeto, no me escuchaba ni me conectaba con mi parte espiritual. Supongo que alguna vez te habrás sentido así y me entenderás. Me conformaba con migajas y no vivía en armonía con lo que realmente anhelaba. <strong>Rogaba que me quisieran, porque yo no me quería nada.</strong></p>
-        <p>La realidad es que me echaba de menos. <strong>¿Qué había sido de mi? ¿Dónde estaba yo?</strong></p>
-        <p>Pero como os he dicho, todo eso cambió desde ese día 1 de febrero de 2020. Curioso, ¿no? Como un <strong>accidente que duró 9 segundos</strong> me cambió la vida. Bendito sea, pues fue lo mejor que me pudo ocurrir. Después de toda esa tempestad, como dice el refrán, llegó la calma.</p>
-        <p>Empecé a reencontrarme conmigo misma poco a poco. <strong>Fue un proceso lento y doloroso</strong>. No podía creer como había llegado hasta ahí. Pero paso que daba, era una auténtica <strong>victoria</strong>. Paso metafórico y literal. Al final, mi pie se curó de forma milagrosa. Sin ningún tratamiento ni operación. No me preguntéis cómo, fue un milagro, aunque he de decir, que me senté de la forma más sincera y noble a pedirle al de arriba que me curase, pero no sin antes yo demostrar que había cambiado, que había aprendido la lección y que iba a <strong>comprometerme conmigo misma</strong> y mi actitud ante toda esa mierda que estaba viviendo. Yo cumplí, y él también.</p>
-        <p>No sé si fue un milagro o fue la fuerza y entereza que le puse, pero la realidad es que ando 6 kilómetros diarios desde entonces y me pongo tacones de 9 cms de alto, y con eso me quedo yo.</p>
-        <p>Y vosotros diréis, "Nerea, y ¿qué c***** de bendito tiene esta historia?" Pues si os parece poco, la historia no queda aquí. Vinieron un millón de inconvenientes más, problemas, crisis internas que se agudizaban con el <strong>maldito confinamiento,</strong> que me obligaba sin duda a tener que pararme a reflexionar y vivir todo esto desde la soledad de mi casa, sin poder huir ni evadirme con salidas, viajes, amigos, ruidos, gentes… Mi alma pedía desmelenarme y <strong>la situación me decía que NO</strong>. Y menos mal, pues gracias a este bendito confinamiento que nunca acababa, tuve que sentarme y ponerme a trabajar, todos los días, sin poder escaparme de eso que tanto me dolía. <strong>Volví a aprender a quererme, pero esta vez, seriamente,</strong> haciéndome la promesa de no volver a dejarme en un rincón del olvido por nada ni nadie, poniéndome como prioridad ante cualquier cosa. Y haciéndolo sola, <strong>que tiene doble mérito</strong> y orgullo para mí, sin muletas (metafóricas, entiéndase).</p>
-        <p>Me he enfrentado a idas y venidas, a miedos, a noches oscuras sin luces que me protejan, a inseguridades. <strong>He vencido a mis dragones</strong>, he descubierto el sexo de verdad, el que te hace vibrar como nunca antes lo había hecho. Me he sentido deseada, tremendamente atractiva, he batallado con mi personalidad, he hablado directamente con mi mente y, familia, creedme, <strong>he salido vencedora</strong> y sobre todo, he descubierto una Nerea mucho más hermosa, más fuerte, más pura. ¡Buah!, me emociono al mencionarlo porque nunca pensé que me vería con estos ojos que me veo hoy. Por fin reconozco la gran mujer que soy, <strong>sin armaduras</strong> absurdas, con mis cosas buenas y malas, pero todas ellas son lo que soy yo hoy: independiente, serena, estable, libre, fuerte, feliz y entera. Va a sonar a cómic, pero me siento poderosa, invencible, y sobre todo…llena. Me vacíe de tanto dar, pero ahora me siento completamente llena. <strong>Ese accidente me dio el mayor regalo que uno puede esperar de la vida: estar en paz y amarse como uno es.</strong></p>
-        <p>No sé si será que el karma me está devolviendo todo eso que di, pero yo puedo decir con el mentón alto y el corazón limpio que <strong>me lo merezco.</strong> He cumplido sueños, he encontrado nuevos amigos, he crecido el triple laboral y educacionalmente, he hecho el amor como nunca antes, he vivido risas y carcajadas hasta dolerme, me he reencontrado conmigo misma y aún más, he <strong>sacado lo mejor de mí que ni siquiera yo sabia que lo tenía.</strong> He ganado más dinero y me he reconciliado conmigo misma, ¿por qué tu ibas a ser menos? <strong>¿Por qué no ibas a poder merecértelo? Joder, ya te toca, ¿no?</strong> Ya has dado, amado, prestado y entregado lo suficiente. Ahora es tu turno. Hay cosas hermosas esperando por ti y sabes que, aunque duela llegar ahí, <strong>cuando llegues será la hostia.</strong></p>
-        <p>Porque yo no te estoy contando historias mentales ni psicológicas, ni herramientas ni leches fritas. <strong>Te estoy contando mi vida y mi verdad.</strong> Y la tuya está esperando, deseosa de salir a la luz, de dar un golpe en la mesa y decir <strong>YA NO PUEDO MÁS.</strong></p>
-        <p>Tu esencia está gritándote "déjame salir" en forma de <strong>ansiedad</strong>, en forma de angustia, tristeza o <strong>miedo</strong>. Si no lo sabias o nadie te lo había dicho antes, <strong>te lo voy a decir yo: Vales un puñetero imperio.</strong> Me dan igual tus imperfecciones, me dan igual tus taras, tus caídas o cualquiera de esas cosas que estarás pensando. ME DAN IGUAL. ERES IGUALMENTE VALIOSO Y VALIOSA PARA MÍ COMO PERSONA. Y sí, te lo debes, te debes respeto, dignidad y cariño. <strong>Y ésta era la señal que esperabas.</strong> No sigas regodeándote en la mierda, en la migaja. <strong>Saca toda tu fuerza, esa que crees no tener, todo tu coraje y aborda tu vida.</strong> Porque vales, porque te lo mereces y porque tienes todo el maldito derecho a ser tú, sin miedo, sin dudas, sin nada que frente tu felicidad. Hay un mundo esperando por ti. Yo no soy más que tú, sólo soy humana, y por ende, tu puedes conseguirlo igual que yo. Solo requiere trabajo, consciencia, compromiso y esfuerzo.</p>
-        <p>Os espero a todos, en ese lado de la vida, porque ahí es donde realmente debes estar. Te lo debes.</p>
-        <p><strong>P.D.: me lo dedico a mí misma</strong>, la chica del espejo. Por mí y todas las cabras montesas que suben presas en vertical.</p>
-        <p>No hay montaña alta, sino mente débil que cree no poder lograrla alcanzar.</p>
-        <p>Gracias 2020. Bendito 2020. Feliz Navidad.</p>
-        <p className="mt-6">Nerea Ballester Goytia.<br/>Terapeuta y Coach.<br/>www.neoka.es</p>
-        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(var(--secondary))', borderColor: 'hsl(var(--border))'}}>Si sientes que ha llegado tu momento de transformación y quieres apoyo profesional, descubre nuestra <a href="/psicologia-sanitaria" style={{color: 'hsl(var(--primary))', fontWeight: 600}}>Psicología Sanitaria en Huelva</a>. En Neoka estamos aquí para acompañarte en el proceso.</p>
-        
-        <img 
-          src={blogNereaBallester} 
-          alt="Nerea Ballester - terapeuta transpersonal en Huelva" 
-          className="my-6 mx-auto rounded-lg max-w-full"
-        />
-        
-        <p className="text-sm text-muted-foreground">Artículo publicado en el periódico Diario de Huelva: <a href="https://www.diariodehuelva.es/2020/12/11/nerea-ballester-2020-opinion/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://www.diariodehuelva.es/2020/12/11/nerea-ballester-2020-opinion/</a></p>
       </>
     ),
   },
