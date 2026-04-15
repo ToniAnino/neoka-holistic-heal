@@ -49,6 +49,13 @@ const jsonLd = {
     "Podología",
     "Nutrición y Dietética"
   ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "48"
+  },
   "sameAs": [
     "https://www.facebook.com/NeokaOficial",
     "https://www.instagram.com/neokaoficial/",
@@ -64,10 +71,22 @@ const Index = () => {
         <title>Centro de Psicología y Terapia de Pareja en Huelva | Neoka</title>
         <meta name="description" content="Clínica de psicología y terapia de pareja en Huelva. Psicólogo Sanitario en Huelva con equipo multidisciplinar. Bienestar emocional, salud mental y atención integral. Reserva tu cita." />
         <link rel="canonical" href="https://centroneoka.es" />
+        <link rel="alternate" hrefLang="es" href="https://centroneoka.es" />
+        <link rel="alternate" hrefLang="x-default" href="https://centroneoka.es" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Clínica de Psicología y Terapia de Pareja en Huelva | Neoka" />
         <meta property="og:description" content="Clínica de psicología y terapia de pareja en Huelva. Bienestar emocional, salud mental y atención integral. Reserva tu cita." />
         <meta property="og:url" content="https://centroneoka.es" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Neoka - Centro de Psicología y Salud Integral en Huelva" />
+        <meta name="twitter:image" content="https://centroneoka.es/og-image.jpg" />
+        <meta name="geo.region" content="ES-H" />
+        <meta name="geo.placename" content="Huelva" />
+        <meta name="geo.position" content="37.258889;-6.951231" />
+        <meta name="ICBM" content="37.258889, -6.951231" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
