@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -164,6 +164,24 @@ const onSubmit = (data: ContactFormData) => {
                 </svg>
                 Enviar por WhatsApp
               </Button>
+
+              {/* Google Maps Link */}
+              <a
+                href="https://www.google.com/maps/place/Neoka+-+Centro+de+Psicolog%C3%ADa,+Terapia+de+Pareja+y+Coaching/@37.258889,-6.951231,17z"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="lg"
+                  className="w-full"
+                >
+                  <MapPin className="w-5 h-5 mr-2" />
+                  Ver en Google Maps
+                </Button>
+              </a>
             </form>
           </div>
         </div>

@@ -17,7 +17,7 @@ import { Footer } from "@/components/Footer";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalOrganization",
-  "name": "Neoka - Centro de Psicología y Salud Integral",
+  "name": "Neoka - Centro de Psicología, Terapia de Pareja y Coaching",
   "description": "Clínica de psicología y terapia de pareja en Huelva. Psicología sanitaria, terapia transpersonal, fisioterapia, podología y nutrición.",
   "url": "https://centroneoka.es",
   "telephone": "+34617642564",

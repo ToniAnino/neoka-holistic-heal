@@ -67,14 +67,14 @@ export const MapSection = () => {
           <div className="lg:col-span-2">
             <div className="rounded-2xl overflow-hidden shadow-lg border border-border h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.6583947661!2d-6.951231!3d37.258889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd11c52c8a4d3c3d%3A0x0!2sC.%20la%20Palma%2C%204%2C%2021002%20Huelva!5e0!3m2!1ses!2ses!4v1699999999999!5m2!1ses!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.9!2d-6.9512!3d37.2589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd11c52c8a4d3c3d%3A0x5c3a1f4e8b2d7a90!2sNeoka%20-%20Centro%20de%20Psicolog%C3%ADa%2C%20Terapia%20de%20Pareja%20y%20Coaching!5e0!3m2!1ses!2ses!4v1713200000000!5m2!1ses!2ses"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de Neoka en Huelva"
+                title="Ubicación de Neoka - Centro de Psicología, Terapia de Pareja y Coaching en Huelva"
               />
             </div>
           </div>
