@@ -167,7 +167,7 @@ const onSubmit = (data: ContactFormData) => {
 
               {/* Google Maps Link */}
               <a
-                href="https://maps.app.goo.gl/YourGoogleMapsLink"
+                href="https://www.google.com/maps/place/Neoka+-+Centro+de+Psicolog%C3%ADa,+Terapia+de+Pareja+y+Coaching/@37.258889,-6.951231,17z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
