@@ -5,7 +5,7 @@
 /* Neoka - Centro de Salud Integral Design System
    Paleta calmante y profesional para transmitir bienestar y confianza */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+/* Google Fonts loaded via <link> in index.html for better performance */
 
 @layer base {
   :root {

@@ -41,6 +41,12 @@ const jsonLd = {
     "opens": "09:00",
     "closes": "21:00"
   },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "48",
+    "bestRating": "5"
+  },
   "medicalSpecialty": [
     "Psicología Sanitaria",
     "Terapia de Pareja",
