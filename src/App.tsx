@@ -20,6 +20,7 @@ import Privacidad from "./pages/Privacidad";
 import Cookies from "./pages/Cookies";
 import Terminos from "./pages/Terminos";
 import { CookieBanner } from "./components/CookieBanner";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
         <CookieBanner />
+        <FloatingWhatsApp />
       </BrowserRouter>
     </HelmetProvider>
   </QueryClientProvider>
