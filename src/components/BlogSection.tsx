@@ -10,7 +10,8 @@ export const BlogSection = () => {
   const navigate = useNavigate();
   const location = useLocation();
   
-  const postSlugs = blogPosts.map(p => p.slug);
+  const visiblePosts = blogPosts.slice(0, 6);
+  const postSlugs = visiblePosts.map(p => p.slug);
   const { allStats, likedPosts, toggleLike, updateCommentCount, refetchStats } = useAllBlogStats(postSlugs);
 
   // Check if URL matches a blog post on mount (for refresh with modal open)
