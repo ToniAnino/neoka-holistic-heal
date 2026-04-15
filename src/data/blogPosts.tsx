@@ -21,6 +21,54 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 7,
+    slug: "comunicacion-asertiva-pareja",
+    title: "5 Claves para mejorar la comunicación asertiva en tu relación.",
+    date: "15 abr 2026",
+    readTime: "5 Min. de lectura",
+    image: blogComunicacionAsertiva,
+    metaTitle: "5 Claves para la comunicación asertiva en pareja | Terapia de Pareja Huelva",
+    metaDescription: "Descubre las 5 claves esenciales para mejorar la comunicación asertiva en tu relación de pareja. Escucha activa, validación emocional y más consejos profesionales.",
+    content: (
+      <>
+        <p>La comunicación es el pilar fundamental de cualquier relación de pareja. Sin embargo, <strong>comunicarse no es lo mismo que hablar</strong>. Muchas parejas hablan, discuten, se expresan… pero pocas realmente se comunican de forma asertiva. La comunicación asertiva implica expresar lo que sientes y necesitas de manera clara, respetuosa y empática, sin atacar ni someterte.</p>
+        <p>En nuestra experiencia como profesionales de la terapia de pareja en Huelva, hemos visto cómo la falta de comunicación asertiva es una de las principales causas de conflicto y desgaste en las relaciones. Por eso, hoy queremos compartir contigo <strong>cinco claves esenciales</strong> que pueden transformar la forma en que te relacionas con tu pareja.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">1. Escucha activa: oír no es escuchar</p>
+        <p>La escucha activa va mucho más allá de permanecer en silencio mientras el otro habla. Se trata de <strong>prestar atención plena</strong>, sin interrumpir, sin preparar mentalmente tu respuesta y sin juzgar. Cuando practicas la escucha activa, le transmites a tu pareja que lo que dice importa, que sus emociones tienen valor.</p>
+        <p>Un ejercicio útil es <strong>parafrasear</strong> lo que tu pareja acaba de decir: "Si te he entendido bien, lo que me dices es que…". Esto no solo demuestra que estás presente, sino que evita malentendidos que muchas veces escalan en discusiones innecesarias.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">2. Hablar desde el "yo": responsabilízate de tus emociones</p>
+        <p>Uno de los errores más comunes en las discusiones de pareja es utilizar el "tú" como arma: <em>"Tú nunca me escuchas"</em>, <em>"Tú siempre llegas tarde"</em>. Este tipo de frases generan una respuesta defensiva automática en la otra persona.</p>
+        <p>La alternativa asertiva es <strong>hablar desde el "yo"</strong>: <em>"Yo me siento ignorado/a cuando hablo y no recibo respuesta"</em>, <em>"Yo necesito que respetemos los horarios que acordamos"</em>. De esta forma, expresas tu emoción sin culpabilizar, abriendo la puerta al diálogo en lugar de al conflicto.</p>
+
+        <img 
+          src={blogComunicacionAsertivaMid} 
+          alt="Pareja comunicándose con empatía - comunicación asertiva en Huelva" 
+          className="my-6 mx-auto rounded-lg max-w-full"
+        />
+
+        <p className="text-xl font-semibold mt-8 mb-2">3. Validación emocional: no tienes que estar de acuerdo para entender</p>
+        <p>Validar las emociones de tu pareja significa <strong>reconocer que lo que siente es legítimo</strong>, aunque no compartas su punto de vista. Frases como <em>"Entiendo que te sientas así"</em> o <em>"Es normal que eso te haya molestado"</em> generan un espacio seguro donde ambos pueden expresarse sin miedo al juicio.</p>
+        <p>La invalidación emocional —minimizar, ridiculizar o ignorar los sentimientos del otro— es una de las dinámicas más destructivas en una relación. Cuando una persona siente que sus emociones no importan, <strong>deja de compartirlas</strong>, y ahí comienza el distanciamiento.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">4. Elegir el momento adecuado: no todas las conversaciones caben en cualquier instante</p>
+        <p>Hay conversaciones importantes que merecen un espacio y un momento adecuados. Intentar resolver un conflicto cuando uno de los dos está cansado, estresado por el trabajo o en medio de otra actividad, <strong>rara vez termina bien</strong>.</p>
+        <p>La comunicación asertiva también implica saber decir: <em>"Necesito hablar contigo sobre algo importante, ¿cuándo podemos sentarnos tranquilos?"</em>. Este simple gesto demuestra respeto por el otro y por la conversación misma, aumentando las posibilidades de que sea <strong>productiva y constructiva</strong>.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">5. Contacto visual y lenguaje corporal: lo que no se dice con palabras</p>
+        <p>Gran parte de nuestra comunicación es no verbal. <strong>El contacto visual, la postura corporal, el tono de voz</strong> y los gestos transmiten tanto o más que las palabras. Mirar a los ojos de tu pareja mientras habla le dice "estoy aquí, contigo". Cruzar los brazos o mirar el móvil le dice todo lo contrario.</p>
+        <p>Practica la <strong>coherencia entre lo que dices y lo que tu cuerpo expresa</strong>. Si dices "te escucho" mientras miras la pantalla del teléfono, el mensaje que realmente llega es de indiferencia. La comunicación asertiva requiere presencia total.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-4"><strong>Conclusión</strong></p>
+        <p>La comunicación asertiva no es un don innato, es una <strong>habilidad que se entrena</strong>. Requiere práctica, paciencia y, sobre todo, la voluntad de ambos miembros de la pareja de construir un espacio donde cada uno pueda expresarse con libertad y respeto.</p>
+        <p>Si sientes que la comunicación con tu pareja se ha convertido en un campo de batalla, o si simplemente quieres mejorar la calidad de vuestras conversaciones, <strong>dar el paso hacia la terapia de pareja puede marcar la diferencia</strong>. Un profesional os puede guiar para identificar patrones dañinos y desarrollar herramientas que fortalezcan vuestro vínculo.</p>
+
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(350 100% 97%)', borderColor: 'hsl(350 100% 90%)'}}>¿Quieres mejorar la comunicación en tu relación? En Neoka podemos ayudaros. <a href="/terapia-pareja" style={{color: 'hsl(350 80% 50%)', fontWeight: 600}}>Descubre nuestra terapia de pareja en Huelva</a> y da el primer paso hacia una relación más sana.</p>
+      </>
+    ),
+  },
+  {
     id: 1,
     slug: "el-amor-se-ha-perdido",
     title: "El amor se ha perdido.",
