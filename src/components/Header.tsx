@@ -7,7 +7,7 @@ import neokaLogo from "@/assets/neoka-logo.png";
 const navLinks = [
   { label: "Inicio", href: "/#inicio" },
   { label: "Quiénes Somos", href: "/quienes-somos", isRoute: true },
-  { label: "Blog", href: "/#blog" },
+  { label: "Blog", href: "/blog", isRoute: true },
   { label: "Contacto", href: "/#contacto" },
 ];
 
