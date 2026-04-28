@@ -150,9 +150,10 @@ export const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
         <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-background/50 text-center md:text-left">
-            © {currentYear} Neoka - Centro de Salud Integral. Todos los derechos reservados.
-          </p>
+          <div className="text-sm text-background/50 text-center md:text-left space-y-1">
+            <p>© {currentYear} Neoka - Centro de Salud Integral. Todos los derechos reservados.</p>
+            <p>N.º Registro Sanitario (NICA): 60441</p>
+          </div>
           <p className="text-sm text-background/50">
             Diseñado con ❤️ en Huelva
           </p>

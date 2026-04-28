@@ -15,13 +15,19 @@ const AvisoLegal = () => (
       <li><strong>Correo electrónico:</strong> <a href="mailto:webneoka@gmail.com">webneoka@gmail.com</a></li>
     </ul>
 
-    <h2>2. Usuarios</h2>
+    <h2>2. Autorización Administrativa</h2>
+    <p>
+      El centro está inscrito en el Registro de Centros, Establecimientos y Servicios
+      Sanitarios de Andalucía con el número NICA 60441.
+    </p>
+
+    <h2>3. Usuarios</h2>
     <p>
       El acceso y/o uso de este portal de Centro Neoka atribuye la condición de USUARIO,
       que acepta las Condiciones Generales de Uso aquí reflejadas.
     </p>
 
-    <h2>3. Propiedad Intelectual</h2>
+    <h2>4. Propiedad Intelectual</h2>
     <p>
       Todos los contenidos de la web (textos, imágenes, logotipos) son propiedad de
       Centro Neoka o de sus licenciantes y están protegidos por los derechos de propiedad
