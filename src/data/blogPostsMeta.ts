@@ -11,6 +11,15 @@ export interface BlogPostMeta {
 
 export const blogPostsMeta: BlogPostMeta[] = [
   {
+    slug: "romper-bucles-discusiones-pareja",
+    title: "¿Por qué discutimos siempre por lo mismo? Cómo romper los bucles en la pareja",
+    date: "16 jul 2026",
+    readTime: "5 Min. de lectura",
+    metaTitle: "¿Por qué discutimos siempre por lo mismo? Romper bucles en pareja | Terapia de Pareja Huelva",
+    metaDescription:
+      "Descubre por qué las parejas discuten siempre por los mismos temas y aprende, con ayuda profesional en Huelva, cómo romper los bucles emocionales que dañan la relación.",
+  },
+  {
     slug: "comunicacion-asertiva-pareja",
     title: "5 Claves para mejorar la comunicación asertiva en tu relación.",
     date: "15 abr 2026",

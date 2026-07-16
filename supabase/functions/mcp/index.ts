@@ -11,6 +11,14 @@ import { defineTool } from "npm:@lovable.dev/mcp-js@0.22.2";
 // src/data/blogPostsMeta.ts
 var blogPostsMeta = [
   {
+    slug: "romper-bucles-discusiones-pareja",
+    title: "\xBFPor qu\xE9 discutimos siempre por lo mismo? C\xF3mo romper los bucles en la pareja",
+    date: "16 jul 2026",
+    readTime: "5 Min. de lectura",
+    metaTitle: "\xBFPor qu\xE9 discutimos siempre por lo mismo? Romper bucles en pareja | Terapia de Pareja Huelva",
+    metaDescription: "Descubre por qu\xE9 las parejas discuten siempre por los mismos temas y aprende, con ayuda profesional en Huelva, c\xF3mo romper los bucles emocionales que da\xF1an la relaci\xF3n."
+  },
+  {
     slug: "comunicacion-asertiva-pareja",
     title: "5 Claves para mejorar la comunicaci\xF3n asertiva en tu relaci\xF3n.",
     date: "15 abr 2026",
