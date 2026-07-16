@@ -6,6 +6,8 @@ import blogIdolosDelCirco from "@/assets/blog-idolos-del-circo.jpg";
 import blogNereaBallester from "@/assets/blog-nerea-ballester-terapeuta.jpg";
 import blogComunicacionAsertiva from "@/assets/blog-comunicacion-asertiva.jpg";
 import blogComunicacionAsertivaMid from "@/assets/blog-comunicacion-asertiva-intermedia.jpg";
+import blogBuclesPareja from "@/assets/blog-bucles-pareja.jpg";
+import blogBuclesParejaMid from "@/assets/blog-bucles-pareja-intermedia.jpg";
 
 export interface BlogPost {
   id: number;
