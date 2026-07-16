@@ -1,5 +1,5 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { blogPostsMeta } from "@/data/blogPostsMeta";
+import { blogPostsMeta } from "../../../data/blogPostsMeta";
 
 export default defineTool({
   name: "list_blog_posts",

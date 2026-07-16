@@ -7,7 +7,68 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.22.2";
 
 // src/lib/mcp/tools/list-blog-posts.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.22.2";
-import { blogPostsMeta } from "npm:@/data/blogPostsMeta";
+
+// src/data/blogPostsMeta.ts
+var blogPostsMeta = [
+  {
+    slug: "comunicacion-asertiva-pareja",
+    title: "5 Claves para mejorar la comunicaci\xF3n asertiva en tu relaci\xF3n.",
+    date: "15 abr 2026",
+    readTime: "5 Min. de lectura",
+    metaTitle: "5 Claves para la comunicaci\xF3n asertiva en pareja | Terapia de Pareja Huelva",
+    metaDescription: "Descubre las 5 claves esenciales para mejorar la comunicaci\xF3n asertiva en tu relaci\xF3n de pareja. Escucha activa, validaci\xF3n emocional y m\xE1s consejos profesionales."
+  },
+  {
+    slug: "el-amor-se-ha-perdido",
+    title: "El amor se ha perdido.",
+    date: "8 may 2024",
+    readTime: "4 Min. de lectura",
+    metaTitle: "El amor se ha perdido | Reflexiones de Terapia de Pareja - Neoka Huelva",
+    metaDescription: "Reflexi\xF3n profesional sobre c\xF3mo se transforma el amor con el tiempo y cu\xE1ndo acudir a terapia de pareja en Huelva."
+  },
+  {
+    slug: "mirar-hacia-otro-lado",
+    title: "Mirar hacia otro lado",
+    date: "1 may 2024",
+    readTime: "4 Min. de lectura",
+    metaTitle: "Mirar hacia otro lado | Blog de Psicolog\xEDa - Neoka Huelva",
+    metaDescription: "Art\xEDculo sobre el mecanismo de evitaci\xF3n emocional y c\xF3mo la psicoterapia ayuda a afrontar aquello que evitamos."
+  },
+  {
+    slug: "la-importancia-del-compromiso",
+    title: "La importancia del compromiso.",
+    date: "11 oct 2023",
+    readTime: "4 Min. de lectura",
+    metaTitle: "La importancia del compromiso en pareja | Neoka Huelva",
+    metaDescription: "Por qu\xE9 el compromiso es un pilar de la relaci\xF3n de pareja y c\xF3mo trabajarlo desde la terapia."
+  },
+  {
+    slug: "perderse-encontrarse-catarsis",
+    title: "Perderse - Encontrarse = Catarsis.",
+    date: "8 jun 2023",
+    readTime: "4 Min. de lectura",
+    metaTitle: "Perderse y encontrarse: la catarsis emocional | Neoka Huelva",
+    metaDescription: "Reflexi\xF3n sobre la catarsis emocional en los procesos de autoconocimiento y terapia."
+  },
+  {
+    slug: "idolos-del-circo",
+    title: "\xCDdolos del circo.",
+    date: "20 sept 2020",
+    readTime: "4 Min. de lectura",
+    metaTitle: "\xCDdolos del circo | Blog de Psicolog\xEDa - Neoka Huelva",
+    metaDescription: "Art\xEDculo del blog de Neoka sobre modelos y referentes sociales."
+  },
+  {
+    slug: "bendito-2020",
+    title: "Bendito 2020.",
+    date: "11 dic 2020",
+    readTime: "4 Min. de lectura",
+    metaTitle: "Bendito 2020 | Blog de Psicolog\xEDa - Neoka Huelva",
+    metaDescription: "Reflexi\xF3n sobre el a\xF1o 2020 y sus aprendizajes emocionales."
+  }
+];
+
+// src/lib/mcp/tools/list-blog-posts.ts
 var list_blog_posts_default = defineTool({
   name: "list_blog_posts",
   title: "Listar art\xEDculos del blog",
@@ -33,7 +94,6 @@ var list_blog_posts_default = defineTool({
 // src/lib/mcp/tools/get-blog-post.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.22.2";
 import { z } from "npm:zod@^3.25.76";
-import { blogPostsMeta as blogPostsMeta2 } from "npm:@/data/blogPostsMeta";
 var get_blog_post_default = defineTool2({
   name: "get_blog_post",
   title: "Obtener art\xEDculo del blog",
@@ -43,7 +103,7 @@ var get_blog_post_default = defineTool2({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {
-    const post = blogPostsMeta2.find((p) => p.slug === slug);
+    const post = blogPostsMeta.find((p) => p.slug === slug);
     if (!post) {
       return {
         content: [{ type: "text", text: `No se encontr\xF3 ning\xFAn art\xEDculo con slug "${slug}".` }],
