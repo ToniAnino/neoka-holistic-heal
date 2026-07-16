@@ -1,6 +1,5 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { z } from "zod";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPostsMeta } from "@/data/blogPostsMeta";
 
 export default defineTool({
   name: "list_blog_posts",
@@ -10,7 +9,7 @@ export default defineTool({
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
-    const items = blogPosts.map((p) => ({
+    const items = blogPostsMeta.map((p) => ({
       slug: p.slug,
       title: p.title,
       date: p.date,

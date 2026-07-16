@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPostsMeta } from "@/data/blogPostsMeta";
 
 export default defineTool({
   name: "get_blog_post",
@@ -12,7 +12,7 @@ export default defineTool({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {
-    const post = blogPosts.find((p) => p.slug === slug);
+    const post = blogPostsMeta.find((p) => p.slug === slug);
     if (!post) {
       return {
         content: [{ type: "text", text: `No se encontró ningún artículo con slug "${slug}".` }],

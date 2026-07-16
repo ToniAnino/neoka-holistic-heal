@@ -7,7 +7,7 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.22.2";
 
 // src/lib/mcp/tools/list-blog-posts.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.22.2";
-import { blogPosts } from "npm:@/data/blogPosts";
+import { blogPostsMeta } from "npm:@/data/blogPostsMeta";
 var list_blog_posts_default = defineTool({
   name: "list_blog_posts",
   title: "Listar art\xEDculos del blog",
@@ -15,7 +15,7 @@ var list_blog_posts_default = defineTool({
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => {
-    const items = blogPosts.map((p) => ({
+    const items = blogPostsMeta.map((p) => ({
       slug: p.slug,
       title: p.title,
       date: p.date,
@@ -33,7 +33,7 @@ var list_blog_posts_default = defineTool({
 // src/lib/mcp/tools/get-blog-post.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.22.2";
 import { z } from "npm:zod@^3.25.76";
-import { blogPosts as blogPosts2 } from "npm:@/data/blogPosts";
+import { blogPostsMeta as blogPostsMeta2 } from "npm:@/data/blogPostsMeta";
 var get_blog_post_default = defineTool2({
   name: "get_blog_post",
   title: "Obtener art\xEDculo del blog",
@@ -43,7 +43,7 @@ var get_blog_post_default = defineTool2({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {
-    const post = blogPosts2.find((p) => p.slug === slug);
+    const post = blogPostsMeta2.find((p) => p.slug === slug);
     if (!post) {
       return {
         content: [{ type: "text", text: `No se encontr\xF3 ning\xFAn art\xEDculo con slug "${slug}".` }],
