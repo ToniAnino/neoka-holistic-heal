@@ -6,6 +6,8 @@ import blogIdolosDelCirco from "@/assets/blog-idolos-del-circo.jpg";
 import blogNereaBallester from "@/assets/blog-nerea-ballester-terapeuta.jpg";
 import blogComunicacionAsertiva from "@/assets/blog-comunicacion-asertiva.jpg";
 import blogComunicacionAsertivaMid from "@/assets/blog-comunicacion-asertiva-intermedia.jpg";
+import blogBuclesPareja from "@/assets/blog-bucles-pareja.jpg";
+import blogBuclesParejaMid from "@/assets/blog-bucles-pareja-intermedia.jpg";
 
 export interface BlogPost {
   id: number;
@@ -20,6 +22,59 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 8,
+    slug: "romper-bucles-discusiones-pareja",
+    title: "¿Por qué discutimos siempre por lo mismo? Cómo romper los bucles en la pareja",
+    date: "16 jul 2026",
+    readTime: "5 Min. de lectura",
+    image: blogBuclesPareja,
+    metaTitle: "¿Por qué discutimos siempre por lo mismo? Romper bucles en pareja | Terapia de Pareja Huelva",
+    metaDescription: "Descubre por qué las parejas discuten siempre por los mismos temas y aprende, con ayuda profesional en Huelva, cómo romper los bucles emocionales que dañan la relación.",
+    content: (
+      <>
+        <p>Hay una sensación muy familiar en las consultas de <strong>terapia de pareja</strong>: la de sentarse a hablar de un conflicto y darse cuenta de que <strong>ya lo habíamos tenido antes</strong>. Las mismas frases, los mismos silencios, el mismo enfado. Cambia el motivo aparente —la limpieza, los suegros, el móvil, el tiempo que pasamos juntos— pero el fondo se repite una y otra vez.</p>
+        <p>Si te reconoces en esto, no estáis rotos ni sois incompatibles: probablemente habéis entrado en un <strong>bucle relacional</strong>. Y los bucles, aunque duelen, se pueden entender y romper.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">1. Qué es realmente un bucle de pareja</p>
+        <p>Un bucle es un <strong>patrón automático de interacción</strong> que se activa siempre que aparece un tema sensible. Uno reacciona de una forma, el otro responde de otra, y ambos os quedáis atrapados en la misma coreografía emocional.</p>
+        <p>El problema no es <em>de qué</em> discutís, sino <em>cómo</em> discutís. Por eso podéis cambiar de tema mil veces y seguir sintiendo lo mismo al final: <strong>frustración, distancia y la sensación de no ser escuchados</strong>.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">2. Debajo del enfado casi siempre hay una emoción más profunda</p>
+        <p>La rabia suele ser la <strong>capa visible</strong>, pero debajo casi siempre hay miedo, tristeza, sensación de no importar o de no ser prioridad. Cuando decimos <em>"siempre estás con el móvil"</em>, muchas veces lo que queremos decir es <em>"te echo de menos"</em> o <em>"tengo miedo de que ya no me mires como antes"</em>.</p>
+        <p>Identificar la emoción que hay debajo es el primer paso para <strong>salir del reproche</strong> y empezar a hablar de lo que de verdad ocurre.</p>
+
+        <img
+          src={blogBuclesParejaMid}
+          alt="Pareja en terapia trabajando los bucles emocionales en Huelva"
+          className="my-6 mx-auto rounded-lg max-w-full"
+          loading="lazy"
+          width={1024}
+          height={640}
+        />
+
+        <p className="text-xl font-semibold mt-8 mb-2">3. Los roles que solemos repetir: el que persigue y el que se retira</p>
+        <p>Uno de los bucles más comunes es el de <strong>perseguidor–evitador</strong>. Uno de los dos, ante el malestar, necesita hablar, aclarar, sentir cercanía. El otro, ante ese mismo malestar, necesita silencio, distancia y espacio para pensar.</p>
+        <p>Cuanto más persigue uno, más se retira el otro. Y cuanto más se retira, más ansiedad y necesidad de acercamiento genera. Ninguno lo hace por maldad: cada uno intenta protegerse como puede. El resultado, sin embargo, es que los dos <strong>acaban sintiéndose solos dentro de la pareja</strong>.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">4. Cómo empezar a romper el bucle</p>
+        <p>Romper un bucle no significa dejar de discutir, sino <strong>discutir de otra manera</strong>. Algunas claves que trabajamos habitualmente en consulta:</p>
+        <p><strong>Poner nombre al patrón.</strong> En lugar de atacar a la persona, señalad juntos la dinámica: <em>"otra vez estamos entrando en la misma discusión"</em>. Cuando el bucle se ve, deja de tener tanto poder.</p>
+        <p><strong>Pedir una pausa consciente.</strong> Si la conversación se está calentando, es más útil parar durante unos minutos y retomar después que seguir hablando desde la reactividad. Una pausa no es huir: es cuidar la conversación.</p>
+        <p><strong>Hablar desde lo que sentís, no desde lo que hace el otro.</strong> Cambiar <em>"tú siempre…"</em> por <em>"yo me siento…"</em> transforma el tono y baja las defensas del otro.</p>
+        <p><strong>Buscar el acuerdo, no la razón.</strong> Ganar una discusión en pareja suele significar que los dos perdéis. Preguntaros con frecuencia: <em>¿qué necesitamos ahora mismo como equipo?</em></p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">5. Cuándo pedir ayuda profesional</p>
+        <p>Si notáis que las mismas discusiones se repiten desde hace meses, que las heridas se acumulan o que ya casi evitáis hablar de ciertos temas para no discutir, es una señal de que el bucle se ha instalado y es difícil salir <strong>sin una mirada externa</strong>.</p>
+        <p>La terapia de pareja no busca decidir quién tiene razón, sino <strong>ayudaros a entender vuestro patrón</strong>, cuidar el vínculo y construir una forma de comunicaros en la que los dos os sintáis seguros.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-4"><strong>Conclusión</strong></p>
+        <p>Discutir siempre por lo mismo no significa que vuestra relación no tenga arreglo, sino que hay una dinámica que se ha vuelto automática y que os está haciendo daño a los dos. Detectarla, ponerle nombre y aprender nuevas formas de responder es un <strong>trabajo posible</strong>, y muchas veces profundamente reparador.</p>
+
+        <p className="mt-6 p-4 rounded-lg border text-sm" style={{backgroundColor: 'hsl(350 100% 97%)', borderColor: 'hsl(350 100% 90%)'}}>¿Sentís que caéis siempre en las mismas discusiones? En Neoka podemos ayudaros a romper esos bucles. <a href="/terapia-pareja" style={{color: 'hsl(350 80% 50%)', fontWeight: 600}}>Descubre nuestra terapia de pareja en Huelva</a> y dad el primer paso hacia una relación más tranquila.</p>
+      </>
+    ),
+  },
   {
     id: 7,
     slug: "comunicacion-asertiva-pareja",
