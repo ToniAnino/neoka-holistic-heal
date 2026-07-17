@@ -119,7 +119,7 @@ const Fisioterapia = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Fisioterapia en Huelva | Clínica de Fisioterapia Neoka</title>
         <meta name="description" content="¿Buscas fisioterapeuta en Huelva? Especialistas en dolor muscular, lesiones deportivas y rehabilitación. Ofrecemos fisioterapia a domicilio en Huelva centro." />
         <meta name="keywords" content="fisioterapia huelva, fisioterapeuta huelva, fisioterapia a domicilio huelva, rehabilitación huelva, tratamiento dolor espalda huelva" />

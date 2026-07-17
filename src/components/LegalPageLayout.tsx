@@ -10,7 +10,7 @@ interface LegalPageLayoutProps {
 export const LegalPageLayout = ({ title, children }: LegalPageLayoutProps) => {
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>{title}</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>

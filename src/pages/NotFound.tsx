@@ -11,7 +11,7 @@ const NotFound = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
-      <Helmet>
+      <Helmet defer={false}>
         <meta name="robots" content="noindex, nofollow" />
         <title>Página no encontrada | Neoka</title>
       </Helmet>

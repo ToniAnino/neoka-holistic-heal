@@ -90,7 +90,7 @@ const Podologia = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Podólogo en Huelva | Plantillas y Estudio de la Pisada | Neoka</title>
         <meta name="description" content="¿Buscas podólogo en Huelva? Paola Buitrago ofrece estudio biomecánico de la pisada, plantillas a medida, tratamiento de hongos, papilomas y pie diabético. ¡Reserva cita!" />
         <meta name="keywords" content="podologo huelva, podologia huelva, plantillas a medida huelva, estudio pisada huelva, tratamiento papiloma pie huelva, uñas encarnadas huelva, pie diabetico huelva" />

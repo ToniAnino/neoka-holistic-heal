@@ -12,7 +12,7 @@ const Blog = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Blog de Psicología y Terapia de Pareja en Huelva | Neoka</title>
         <meta name="description" content="Artículos sobre psicología, terapia de pareja, bienestar emocional y salud integral escritos por profesionales del centro Neoka en Huelva." />
         <link rel="canonical" href="https://centroneoka.es/blog" />

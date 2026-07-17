@@ -31,7 +31,7 @@ const TerapiaTranspersonal = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Terapia Transpersonal en Huelva | Crecimiento Personal – Neoka</title>
         <meta name="description" content="Terapia transpersonal en Huelva orientada al crecimiento personal, los patrones vitales y el sentido de vida. Un enfoque profundo y consciente con Nerea B." />
         <meta name="keywords" content="terapia transpersonal huelva, crecimiento personal huelva, autoconocimiento, transgeneracional huelva, nerea neoka" />

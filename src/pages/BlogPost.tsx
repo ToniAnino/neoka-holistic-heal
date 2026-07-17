@@ -66,7 +66,7 @@ const BlogPost = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
         <link rel="canonical" href={`https://centroneoka.es/blog/${post.slug}`} />
