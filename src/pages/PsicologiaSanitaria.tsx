@@ -69,7 +69,7 @@ const PsicologiaSanitaria = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Psicóloga en Huelva | Ansiedad y Salud Mental – Centro Neoka</title>
         <meta name="description" content="¿Necesitas un psicólogo en Huelva? María D. ofrece atención sanitaria profesional para ansiedad, fobias y bienestar emocional en Neoka. ¡Pide tu cita hoy!" />
         <link rel="canonical" href="https://centroneoka.es/psicologia-sanitaria" />

@@ -90,7 +90,7 @@ const NutricionDietetica = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Nutricionista en Huelva | Dietética y Nutrición Clínica Neoka</title>
         <meta name="description" content="¿Buscas un nutricionista en Huelva? Mario C. ofrece planes personalizados para SIBO, nutrición oncológica, deportiva y pérdida de peso. ¡Reserva tu cita!" />
         <meta name="keywords" content="nutricionista huelva, dietista huelva, nutrición oncológica huelva, tratamiento sibo huelva, nutrición deportiva huelva, adelgazar huelva" />

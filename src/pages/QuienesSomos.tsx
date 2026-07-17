@@ -89,7 +89,7 @@ const curiosities = [
 const QuienesSomos = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Quiénes Somos | Clínica de Psicología y Terapia de Pareja en Huelva | Neoka</title>
         <meta name="description" content="Conoce al equipo de Neoka, clínica de psicología y terapia de pareja en Huelva. Profesionales en salud mental, fisioterapia, podología y nutrición." />
         <link rel="canonical" href="https://centroneoka.es/quienes-somos" />

@@ -68,7 +68,7 @@ const TerapiaPareja = () => {
 
   return (
     <main className="min-h-screen">
-      <Helmet>
+      <Helmet defer={false}>
         <title>Terapia de Pareja en Huelva | Especialistas en Relaciones – Neoka</title>
         <meta name="description" content="¿Buscas terapia de pareja en Huelva? Nuestro Psicólogo Sanitario en Huelva te ayuda a superar crisis, infidelidades y problemas de comunicación. Recupera el vínculo." />
         <link rel="canonical" href="https://centroneoka.es/terapia-pareja" />

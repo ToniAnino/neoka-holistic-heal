@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
@@ -24,6 +24,11 @@ import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
+const RedirectPostToBlog = () => {
+  const { slug } = useParams();
+  return <Navigate to={`/blog/${slug ?? ""}`} replace />;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
@@ -42,6 +47,8 @@ const App = () => (
           <Route path="/nutricion-dietetica" element={<NutricionDietetica />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          {/* Redirección de URLs antiguas /post/:slug → /blog/:slug */}
+          <Route path="/post/:slug" element={<RedirectPostToBlog />} />
           <Route path="/aviso-legal" element={<AvisoLegal />} />
           <Route path="/privacidad" element={<Privacidad />} />
           <Route path="/cookies" element={<Cookies />} />
