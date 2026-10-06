@@ -99,7 +99,7 @@ const NutricionDietetica = () => {
         <meta property="og:title" content="Nutricionista en Huelva | Clínica Neoka" />
         <meta property="og:description" content="Planes nutricionales personalizados en Huelva. SIBO, nutrición oncológica, deportiva y pérdida de peso saludable." />
         <meta property="og:url" content="https://centroneoka.es/nutricion-dietetica" />
-        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Nutricionista en Huelva | Clínica Neoka" />
         <meta name="twitter:description" content="Planes nutricionales personalizados en Huelva para SIBO, nutrición oncológica y pérdida de peso saludable." />

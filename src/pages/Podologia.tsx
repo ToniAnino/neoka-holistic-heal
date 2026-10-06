@@ -99,7 +99,7 @@ const Podologia = () => {
         <meta property="og:title" content="Podólogo en Huelva | Plantillas y Estudio de la Pisada | Neoka" />
         <meta property="og:description" content="Especialistas en podología en Huelva. Estudio biomecánico de la pisada, plantillas a medida y tratamiento de pie diabético." />
         <meta property="og:url" content="https://centroneoka.es/podologia" />
-        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Podólogo en Huelva | Clínica Neoka" />
         <meta name="twitter:description" content="Especialistas en podología en Huelva. Plantillas a medida, estudio de pisada y pie diabético." />

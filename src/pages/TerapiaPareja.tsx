@@ -76,7 +76,7 @@ const TerapiaPareja = () => {
         <meta property="og:title" content="Terapia de Pareja en Huelva | Neoka" />
         <meta property="og:description" content="Especialistas en terapia de pareja en Huelva. Supera crisis, infidelidades y problemas de comunicación con terapia profesional." />
         <meta property="og:url" content="https://centroneoka.es/terapia-pareja" />
-        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Terapia de Pareja en Huelva | Neoka" />
         <meta name="twitter:description" content="Especialistas en terapia de pareja en Huelva. Supera crisis e infidelidades con terapia profesional." />

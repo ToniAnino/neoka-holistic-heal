@@ -77,7 +77,7 @@ const PsicologiaSanitaria = () => {
         <meta property="og:title" content="Psicóloga en Huelva | Ansiedad y Salud Mental – Centro Neoka" />
         <meta property="og:description" content="Atención psicológica profesional en Huelva para ansiedad, fobias, regulación emocional y bienestar mental. Pide tu cita." />
         <meta property="og:url" content="https://centroneoka.es/psicologia-sanitaria" />
-        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Psicóloga en Huelva | Centro Neoka" />
         <meta name="twitter:description" content="Atención psicológica profesional en Huelva para ansiedad, fobias y bienestar emocional." />

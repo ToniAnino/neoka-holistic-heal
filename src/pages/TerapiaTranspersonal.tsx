@@ -40,7 +40,7 @@ const TerapiaTranspersonal = () => {
         <meta property="og:title" content="Terapia Transpersonal en Huelva | Neoka" />
         <meta property="og:description" content="Terapia transpersonal en Huelva para el crecimiento personal, autoconocimiento y transformación interior. Con Nerea B." />
         <meta property="og:url" content="https://centroneoka.es/terapia-transpersonal" />
-        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Terapia Transpersonal en Huelva | Neoka" />
         <meta name="twitter:description" content="Terapia transpersonal para el crecimiento personal y el autoconocimiento en Huelva." />
