@@ -1,0 +1,1 @@
+- Public routes are prerendered at build time by prerender.plugin.ts (SSR build of src/entry-server.tsx); add new public routes to its route list so crawlers get static HTML.
