@@ -29,12 +29,8 @@ const RedirectPostToBlog = () => {
   return <Navigate to={`/blog/${slug ?? ""}`} replace />;
 };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+export const AppRoutes = () => (
+  <>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
@@ -58,6 +54,16 @@ const App = () => (
         </Routes>
         <CookieBanner />
         <FloatingWhatsApp />
+  </>
+);
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <HelmetProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <AppRoutes />
       </BrowserRouter>
     </HelmetProvider>
   </QueryClientProvider>
