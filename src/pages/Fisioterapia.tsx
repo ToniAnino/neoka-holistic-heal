@@ -128,7 +128,7 @@ const Fisioterapia = () => {
         <meta property="og:title" content="Fisioterapia en Huelva | Clínica Neoka" />
         <meta property="og:description" content="Especialistas en fisioterapia en Huelva. Dolor muscular, lesiones deportivas, rehabilitación y fisioterapia a domicilio." />
         <meta property="og:url" content="https://centroneoka.es/fisioterapia" />
-        <meta property="og:image" content="https://centroneoka.es/og-neoka.jpg" />
+        <meta property="og:image" content="https://centroneoka.es/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fisioterapia en Huelva | Clínica Neoka" />
         <meta name="twitter:description" content="Especialistas en fisioterapia en Huelva. Dolor muscular, lesiones deportivas, rehabilitación y fisioterapia a domicilio." />
