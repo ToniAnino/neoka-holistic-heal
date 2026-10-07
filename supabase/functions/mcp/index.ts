@@ -11,6 +11,14 @@ import { defineTool } from "npm:@lovable.dev/mcp-js@0.22.2";
 // src/data/blogPostsMeta.ts
 var blogPostsMeta = [
   {
+    slug: "ansiedad-cuando-pedir-ayuda",
+    title: "Ansiedad: c\xF3mo saber cu\xE1ndo pedir ayuda a un psic\xF3logo",
+    date: "6 oct 2026",
+    readTime: "6 Min. de lectura",
+    metaTitle: "Ansiedad: cu\xE1ndo pedir ayuda psicol\xF3gica | Neoka Huelva",
+    metaDescription: "\xBFBuscas un psic\xF3logo para la ansiedad en Huelva? Aprende a reconocer cu\xE1ndo pedir ayuda y c\xF3mo dar el primer paso con el centro Neoka, sin juzgarte."
+  },
+  {
     slug: "romper-bucles-discusiones-pareja",
     title: "\xBFPor qu\xE9 discutimos siempre por lo mismo? C\xF3mo romper los bucles en la pareja",
     date: "16 jul 2026",

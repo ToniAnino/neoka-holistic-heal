@@ -11,6 +11,14 @@ export interface BlogPostMeta {
 
 export const blogPostsMeta: BlogPostMeta[] = [
   {
+    slug: "ansiedad-cuando-pedir-ayuda",
+    title: "Ansiedad: cómo saber cuándo pedir ayuda a un psicólogo",
+    date: "6 oct 2026",
+    readTime: "6 Min. de lectura",
+    metaTitle: "Ansiedad: cuándo pedir ayuda psicológica | Neoka Huelva",
+    metaDescription: "¿Buscas un psicólogo para la ansiedad en Huelva? Aprende a reconocer cuándo pedir ayuda y cómo dar el primer paso con el centro Neoka, sin juzgarte.",
+  },
+  {
     slug: "romper-bucles-discusiones-pareja",
     title: "¿Por qué discutimos siempre por lo mismo? Cómo romper los bucles en la pareja",
     date: "16 jul 2026",
