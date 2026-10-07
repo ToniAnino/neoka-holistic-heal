@@ -9,6 +9,7 @@ import blogComunicacionAsertivaMid from "@/assets/blog-comunicacion-asertiva-int
 import blogBuclesPareja from "@/assets/blog-bucles-pareja.jpg";
 import blogBuclesParejaMid from "@/assets/blog-bucles-pareja-intermedia.jpg";
 import blogAnsiedad from "@/assets/blog-ansiedad-psicologo-huelva.jpg.asset.json";
+import blogAnsiedadCabecera from "@/assets/blog-ansiedad-cabecera.png.asset.json";
 
 export interface BlogPost {
   id: number;
@@ -29,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     title: "Ansiedad: cómo saber cuándo pedir ayuda a un psicólogo",
     date: "6 oct 2026",
     readTime: "6 Min. de lectura",
-    image: blogAnsiedad.url,
+    image: blogAnsiedadCabecera.url,
     metaTitle: "Ansiedad: cuándo pedir ayuda psicológica | Neoka Huelva",
     metaDescription: "¿Buscas un psicólogo para la ansiedad en Huelva? Aprende a reconocer cuándo pedir ayuda y cómo dar el primer paso con el centro Neoka, sin juzgarte.",
     content: (
