@@ -1,4 +1,4 @@
 # Artículo sobre ansiedad
-- [ ] Añadir artículo y metadatos, primero en ambos listados.
-- [ ] Incorporar fotografía de cabecera y URL al sitemap.
-- [ ] Verificar contenido, SEO, portada y enlace al servicio.
+- [x] Añadir artículo y metadatos, primero en ambos listados.
+- [x] Incorporar fotografía de cabecera y URL al sitemap (stock: generación no disponible).
+- [x] Verificar contenido, SEO, portada y enlace al servicio.
