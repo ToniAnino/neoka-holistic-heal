@@ -8,6 +8,7 @@ import blogComunicacionAsertiva from "@/assets/blog-comunicacion-asertiva.jpg";
 import blogComunicacionAsertivaMid from "@/assets/blog-comunicacion-asertiva-intermedia.jpg";
 import blogBuclesPareja from "@/assets/blog-bucles-pareja.jpg";
 import blogBuclesParejaMid from "@/assets/blog-bucles-pareja-intermedia.jpg";
+import blogAnsiedad from "@/assets/blog-ansiedad-psicologo-huelva.jpg.asset.json";
 
 export interface BlogPost {
   id: number;
@@ -22,6 +23,53 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 9,
+    slug: "ansiedad-cuando-pedir-ayuda",
+    title: "Ansiedad: cómo saber cuándo pedir ayuda a un psicólogo",
+    date: "6 oct 2026",
+    readTime: "6 Min. de lectura",
+    image: blogAnsiedad.url,
+    metaTitle: "Ansiedad: cuándo pedir ayuda psicológica | Neoka Huelva",
+    metaDescription: "¿Buscas un psicólogo para la ansiedad en Huelva? Aprende a reconocer cuándo pedir ayuda y cómo dar el primer paso con el centro Neoka, sin juzgarte.",
+    content: (
+      <>
+        <p>Quizá llevas un tiempo diciendo que solo estás pasando una mala racha. Cumples con tus obligaciones, pero te cuesta desconectar, duermes pendiente de lo que puede ocurrir mañana y notas una tensión que parece acompañarte a todas partes. Entonces aparece una pregunta: <strong>¿esto se me pasará o debería pedir ayuda?</strong></p>
+        <p>No necesitas tener una respuesta definitiva ni llegar al límite para consultar. Si estás buscando un <strong>psicólogo para la ansiedad en Huelva</strong>, este artículo puede ayudarte a ordenar lo que sientes y decidir tu siguiente paso. No sustituye una valoración individual: pretende ofrecer orientación, sin etiquetas apresuradas ni promesas de soluciones inmediatas.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">1. Sentir ansiedad no significa que haya algo malo en ti</p>
+        <p>La ansiedad es una respuesta que puede aparecer ante situaciones que percibimos como amenazantes o inciertas. Una entrevista, un cambio importante o una preocupación familiar pueden activar esa sensación de alerta. <strong>Sentirla en determinados momentos forma parte de la experiencia humana</strong> y no equivale, por sí solo, a tener un trastorno.</p>
+        <p>Lo importante es observar qué espacio está ocupando en tu vida. ¿Puedes recuperar la calma después? ¿La preocupación te acompaña incluso cuando no hay nada urgente? ¿Estás dejando de hacer cosas que antes disfrutabas? Más que compararte con otras personas, conviene mirar <strong>la intensidad, la persistencia y el impacto en tu día a día</strong>.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">2. Presta atención a cómo afecta a tu vida cotidiana</p>
+        <p>Una señal para pedir ayuda es que el malestar empiece a interferir en el descanso, el trabajo, los estudios o las relaciones. Quizá relees un mensaje muchas veces por miedo a equivocarte, te resulta difícil concentrarte o llegas a casa sin energía después de pasar el día intentando controlar tus preocupaciones.</p>
+        <p>También puede aparecer <strong>evitación</strong>: cancelar planes, dejar de conducir o posponer una conversación porque anticipas que no podrás soportarla. Evitar puede aliviarte en ese momento, pero a veces termina reduciendo tu libertad. Si cada vez necesitas organizar más tu vida alrededor del miedo, merece la pena hablarlo con un profesional.</p>
+        <p>No hace falta que te ocurra todo esto. Tampoco tienes que esperar un número concreto de semanas ni cumplir una lista para merecer atención. <strong>Que estés sufriendo o necesites orientación ya es una razón válida para consultar</strong>.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">3. Escucha tu cuerpo sin sacar conclusiones precipitadas</p>
+        <p>La ansiedad puede acompañarse de tensión muscular, palpitaciones, molestias digestivas o sensación de falta de aire. Son experiencias que pueden asustar, especialmente cuando no sabes qué las está provocando. Sin embargo, <strong>no todos los síntomas físicos se deben a la ansiedad</strong>, aunque hayas pasado antes por algo parecido.</p>
+        <p>Si aparecen síntomas nuevos, persistentes o que te preocupan, consulta con un profesional sanitario para valorar su origen. Un dolor intenso en el pecho, una dificultad importante para respirar o un desmayo requieren atención médica urgente. Leer un artículo o buscar síntomas en internet no permite descartar otras causas ni sustituye una exploración.</p>
+
+        <img src={blogAnsiedad.url} alt="Fotografía ilustrativa de una conversación de apoyo psicológico sobre ansiedad" className="my-6 mx-auto rounded-lg max-w-full" loading="lazy" width={1200} height={800} />
+
+        <p className="text-xl font-semibold mt-8 mb-2">4. No esperes a que tus recursos se agoten</p>
+        <p>Hablar con alguien de confianza, cuidar tus horarios de descanso o reservar momentos de pausa puede ayudarte a sobrellevar el malestar. También puedes observar si la cafeína aumenta tu nerviosismo. Son medidas de cuidado, no una prueba que debas superar antes de pedir apoyo psicológico.</p>
+        <p>Si lo que has intentado no te resulta suficiente, no significa que estés fallando. <strong>Pedir ayuda no es perder autonomía</strong>: puede ser una forma de recuperarla. Un psicólogo puede ayudarte a comprender qué activa tu ansiedad, qué respuestas la mantienen y qué cambios tienen sentido en tu situación, teniendo en cuenta tus circunstancias y tu ritmo.</p>
+        <p>Si vives en Huelva, puedes conocer el servicio de <a href="/psicologia-sanitaria">psicología sanitaria de Neoka</a> para informarte sobre la atención del centro. También puedes acudir a tu centro de salud si necesitas orientación o valoración médica. Ambas vías permiten empezar a hablar de lo que ocurre.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">5. Qué puedes llevar a una primera consulta</p>
+        <p>No necesitas preparar un discurso perfecto. Puede bastar con decir: <em>«Últimamente vivo con demasiada preocupación y no sé cómo gestionarla»</em>. Si te ayuda, anota cuándo aparece el malestar, qué pensamientos lo acompañan, cómo duermes y qué actividades estás evitando. No se trata de vigilarte constantemente, sino de aportar algunos ejemplos concretos.</p>
+        <p>La primera conversación permite explorar lo que te pasa y valorar tus necesidades. Puedes preguntar por la forma de trabajar, los objetivos y las dudas que tengas. <strong>No hay un número universal de sesiones ni un resultado garantizado</strong>: el proceso depende de cada persona y debe ajustarse a una valoración profesional.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-2">6. Cuándo buscar ayuda urgente</p>
+        <p>Si sientes que no puedes mantenerte a salvo, tienes intención de hacerte daño o existe un peligro inmediato, <strong>llama al 112 o acude a urgencias</strong>. Busca la compañía de alguien de confianza mientras llega la ayuda. Una cita ordinaria o un mensaje al centro no sustituye la atención de una emergencia.</p>
+
+        <p className="text-xl font-semibold mt-8 mb-4"><strong>Conclusión: no necesitas estar peor para empezar</strong></p>
+        <p>La pregunta no tiene que ser si tu ansiedad es suficientemente grave en comparación con la de otros. Puede ser algo más sencillo: <strong>¿me está costando vivir como quiero y necesito acompañamiento?</strong> Reconocerlo es un punto de partida, no una sentencia. Dar el primer paso puede consistir en pedir información, compartir lo que te pasa y dejar que un profesional te ayude a entenderlo.</p>
+        <p className="mt-6 p-4 rounded-lg border border-border bg-secondary text-sm">Si la ansiedad está limitando tu día a día, en el centro Neoka puedes informarte sobre nuestra atención psicológica. <a href="/psicologia-sanitaria" className="text-primary font-semibold">Conoce nuestro servicio de psicología sanitaria en Huelva</a> y consulta tus dudas antes de dar el siguiente paso.</p>
+      </>
+    ),
+  },
   {
     id: 8,
     slug: "romper-bucles-discusiones-pareja",
